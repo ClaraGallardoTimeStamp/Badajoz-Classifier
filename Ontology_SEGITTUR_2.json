@@ -1,0 +1,3514 @@
+[
+  {
+    "id": "ATM",
+    "label": "Cajero automático",
+    "nivel_1": "Entidad turística",
+    "nivel_2": "Instalación turística o vinculada",
+    "nivel_3": "Negocio local",
+    "nivel_4": "Servicio financiero",
+    "nivel_5": "Cajero automático",
+    "definicion": "Máquina conectada informáticamente con un banco que permite efectuar ciertas operaciones bancarias mediante una tarjeta o libreta magnética que tienen asignada una clave personal.",
+    "keywords": [],
+    "keywords_negativas": []
+  },
+  {
+    "id": "AccessoriesAndComplements",
+    "label": "Tienda de accesorios y complementos",
+    "nivel_1": "Entidad turística",
+    "nivel_2": "Instalación turística o vinculada",
+    "nivel_3": "Negocio local",
+    "nivel_4": "Comercio y moda",
+    "nivel_5": "Tienda de accesorios y complementos",
+    "definicion": "Establecimiento en el que se venden objetos que complementan la indumentaria de una persona, como bolsos, calzado, paraguas, corbatas, sombreros, gafas, guantes, etc.",
+    "keywords": [],
+    "keywords_negativas": []
+  },
+  {
+    "id": "AgritourismExperience",
+    "label": "Experiencia agroturística",
+    "nivel_1": "Entidad turística",
+    "nivel_2": "Servicio turístico",
+    "nivel_3": "Experiencia agroturística",
+    "nivel_4": "",
+    "nivel_5": "",
+    "definicion": "Experiencia de tipo agroturística.",
+    "keywords": [],
+    "keywords_negativas": []
+  },
+  {
+    "id": "Airport",
+    "label": "Aeropuerto",
+    "nivel_1": "Entidad turística",
+    "nivel_2": "Infraestructura de transporte",
+    "nivel_3": "Aeropuerto",
+    "nivel_4": "",
+    "nivel_5": "",
+    "definicion": "Área destinada al aterrizaje y despegue de aviones dotada de instalaciones para el control del tráfico aéreo y de servicios a los pasajeros.",
+    "keywords": [],
+    "keywords_negativas": []
+  },
+  {
+    "id": "Alcazar",
+    "label": "Alcázar",
+    "nivel_1": "Entidad turística",
+    "nivel_2": "Recurso turístico",
+    "nivel_3": "Recurso histórico o cultural",
+    "nivel_4": "Alcázar",
+    "nivel_5": "",
+    "definicion": "Castillo fortificado situado en un lugar estratégico, especialmente cuando está amurallado.",
+    "keywords": [
+      "alcázar",
+      "castillo",
+      "castillos",
+      "fortaleza",
+      "alcazaba"
+    ],
+    "keywords_negativas": []
+  },
+  {
+    "id": "Amphitheatre",
+    "label": "Anfiteatro",
+    "nivel_1": "Entidad turística",
+    "nivel_2": "Recurso turístico",
+    "nivel_3": "Recurso histórico o cultural",
+    "nivel_4": "Anfiteatro",
+    "nivel_5": "",
+    "definicion": "Construcción oval o circular provista de un graderío alrededor de una zona arenosa central, en la que en la antigua Roma se celebraban espectáculos públicos.",
+    "keywords": [
+      "anfiteatro",
+      "circo romano",
+      "teatro romano"
+    ],
+    "keywords_negativas": []
+  },
+  {
+    "id": "AmusementPark",
+    "label": "Parque de atracciones",
+    "nivel_1": "Entidad turística",
+    "nivel_2": "Instalación turística o vinculada",
+    "nivel_3": "Instalación de cultura y ocio",
+    "nivel_4": "Parque de atracciones",
+    "nivel_5": "",
+    "definicion": "Recinto que acoge una gran variedad de atracciones y acontecimientos destinados a la diversión y al entretenimiento.",
+    "keywords": [
+      "parque de atracciones"
+    ],
+    "keywords_negativas": []
+  },
+  {
+    "id": "Aparthotel",
+    "label": "Apartahotel",
+    "nivel_1": "Entidad turística",
+    "nivel_2": "Instalación turística o vinculada",
+    "nivel_3": "Establecimiento alojativo",
+    "nivel_4": "Apartahotel",
+    "nivel_5": "",
+    "definicion": "Establecimiento que facilita el servicio de alojamiento para clientes en estudios o unidades de servicio, dentro de las cuales se dispone de instalaciones adecuadas para la conservación, elaboración y consumo de alimentos.",
+    "keywords": [
+      "apartahotel",
+      "aparthotel"
+    ],
+    "keywords_negativas": []
+  },
+  {
+    "id": "Aquarium",
+    "label": "Acuario",
+    "nivel_1": "Entidad turística",
+    "nivel_2": "Instalación turística o vinculada",
+    "nivel_3": "Instalación de cultura y ocio",
+    "nivel_4": "Acuario",
+    "nivel_5": "",
+    "definicion": "Recinto destinado a la exhibición de animales acuáticos vivos.",
+    "keywords": [
+      "acuario"
+    ],
+    "keywords_negativas": []
+  },
+  {
+    "id": "Aqueduct",
+    "label": "Acueducto",
+    "nivel_1": "Entidad turística",
+    "nivel_2": "Recurso turístico",
+    "nivel_3": "Recurso histórico o cultural",
+    "nivel_4": "Acueducto",
+    "nivel_5": "",
+    "definicion": "Construcción en forma de puente soportado por una o más filas de arcos sobre la cual se conduce agua de un lado a otro de una fuerte depresión de terreno.",
+    "keywords": [
+      "acueducto"
+    ],
+    "keywords_negativas": []
+  },
+  {
+    "id": "ArabicBath",
+    "label": "Baños árabes",
+    "nivel_1": "Entidad turística",
+    "nivel_2": "Recurso turístico",
+    "nivel_3": "Recurso histórico o cultural",
+    "nivel_4": "Baños árabes",
+    "nivel_5": "",
+    "definicion": "Los baños árabes, también conocidos como hammam, son espacios públicos de baño que combinan la limpieza del cuerpo con la relajación y el bienestar.",
+    "keywords": [
+      "baños árabes",
+      "hammam"
+    ],
+    "keywords_negativas": []
+  },
+  {
+    "id": "Arcade",
+    "label": "Salón recreativo",
+    "nivel_1": "Entidad turística",
+    "nivel_2": "Instalación turística o vinculada",
+    "nivel_3": "Instalación de cultura y ocio",
+    "nivel_4": "Salón recreativo",
+    "nivel_5": "",
+    "definicion": "Lugar donde se encuentran un conjunto de máquinas o juegos, en los que a cambio de una determinada cantidad de dinero se obtiene un tiempo de juego.",
+    "keywords": [
+      "salón recreativo",
+      "arcade"
+    ],
+    "keywords_negativas": []
+  },
+  {
+    "id": "Arch",
+    "label": "Arco",
+    "nivel_1": "Entidad turística",
+    "nivel_2": "Recurso turístico",
+    "nivel_3": "Recurso histórico o cultural",
+    "nivel_4": "Arco",
+    "nivel_5": "",
+    "definicion": "Elemento constructivo de directriz en forma curvada o poligonal.",
+    "keywords": [
+      "arco",
+      "arquería",
+      "arcos"
+    ],
+    "keywords_negativas": []
+  },
+  {
+    "id": "ArcheologicalSite",
+    "label": "Yacimiento arqueológico",
+    "nivel_1": "Entidad turística",
+    "nivel_2": "Recurso turístico",
+    "nivel_3": "Recurso histórico o cultural",
+    "nivel_4": "Yacimiento arqueológico",
+    "nivel_5": "",
+    "definicion": "Lugar donde se hallan restos arqueológicos.",
+    "keywords": [
+      "yacimiento arqueológico",
+      "yacimiento",
+      "excavación arqueológica",
+      "columbario",
+      "columbarios",
+      "necrópolis",
+      "Terma"
+    ],
+    "keywords_negativas": []
+  },
+  {
+    "id": "ArtGallery",
+    "label": "Galería de arte",
+    "nivel_1": "Entidad turística",
+    "nivel_2": "Instalación turística o vinculada",
+    "nivel_3": "Instalación de cultura y ocio",
+    "nivel_4": "Galería de arte",
+    "nivel_5": "",
+    "definicion": "Establecimiento para exposición y venta de obras de arte.",
+    "keywords": [
+      "galería de arte",
+      "galería"
+    ],
+    "keywords_negativas": []
+  },
+  {
+    "id": "Auditorium",
+    "label": "Auditorio",
+    "nivel_1": "Entidad turística",
+    "nivel_2": "Instalación turística o vinculada",
+    "nivel_3": "Instalación para eventos",
+    "nivel_4": "Auditorio",
+    "nivel_5": "",
+    "definicion": "Sala destinada a conciertos, recitales, conferencias, coloquios, lecturas públicas, etc.",
+    "keywords": [
+      "auditorio"
+    ],
+    "keywords_negativas": []
+  },
+  {
+    "id": "BakeryAndPastry",
+    "label": "Panadería y pastelería",
+    "nivel_1": "Entidad turística",
+    "nivel_2": "Instalación turística o vinculada",
+    "nivel_3": "Negocio local",
+    "nivel_4": "Alimentación",
+    "nivel_5": "Panadería y pastelería",
+    "definicion": "Establecimiento donde se hacen y/o se venden panes, pasteles, pastas u otros dulces.",
+    "keywords": [
+      "panadería",
+      "pastelería",
+      "obrador"
+    ],
+    "keywords_negativas": []
+  },
+  {
+    "id": "BankOffice",
+    "label": "Oficina bancaria",
+    "nivel_1": "Entidad turística",
+    "nivel_2": "Instalación turística o vinculada",
+    "nivel_3": "Negocio local",
+    "nivel_4": "Servicio financiero",
+    "nivel_5": "Oficina bancaria",
+    "definicion": "Lugar donde una institución financiera ofrece asistencia personal y automatizada a los clientes.",
+    "keywords": [
+      "oficina bancaria",
+      "banco",
+      "sucursal bancaria"
+    ],
+    "keywords_negativas": []
+  },
+  {
+    "id": "Bar",
+    "label": "Bar",
+    "nivel_1": "Entidad turística",
+    "nivel_2": "Instalación turística o vinculada",
+    "nivel_3": "Establecimiento de restauración",
+    "nivel_4": "Bar",
+    "nivel_5": "",
+    "definicion": "Establecimiento en el que se despachan bebidas que suelen tomarse de pie ante el mostrador.",
+    "keywords": [
+      "bar"
+    ],
+    "keywords_negativas": []
+  },
+  {
+    "id": "Basilica",
+    "label": "Basílica",
+    "nivel_1": "Entidad turística",
+    "nivel_2": "Recurso turístico",
+    "nivel_3": "Recurso histórico o cultural",
+    "nivel_4": "Basílica",
+    "nivel_5": "",
+    "definicion": "Iglesia notable por su antigüedad o magnificencia o por los cultos que en ella se celebran.",
+    "keywords": [
+      "basílica"
+    ],
+    "keywords_negativas": []
+  },
+  {
+    "id": "BasketballCourt",
+    "label": "Cancha de baloncesto",
+    "nivel_1": "Entidad turística",
+    "nivel_2": "Instalación turística o vinculada",
+    "nivel_3": "Instalación deportiva",
+    "nivel_4": "Cancha de baloncesto",
+    "nivel_5": "",
+    "definicion": "Superficie plana, interior o exterior, con un aro en cada extremo suspendido a unos tres metros de altura para la práctica de este deporte.",
+    "keywords": [
+      "cancha de baloncesto",
+      "pista de baloncesto"
+    ],
+    "keywords_negativas": []
+  },
+  {
+    "id": "Bazaar",
+    "label": "Bazar",
+    "nivel_1": "Entidad turística",
+    "nivel_2": "Instalación turística o vinculada",
+    "nivel_3": "Negocio local",
+    "nivel_4": "Comercio y moda",
+    "nivel_5": "Bazar",
+    "definicion": "Establecimiento en el que se venden gran diversidad de productos, como ropa, relojes, juguetes, artículos para la casa y objetos de regalo.",
+    "keywords": [
+      "bazar"
+    ],
+    "keywords_negativas": []
+  },
+  {
+    "id": "Beach",
+    "label": "Playa",
+    "nivel_1": "Entidad turística",
+    "nivel_2": "Recurso turístico",
+    "nivel_3": "Recurso natural",
+    "nivel_4": "Playa",
+    "nivel_5": "",
+    "definicion": "Ribera del mar o de un río grande, formada de arenales en superficie casi plana.",
+    "keywords": [
+      "playa",
+      "arenal",
+      "playita"
+    ],
+    "keywords_negativas": []
+  },
+  {
+    "id": "BeachBar",
+    "label": "Chiringuito",
+    "nivel_1": "Entidad turística",
+    "nivel_2": "Instalación turística o vinculada",
+    "nivel_3": "Establecimiento de restauración",
+    "nivel_4": "Chiringuito",
+    "nivel_5": "",
+    "definicion": "Pequeño establecimiento a pie de playa, que ofrece comidas y bebidas y que posee una terraza o área de mesas al aire libre.",
+    "keywords": [
+      "chiringuito"
+    ],
+    "keywords_negativas": []
+  },
+  {
+    "id": "BeachClub",
+    "label": "Club de playa",
+    "nivel_1": "Entidad turística",
+    "nivel_2": "Instalación turística o vinculada",
+    "nivel_3": "Instalación para fiestas y entretenimiento",
+    "nivel_4": "Club de playa",
+    "nivel_5": "",
+    "definicion": "Lugar de ocio y entretenimiento en las zonas costeras con instalaciones y servicios semejantes a los de un hotel, pero sin la opción de hospedaje.",
+    "keywords": [
+      "beach club",
+      "club de playa"
+    ],
+    "keywords_negativas": []
+  },
+  {
+    "id": "BeautyCentre",
+    "label": "Centro estético",
+    "nivel_1": "Entidad turística",
+    "nivel_2": "Instalación turística o vinculada",
+    "nivel_3": "Instalación de salud y bienestar",
+    "nivel_4": "Centro estético",
+    "nivel_5": "",
+    "definicion": "Establecimiento orientado a la belleza y cuidado del cuerpo.",
+    "keywords": [
+      "centro estético",
+      "estética",
+      "centro de belleza",
+      "esteticien",
+      "venta de productos de belleza",
+      "venta de productos de cosmetica"
+    ],
+    "keywords_negativas": []
+  },
+  {
+    "id": "BellTower",
+    "label": "Campanario",
+    "nivel_1": "Entidad turística",
+    "nivel_2": "Recurso turístico",
+    "nivel_3": "Recurso histórico o cultural",
+    "nivel_4": "Campanario",
+    "nivel_5": "",
+    "definicion": "Torre elevada, exenta, adosada o integrada en un edificio, donde se colocan las campanas.",
+    "keywords": [
+      "campanario"
+    ],
+    "keywords_negativas": []
+  },
+  {
+    "id": "BicycleSharingSystem",
+    "label": "Sistema de bicicletas compartidas",
+    "nivel_1": "Entidad turística",
+    "nivel_2": "Infraestructura de transporte",
+    "nivel_3": "Sistema de bicicletas compartidas",
+    "nivel_4": "",
+    "nivel_5": "",
+    "definicion": "Servicio que pone a disposición de los usuarios una serie de bicicletas para que sean utilizadas temporalmente como medio de transporte.",
+    "keywords": [
+      "bicicletas compartidas",
+      "bici pública",
+      "préstamo de bicicletas"
+    ],
+    "keywords_negativas": []
+  },
+  {
+    "id": "BikeLane",
+    "label": "Carril bici",
+    "nivel_1": "Entidad turística",
+    "nivel_2": "Infraestructura de transporte",
+    "nivel_3": "Carril bici",
+    "nivel_4": "",
+    "nivel_5": "",
+    "definicion": "Vía ciclista que discurre adosada a la calzada en uno o en doble sentido.",
+    "keywords": [
+      "carril bici",
+      "carril bicicleta",
+      "vía ciclista"
+    ],
+    "keywords_negativas": []
+  },
+  {
+    "id": "Bingo",
+    "label": "Bingo",
+    "nivel_1": "Entidad turística",
+    "nivel_2": "Instalación turística o vinculada",
+    "nivel_3": "Instalación para fiestas y entretenimiento",
+    "nivel_4": "Bingo",
+    "nivel_5": "",
+    "definicion": "Establecimiento de juego de bingo.",
+    "keywords": [
+      "bingo"
+    ],
+    "keywords_negativas": []
+  },
+  {
+    "id": "Bookshop",
+    "label": "Librería",
+    "nivel_1": "Entidad turística",
+    "nivel_2": "Instalación turística o vinculada",
+    "nivel_3": "Negocio local",
+    "nivel_4": "Comercio y moda",
+    "nivel_5": "Librería",
+    "definicion": "Tienda donde se venden libros.",
+    "keywords": [
+      "librería"
+    ],
+    "keywords_negativas": []
+  },
+  {
+    "id": "BowlingAlley",
+    "label": "Bolera",
+    "nivel_1": "Entidad turística",
+    "nivel_2": "Instalación turística o vinculada",
+    "nivel_3": "Instalación deportiva",
+    "nivel_4": "Bolera",
+    "nivel_5": "",
+    "definicion": "Lugar destinado al juego de bolos.",
+    "keywords": [
+      "bolera",
+      "bowling"
+    ],
+    "keywords_negativas": []
+  },
+  {
+    "id": "Brewery",
+    "label": "Cervecería",
+    "nivel_1": "Entidad turística",
+    "nivel_2": "Instalación turística o vinculada",
+    "nivel_3": "Establecimiento de restauración",
+    "nivel_4": "Cervecería",
+    "nivel_5": "",
+    "definicion": "Establecimiento en el que se sirve cerveza como especialidad.",
+    "keywords": [
+      "cervecería"
+    ],
+    "keywords_negativas": []
+  },
+  {
+    "id": "Bridge",
+    "label": "Puente",
+    "nivel_1": "Entidad turística",
+    "nivel_2": "Recurso turístico",
+    "nivel_3": "Recurso histórico o cultural",
+    "nivel_4": "Puente",
+    "nivel_5": "",
+    "definicion": "Construcción de piedra, ladrillo, madera, hierro, hormigón, etc., que se construye y forma sobre los ríos, fosos y otros sitios, para comunicar dos lados.",
+    "keywords": [
+      "puente"
+    ],
+    "keywords_negativas": []
+  },
+  {
+    "id": "BullRing",
+    "label": "Plaza de toros",
+    "nivel_1": "Entidad turística",
+    "nivel_2": "Instalación turística o vinculada",
+    "nivel_3": "Instalación para eventos",
+    "nivel_4": "Plaza de toros",
+    "nivel_5": "",
+    "definicion": "Construcción generalmente circular y con graderías, destinada a la lidia de toros, aunque también puede ser utilizada para otros tipos de eventos.",
+    "keywords": [
+      "plaza de toros",
+      "coso taurino",
+      "ruedo"
+    ],
+    "keywords_negativas": []
+  },
+  {
+    "id": "BusOperator",
+    "label": "Operador de autocares",
+    "nivel_1": "Entidad turística",
+    "nivel_2": "Organización turística",
+    "nivel_3": "Compañía de transporte de viajeros",
+    "nivel_4": "Operador de autocares",
+    "nivel_5": "",
+    "definicion": "Empresa especializada en la prestación de servicios de transporte de pasajeros utilizando autocares en rutas preestablecidas.",
+    "keywords": [
+      "operador de autocares",
+      "conductor autovust",
+      "autobuses",
+      "empresa de autocares"
+    ],
+    "keywords_negativas": []
+  },
+  {
+    "id": "BusStation",
+    "label": "Estación de autobuses",
+    "nivel_1": "Entidad turística",
+    "nivel_2": "Infraestructura de transporte",
+    "nivel_3": "Estación de autobuses",
+    "nivel_4": "",
+    "nivel_5": "",
+    "definicion": "Instalación destinada a la llegada y salida de autobuses.",
+    "keywords": [
+      "estación de autobuses",
+      "terminal de autobuses",
+      "cochera autobuses",
+      "estación de buses"
+    ],
+    "keywords_negativas": []
+  },
+  {
+    "id": "CafeOrCoffeShop",
+    "label": "Cafetería",
+    "nivel_1": "Entidad turística",
+    "nivel_2": "Instalación turística o vinculada",
+    "nivel_3": "Establecimiento de restauración",
+    "nivel_4": "Cafetería",
+    "nivel_5": "",
+    "definicion": "Despacho de café y otras bebidas, donde a veces se sirven aperitivos y comidas.",
+    "keywords": [
+      "cafetería",
+      "café"
+    ],
+    "keywords_negativas": []
+  },
+  {
+    "id": "CallShop",
+    "label": "Locutorio",
+    "nivel_1": "Entidad turística",
+    "nivel_2": "Instalación turística o vinculada",
+    "nivel_3": "Negocio local",
+    "nivel_4": "Servicios varios",
+    "nivel_5": "Locutorio",
+    "definicion": "Local que ofrece a sus clientes servicios de telefonía y conexión a internet principalmente.",
+    "keywords": [
+      "locutorio"
+    ],
+    "keywords_negativas": []
+  },
+  {
+    "id": "Camping",
+    "label": "Camping",
+    "nivel_1": "Entidad turística",
+    "nivel_2": "Instalación turística o vinculada",
+    "nivel_3": "Establecimiento alojativo",
+    "nivel_4": "Camping",
+    "nivel_5": "",
+    "definicion": "Tipo de establecimiento situado al aire libre que posee las instalaciones necesarias para atender la demanda y las necesidades alojativas y servicios para albergar a turistas.",
+    "keywords": [
+      "camping",
+      "campamento"
+    ],
+    "keywords_negativas": []
+  },
+  {
+    "id": "Campsite",
+    "label": "Campamento",
+    "nivel_1": "Entidad turística",
+    "nivel_2": "Instalación turística o vinculada",
+    "nivel_3": "Instalación educativa",
+    "nivel_4": "Campamento",
+    "nivel_5": "",
+    "definicion": "Instalación eventual, en terreno abierto, donde se practican actividades de convivencia al aire libre, orientada a fines educativos y de formación.",
+    "keywords": [
+      "campamento",
+      "campamento de verano"
+    ],
+    "keywords_negativas": []
+  },
+  {
+    "id": "Canal",
+    "label": "Canal",
+    "nivel_1": "Entidad turística",
+    "nivel_2": "Recurso turístico",
+    "nivel_3": "Recurso natural",
+    "nivel_4": "Canal",
+    "nivel_5": "",
+    "definicion": "Cauce artificial por donde se conduce el agua para darle salida o para otros usos.",
+    "keywords": [
+      "canal"
+    ],
+    "keywords_negativas": []
+  },
+  {
+    "id": "CaravanArea",
+    "label": "Área de autocaravanas",
+    "nivel_1": "Entidad turística",
+    "nivel_2": "Infraestructura de transporte",
+    "nivel_3": "Área de autocaravanas",
+    "nivel_4": "",
+    "nivel_5": "",
+    "definicion": "Espacio específicamente designado para el estacionamiento y pernocta de autocaravanas y campers, que ofrece servicios adaptados a este tipo de vehículos.",
+    "keywords": [
+      "área de autocaravanas",
+      "área para autocaravanas",
+      "área de caravanas",
+      "caravanas",
+      "autocaravanas",
+      "área de campers",
+      "área para campers",
+      "parking de autocaravanas",
+      "aparcamiento autocaravanas",
+      "parking autocaravanas",
+      "Área para caravanas y autocaravanas",
+      "area para autocaravanas"
+    ],
+    "keywords_negativas": []
+  },
+  {
+    "id": "Casino",
+    "label": "Casino",
+    "nivel_1": "Entidad turística",
+    "nivel_2": "Instalación turística o vinculada",
+    "nivel_3": "Instalación para fiestas y entretenimiento",
+    "nivel_4": "Casino",
+    "nivel_5": "",
+    "definicion": "Establecimiento de juegos de azar.",
+    "keywords": [
+      "casino",
+      "apuestas"
+    ],
+    "keywords_negativas": []
+  },
+  {
+    "id": "Castle",
+    "label": "Castillo",
+    "nivel_1": "Entidad turística",
+    "nivel_2": "Recurso turístico",
+    "nivel_3": "Recurso histórico o cultural",
+    "nivel_4": "Castillo",
+    "nivel_5": "",
+    "definicion": "Edificio o conjunto de edificios rodeados de murallas, fosos y otras obras de fortificación, construido generalmente en un lugar elevado y estratégicamente situado para la guerra.",
+    "keywords": [
+      "castillo",
+      "fortaleza",
+      "fuerte"
+    ],
+    "keywords_negativas": []
+  },
+  {
+    "id": "Catacomb",
+    "label": "Catacumba",
+    "nivel_1": "Entidad turística",
+    "nivel_2": "Recurso turístico",
+    "nivel_3": "Recurso histórico o cultural",
+    "nivel_4": "Catacumba",
+    "nivel_5": "",
+    "definicion": "Galerías subterráneas que algunas civilizaciones mediterráneas antiguas construyeron y utilizaron como lugar de enterramiento.",
+    "keywords": [
+      "catacumba",
+      "catacumbas"
+    ],
+    "keywords_negativas": []
+  },
+  {
+    "id": "CateringService",
+    "label": "Servicio de catering",
+    "nivel_1": "Entidad turística",
+    "nivel_2": "Instalación turística o vinculada",
+    "nivel_3": "Establecimiento de restauración",
+    "nivel_4": "Servicio de catering",
+    "nivel_5": "",
+    "definicion": "Servicio de provisión de alimentos y bebidas para eventos, ya sean grandes o pequeños, formales o informales.",
+    "keywords": [
+      "catering",
+      "servicio de catering"
+    ],
+    "keywords_negativas": []
+  },
+  {
+    "id": "Cathedral",
+    "label": "Catedral",
+    "nivel_1": "Entidad turística",
+    "nivel_2": "Recurso turístico",
+    "nivel_3": "Recurso histórico o cultural",
+    "nivel_4": "Catedral",
+    "nivel_5": "",
+    "definicion": "Iglesia principal en que el obispo, con su cabildo, tiene su sede o cátedra.",
+    "keywords": [
+      "catedral",
+      "seo",
+      "concatedral"
+    ],
+    "keywords_negativas": []
+  },
+  {
+    "id": "Cave",
+    "label": "Cueva o caverna",
+    "nivel_1": "Entidad turística",
+    "nivel_2": "Recurso turístico",
+    "nivel_3": "Recurso natural",
+    "nivel_4": "Cueva o caverna",
+    "nivel_5": "",
+    "definicion": "Cavidad natural del terreno causada por algún tipo de erosión de corrientes de agua, hielo o lava.",
+    "keywords": [
+      "cueva",
+      "caverna",
+      "gruta",
+      "mina",
+      "minas"
+    ],
+    "keywords_negativas": []
+  },
+  {
+    "id": "Cemetery",
+    "label": "Cementerio",
+    "nivel_1": "Entidad turística",
+    "nivel_2": "Recurso turístico",
+    "nivel_3": "Recurso histórico o cultural",
+    "nivel_4": "Cementerio",
+    "nivel_5": "",
+    "definicion": "Terreno, generalmente cercado, destinado a enterrar cadáveres.",
+    "keywords": [
+      "cementerio",
+      "camposanto","velatorio"
+    ],
+    "keywords_negativas": []
+  },
+  {
+    "id": "Chapel",
+    "label": "Capilla",
+    "nivel_1": "Entidad turística",
+    "nivel_2": "Recurso turístico",
+    "nivel_3": "Recurso histórico o cultural",
+    "nivel_4": "Capilla",
+    "nivel_5": "",
+    "definicion": "Edificio contiguo a una iglesia o parte integrante de ella, con altar y advocación particular.",
+    "keywords": [
+      "capilla"
+    ],
+    "keywords_negativas": []
+  },
+  {
+    "id": "ChillOut",
+    "label": "Chill out",
+    "nivel_1": "Entidad turística",
+    "nivel_2": "Instalación turística o vinculada",
+    "nivel_3": "Instalación para fiestas y entretenimiento",
+    "nivel_4": "Chill out",
+    "nivel_5": "",
+    "definicion": "Local en el que se despachan bebidas y se escucha música electrónica tranquila y relajante.",
+    "keywords": [
+      "chill out"
+    ],
+    "keywords_negativas": []
+  },
+  {
+    "id": "ChocolateShop",
+    "label": "Chocolatería",
+    "nivel_1": "Entidad turística",
+    "nivel_2": "Instalación turística o vinculada",
+    "nivel_3": "Establecimiento de restauración",
+    "nivel_4": "Chocolatería",
+    "nivel_5": "",
+    "definicion": "Establecimiento que sirve hot chocolate, bebidas y productos de pastelería.",
+    "keywords": [
+      "chocolatería"
+    ],
+    "keywords_negativas": []
+  },
+  {
+    "id": "Church",
+    "label": "Iglesia",
+    "nivel_1": "Entidad turística",
+    "nivel_2": "Recurso turístico",
+    "nivel_3": "Recurso histórico o cultural",
+    "nivel_4": "Iglesia",
+    "nivel_5": "",
+    "definicion": "Templo cristiano. También se pueden utilizar otros términos como parroquia.",
+    "keywords": [
+      "iglesia",
+      "parroquia",
+      "templo",
+      "colegiata"
+    ],
+    "keywords_negativas": [
+      "plaza"
+    ]
+  },
+  {
+    "id": "ChurroShop",
+    "label": "Churrería",
+    "nivel_1": "Entidad turística",
+    "nivel_2": "Instalación turística o vinculada",
+    "nivel_3": "Establecimiento de restauración",
+    "nivel_4": "Churrería",
+    "nivel_5": "",
+    "definicion": "Establecimiento donde artesanalmente se hacen y venden churros y porras, así como chocolate a la taza.",
+    "keywords": [
+      "churrería"
+    ],
+    "keywords_negativas": []
+  },
+  {
+    "id": "CiderBar",
+    "label": "Sidrería",
+    "nivel_1": "Entidad turística",
+    "nivel_2": "Instalación turística o vinculada",
+    "nivel_3": "Establecimiento de restauración",
+    "nivel_4": "Sidrería",
+    "nivel_5": "",
+    "definicion": "Establecimiento en el que se vende y se consume sidra como especialidad.",
+    "keywords": [
+      "sidrería",
+      "sidra"
+    ],
+    "keywords_negativas": []
+  },
+  {
+    "id": "CivilProtection",
+    "label": "Protección civil",
+    "nivel_1": "Entidad turística",
+    "nivel_2": "Servicio público",
+    "nivel_3": "Protección civil",
+    "nivel_4": "",
+    "nivel_5": "",
+    "definicion": "Servicio público que protege a las personas y bienes garantizando una respuesta adecuada ante los distintos tipos de emergencias y catástrofes.",
+    "keywords": [
+      "protección civil"
+    ],
+    "keywords_negativas": []
+  },
+  {
+    "id": "ClimbingWall",
+    "label": "Rocódromo",
+    "nivel_1": "Entidad turística",
+    "nivel_2": "Instalación turística o vinculada",
+    "nivel_3": "Instalación deportiva",
+    "nivel_4": "Rocódromo",
+    "nivel_5": "",
+    "definicion": "Instalación deportiva consistente en una pared rocosa para el entrenamiento de la escalada.",
+    "keywords": [
+      "rocódromo",
+      "pared de escalada"
+    ],
+    "keywords_negativas": []
+  },
+  {
+    "id": "Cloister",
+    "label": "Claustro",
+    "nivel_1": "Entidad turística",
+    "nivel_2": "Recurso turístico",
+    "nivel_3": "Recurso histórico o cultural",
+    "nivel_4": "Claustro",
+    "nivel_5": "",
+    "definicion": "Galería que cerca el patio principal de una iglesia o convento.",
+    "keywords": [
+      "claustro"
+    ],
+    "keywords_negativas": []
+  },
+  {
+    "id": "Clothing",
+    "label": "Tienda de moda",
+    "nivel_1": "Entidad turística",
+    "nivel_2": "Instalación turística o vinculada",
+    "nivel_3": "Negocio local",
+    "nivel_4": "Comercio y moda",
+    "nivel_5": "Tienda de moda",
+    "definicion": "Tienda en la que se venden las últimas novedades en ropa.",
+    "keywords": [
+      "tienda de moda",
+      "ropa",
+      "boutique"
+    ],
+    "keywords_negativas": []
+  },
+  {
+    "id": "CocktailBar",
+    "label": "Coctelería",
+    "nivel_1": "Entidad turística",
+    "nivel_2": "Instalación turística o vinculada",
+    "nivel_3": "Establecimiento de restauración",
+    "nivel_4": "Coctelería",
+    "nivel_5": "",
+    "definicion": "Establecimiento especializado en la preparación y en el servicio de cócteles.",
+    "keywords": [
+      "coctelería",
+      "bar de cócteles"
+    ],
+    "keywords_negativas": []
+  },
+  {
+    "id": "CongressCentre",
+    "label": "Palacio de congresos y exposiciones",
+    "nivel_1": "Entidad turística",
+    "nivel_2": "Instalación turística o vinculada",
+    "nivel_3": "Instalación para eventos",
+    "nivel_4": "Palacio de congresos y exposiciones",
+    "nivel_5": "",
+    "definicion": "Espacio preparado para la acogida y celebración de congresos, convenciones, ferias, incentivos y cualquier otro acontecimiento similar.",
+    "keywords": [
+      "palacio de congresos",
+      "centro de convenciones",
+      "recinto ferial"
+    ],
+    "keywords_negativas": []
+  },
+  {
+    "id": "Convent",
+    "label": "Convento",
+    "nivel_1": "Entidad turística",
+    "nivel_2": "Recurso turístico",
+    "nivel_3": "Recurso histórico o cultural",
+    "nivel_4": "Convento",
+    "nivel_5": "",
+    "definicion": "Casa en que viven religiosos o religiosas bajo las reglas de su instituto.",
+    "keywords": [
+      "convento"
+    ],
+    "keywords_negativas": []
+  },
+  {
+    "id": "Cove",
+    "label": "Cala",
+    "nivel_1": "Entidad turística",
+    "nivel_2": "Recurso turístico",
+    "nivel_3": "Recurso natural",
+    "nivel_4": "Cala",
+    "nivel_5": "",
+    "definicion": "Tramo de bahía de forma redondeada, de dimensiones más pequeñas a las de la playa y donde sus aguas son más tranquilas.",
+    "keywords": [
+      "cala"
+    ],
+    "keywords_negativas": []
+  },
+  {
+    "id": "CultureCentre",
+    "label": "Centro cultural",
+    "nivel_1": "Entidad turística",
+    "nivel_2": "Instalación turística o vinculada",
+    "nivel_3": "Instalación de cultura y ocio",
+    "nivel_4": "Centro cultural",
+    "nivel_5": "",
+    "definicion": "Recinto en los que se organizan actividades de carácter cultural: conferencias, exposiciones, tertulias, etc.",
+    "keywords": [
+      "centro cultural",
+      "casa de cultura"
+    ],
+    "keywords_negativas": []
+  },
+  {
+    "id": "Desert",
+    "label": "Desierto",
+    "nivel_1": "Entidad turística",
+    "nivel_2": "Recurso turístico",
+    "nivel_3": "Recurso natural",
+    "nivel_4": "Desierto",
+    "nivel_5": "",
+    "definicion": "Territorio arenoso o pedregoso, que por la falta casi total de lluvias carece de vegetación o la tiene muy escasa.",
+    "keywords": [
+      "desierto"
+    ],
+    "keywords_negativas": []
+  },
+  {
+    "id": "DestinationExperience",
+    "label": "Experiencia en destino",
+    "nivel_1": "Entidad turística",
+    "nivel_2": "Servicio turístico",
+    "nivel_3": "Experiencia en destino",
+    "nivel_4": "",
+    "nivel_5": "",
+    "definicion": "Vivencias libres de precio que el destino propone para que el turista se integre en la forma de vivir de sus habitantes, su cultura y su autenticidad.",
+    "keywords": [],
+    "keywords_negativas": []
+  },
+  {
+    "id": "DestinationManagementCompany",
+    "label": "Operador receptivo",
+    "nivel_1": "Entidad turística",
+    "nivel_2": "Organización turística",
+    "nivel_3": "Intermediario turístico",
+    "nivel_4": "Operador receptivo",
+    "nivel_5": "",
+    "definicion": "Empresa especializada en la organización y gestión de servicios turísticos para visitantes extranjeros en un destino específico.",
+    "keywords": [
+      "operador receptivo",
+      "DMC"
+    ],
+    "keywords_negativas": []
+  },
+  {
+    "id": "DryCleaningOrLaundry",
+    "label": "Tintorería o lavandería",
+    "nivel_1": "Entidad turística",
+    "nivel_2": "Instalación turística o vinculada",
+    "nivel_3": "Negocio local",
+    "nivel_4": "Servicios varios",
+    "nivel_5": "Tintorería o lavandería",
+    "definicion": "Establecimiento en el que se tiñen, se planchan o se limpian en seco o mediante otro procedimiento tejidos y prendas de vestir.",
+    "keywords": [
+      "tintorería",
+      "lavandería"
+    ],
+    "keywords_negativas": []
+  },
+  {
+    "id": "EVChargingStation",
+    "label": "Estación de carga de vehículos eléctricos",
+    "nivel_1": "Entidad turística",
+    "nivel_2": "Infraestructura de transporte",
+    "nivel_3": "Estación de carga de vehículos eléctricos",
+    "nivel_4": "",
+    "nivel_5": "",
+    "definicion": "Lugar que provee electricidad para la recarga rápida de las baterías de los vehículos eléctricos.",
+    "keywords": [
+      "punto de recarga",
+      "cargador eléctrico",
+      "electrolinera"
+    ],
+    "keywords_negativas": []
+  },
+  {
+    "id": "EducationalCentre",
+    "label": "Centro educativo",
+    "nivel_1": "Entidad turística",
+    "nivel_2": "Instalación turística o vinculada",
+    "nivel_3": "Instalación educativa",
+    "nivel_4": "Centro educativo",
+    "nivel_5": "",
+    "definicion": "Establecimiento destinado a la enseñanza.",
+    "keywords": [
+      "centro educativo",
+      "escuela",
+      "colegio",
+      "colegios"
+    ],
+    "keywords_negativas": []
+  },
+  {
+    "id": "EmbassyAndConsulate",
+    "label": "Embajada y consulado",
+    "nivel_1": "Entidad turística",
+    "nivel_2": "Servicio público",
+    "nivel_3": "Embajada y consulado",
+    "nivel_4": "",
+    "nivel_5": "",
+    "definicion": "Representación de la administración pública de un país en otro.",
+    "keywords": [
+      "embajada",
+      "consulado"
+    ],
+    "keywords_negativas": []
+  },
+  {
+    "id": "EngineCircuit",
+    "label": "Circuito de motor",
+    "nivel_1": "Entidad turística",
+    "nivel_2": "Instalación turística o vinculada",
+    "nivel_3": "Instalación deportiva",
+    "nivel_4": "Circuito de motor",
+    "nivel_5": "",
+    "definicion": "Circuito deportivo para competiciones de motor.",
+    "keywords": [
+      "circuito de motor",
+      "circuito de carreras",
+      "circuito"
+    ],
+    "keywords_negativas": []
+  },
+  {
+    "id": "Enoteca",
+    "label": "Enoteca",
+    "nivel_1": "Entidad turística",
+    "nivel_2": "Instalación turística o vinculada",
+    "nivel_3": "Instalación agroturística",
+    "nivel_4": "Enoteca",
+    "nivel_5": "",
+    "definicion": "Lugar donde se exponen, guardan, venden e incluso se catan o degustan distintas clases de vinos. En algunos lugares también se puede utilizar el término tabanco.",
+    "keywords": [
+      "enoteca",
+      "tabanco"
+    ],
+    "keywords_negativas": []
+  },
+  {
+    "id": "EquestrianClub",
+    "label": "Club hípico",
+    "nivel_1": "Entidad turística",
+    "nivel_2": "Instalación turística o vinculada",
+    "nivel_3": "Instalación deportiva",
+    "nivel_4": "Club hípico",
+    "nivel_5": "",
+    "definicion": "Instalaciones que albergan caballos con fines recreativos deportivos o turísticos incluyendo las cuadras deportivas, las cuadras en alquiler y otros establecimientos para la práctica ecuestre.",
+    "keywords": [
+      "club hípico",
+      "hípica",
+      "picadero"
+    ],
+    "keywords_negativas": []
+  },
+  {
+    "id": "EscapeRoom",
+    "label": "Escape room",
+    "nivel_1": "Entidad turística",
+    "nivel_2": "Instalación turística o vinculada",
+    "nivel_3": "Instalación de cultura y ocio",
+    "nivel_4": "Escape room",
+    "nivel_5": "",
+    "definicion": "Juego que se basa en resolver una serie de pruebas y encontrar objetos con el objetivo de escapar de una habitación.",
+    "keywords": [
+      "escape room"
+    ],
+    "keywords_negativas": []
+  },
+  {
+    "id": "Ofertaespecial",
+    "label": "Oferta especial",
+    "nivel_1": "Entidad turística",
+    "nivel_2": "Oferta especial",
+    "nivel_3": "",
+    "nivel_4": "",
+    "nivel_5": "",
+    "definicion": "Servicio o entidad turística relacionada con oferta especial",
+    "keywords": [
+      "especial",
+      "oferta"
+    ],
+    "keywords_negativas": []
+  },
+  {
+    "id": "Casadecomidasparallevar",
+    "label": "Casa de comidas para llevar",
+    "nivel_1": "Entidad turística",
+    "nivel_2": "Instalación turística o vinculada",
+    "nivel_3": "Establecimiento de restauración",
+    "nivel_4": "Casa de comidas para llevar",
+    "nivel_5": "",
+    "definicion": "Servicio o entidad turística relacionada con casa de comidas para llevar",
+    "keywords": [
+      "llevar",
+      "take away",
+      "comidas"
+    ],
+    "keywords_negativas": []
+  },
+  {
+    "id": "Empresadealojamiento",
+    "label": "Empresa de alojamiento",
+    "nivel_1": "Entidad turística",
+    "nivel_2": "Organización turística",
+    "nivel_3": "Empresa de alojamiento",
+    "nivel_4": "",
+    "nivel_5": "",
+    "definicion": "Servicio o entidad turística relacionada con empresa de alojamiento",
+    "keywords": [
+      "alojamiento",
+      "hospedaje",
+      "empresa"
+    ],
+    "keywords_negativas": []
+  },
+  {
+    "id": "Empresadeactividadescomplementarias",
+    "label": "Empresa de actividades complementarias",
+    "nivel_1": "Entidad turística",
+    "nivel_2": "Organización turística",
+    "nivel_3": "Empresa de actividades complementarias",
+    "nivel_4": "",
+    "nivel_5": "",
+    "definicion": "Servicio o entidad turística relacionada con empresa de actividades complementarias",
+    "keywords": [
+      "empresa",
+      "complementarias",
+      "actividades",
+      "embotelladora",
+      "nuclear",
+      "Estación de reparación de bicicletas ",
+      "auto-lavado",
+      "fontaneria",
+      "autolavado",
+      "auto-lavado",
+      "veterinario","Oficina Veterinaria",
+      "veterinaria",
+      "clinica dental","Servicios de abastecimiento de agua",
+      "dentista"
+    ],
+    "keywords_negativas": []
+  },
+  {
+    "id": "Empresadeorganizacióndeeventos",
+    "label": "Empresa de organización de eventos",
+    "nivel_1": "Entidad turística",
+    "nivel_2": "Organización turística",
+    "nivel_3": "Empresa de organización de eventos",
+    "nivel_4": "",
+    "nivel_5": "",
+    "definicion": "Servicio o entidad turística relacionada con empresa de organización de eventos",
+    "keywords": [
+      "eventos",
+      "empresa",
+      "organización"
+    ],
+    "keywords_negativas": []
+  },
+  {
+    "id": "Empresadeserviciosderestauración",
+    "label": "Empresa de servicios de restauración",
+    "nivel_1": "Entidad turística",
+    "nivel_2": "Organización turística",
+    "nivel_3": "Empresa de servicios de restauración",
+    "nivel_4": "",
+    "nivel_5": "",
+    "definicion": "Servicio o entidad turística relacionada con empresa de servicios de restauración",
+    "keywords": [
+      "servicios",
+      "restauración",
+      "empresa"
+    ],
+    "keywords_negativas": []
+  },
+  {
+    "id": "Paradadetransportepúblico",
+    "label": "Parada de transporte público",
+    "nivel_1": "Entidad turística",
+    "nivel_2": "Infraestructura de transporte",
+    "nivel_3": "Parada de transporte público",
+    "nivel_4": "",
+    "nivel_5": "",
+    "definicion": "Servicio o entidad turística relacionada con parada de transporte público",
+    "keywords": [
+      "transporte",
+      "parada",
+      "público"
+    ],
+    "keywords_negativas": []
+  },
+  {
+    "id": "Event",
+    "label": "Evento",
+    "nivel_1": "Entidad turística",
+    "nivel_2": "Evento",
+    "nivel_3": "",
+    "nivel_4": "",
+    "nivel_5": "",
+    "definicion": "Acontecimiento planificado o programado que tiene un propósito específico y reúne a un grupo de personas para participar en actividades, celebraciones o experiencias compartidas.",
+    "keywords": [],
+    "keywords_negativas": []
+  },
+  {
+    "id": "EventAttendanceFacility",
+    "label": "Instalación para eventos",
+    "nivel_1": "Entidad turística",
+    "nivel_2": "Instalación turística o vinculada",
+    "nivel_3": "Instalación para eventos",
+    "nivel_4": "",
+    "nivel_5": "",
+    "definicion": "Espacios diseñados y equipados para albergar la celebración de diversas actividades y acontecimientos.",
+    "keywords": [],
+    "keywords_negativas": []
+  },
+  {
+    "id": "ExchangeBureau",
+    "label": "Casa de cambio",
+    "nivel_1": "Entidad turística",
+    "nivel_2": "Instalación turística o vinculada",
+    "nivel_3": "Negocio local",
+    "nivel_4": "Servicio financiero",
+    "nivel_5": "Casa de cambio",
+    "definicion": "Organización o centro que permite a los clientes cambiar una divisa por otra.",
+    "keywords": [
+      "casa de cambio",
+      "cambio de moneda"
+    ],
+    "keywords_negativas": []
+  },
+  {
+    "id": "ExhibitionHall",
+    "label": "Sala de exposiciones",
+    "nivel_1": "Entidad turística",
+    "nivel_2": "Instalación turística o vinculada",
+    "nivel_3": "Instalación de cultura y ocio",
+    "nivel_4": "Sala de exposiciones",
+    "nivel_5": "",
+    "definicion": "Espacio de fomento, promoción y difusión de las artes plásticas.",
+    "keywords": [
+      "sala de exposiciones",
+      "sala de arte"
+    ],
+    "keywords_negativas": []
+  },
+  {
+    "id": "FarmSchool",
+    "label": "Granja escuela",
+    "nivel_1": "Entidad turística",
+    "nivel_2": "Instalación turística o vinculada",
+    "nivel_3": "Instalación agroturística",
+    "nivel_4": "Granja escuela",
+    "nivel_5": "",
+    "definicion": "Espacio educativo y de aprendizaje donde se realizan actividades relacionadas con la naturaleza, el mundo rural y el respeto al medio ambiente.",
+    "keywords": [
+      "granja escuela",
+      "granja"
+    ],
+    "keywords_negativas": []
+  },
+  {
+    "id": "FerryOperator",
+    "label": "Operador de ferris",
+    "nivel_1": "Entidad turística",
+    "nivel_2": "Organización turística",
+    "nivel_3": "Compañía de transporte de viajeros",
+    "nivel_4": "Operador de ferris",
+    "nivel_5": "",
+    "definicion": "Compañía que se dedica a operar servicios de transporte marítimo de pasajeros y vehículos a través de ferris y rutas marítimas específicas.",
+    "keywords": [
+      "ferry",
+      "ferri",
+      "transbordador"
+    ],
+    "keywords_negativas": []
+  },
+  {
+    "id": "FireStation",
+    "label": "Estación de bomberos",
+    "nivel_1": "Entidad turística",
+    "nivel_2": "Servicio público",
+    "nivel_3": "Estación de bomberos",
+    "nivel_4": "",
+    "nivel_5": "",
+    "definicion": "Órgano competente para la prevención, preparación y atención de incendios y otras emergencias.",
+    "keywords": [
+      "bomberos",
+      "parque de bomberos"
+    ],
+    "keywords_negativas": []
+  },
+  {
+    "id": "FootballField",
+    "label": "Campo de fútbol",
+    "nivel_1": "Entidad turística",
+    "nivel_2": "Instalación turística o vinculada",
+    "nivel_3": "Instalación deportiva",
+    "nivel_4": "Campo de fútbol",
+    "nivel_5": "",
+    "definicion": "Área donde se desarrolla un partido de fútbol.",
+    "keywords": [
+      "campo de fútbol"
+    ],
+    "keywords_negativas": []
+  },
+  {
+    "id": "Forest",
+    "label": "Bosque",
+    "nivel_1": "Entidad turística",
+    "nivel_2": "Recurso turístico",
+    "nivel_3": "Recurso natural",
+    "nivel_4": "Bosque",
+    "nivel_5": "",
+    "definicion": "Ecosistema donde la vegetación predominante la constituyen los árboles y arbustos.",
+    "keywords": [
+      "bosque",
+      "foresta",
+      "arboleda"
+    ],
+    "keywords_negativas": []
+  },
+  {
+    "id": "Garden",
+    "label": "Jardín",
+    "nivel_1": "Entidad turística",
+    "nivel_2": "Recurso turístico",
+    "nivel_3": "Recurso histórico o cultural",
+    "nivel_4": "Jardín",
+    "nivel_5": "",
+    "definicion": "Terreno donde se cultivan especies vegetales, con posible añadidura de otros elementos como fuentes, esculturas o zonas de ocio. También pueden referirse a parques urbanos.",
+    "keywords": [
+      "jardín",
+      "parque",
+      "jardines"
+    ],
+    "keywords_negativas": []
+  },
+  {
+    "id": "GasStation",
+    "label": "Gasolinera",
+    "nivel_1": "Entidad turística",
+    "nivel_2": "Infraestructura de transporte",
+    "nivel_3": "Gasolinera",
+    "nivel_4": "",
+    "nivel_5": "",
+    "definicion": "Establecimiento o puesto de venta en el que se vende y suministra a vehículos automóviles gasolina u otros combustibles.",
+    "keywords": [
+      "gasolinera",
+      "estación de servicio"
+    ],
+    "keywords_negativas": []
+  },
+  {
+    "id": "GastronomicMarket",
+    "label": "Mercado gastronómico",
+    "nivel_1": "Entidad turística",
+    "nivel_2": "Instalación turística o vinculada",
+    "nivel_3": "Establecimiento de restauración",
+    "nivel_4": "Mercado gastronómico",
+    "nivel_5": "",
+    "definicion": "Lugar donde se reúnen diferentes puestos de comida y bebida en un espacio común donde consumir productos y elaboraciones de carácter gourmet.",
+    "keywords": [
+      "mercado gastronómico",
+      "mercado gourmet"
+    ],
+    "keywords_negativas": []
+  },
+  {
+    "id": "GastronomicResource",
+    "label": "Recurso gastronómico",
+    "nivel_1": "Entidad turística",
+    "nivel_2": "Recurso turístico",
+    "nivel_3": "Recurso gastronómico",
+    "nivel_4": "",
+    "nivel_5": "",
+    "definicion": "Clase que representa gastronomía.",
+    "keywords": [],
+    "keywords_negativas": []
+  },
+  {
+    "id": "GeneralStore",
+    "label": "Tienda de ultramarinos",
+    "nivel_1": "Entidad turística",
+    "nivel_2": "Instalación turística o vinculada",
+    "nivel_3": "Negocio local",
+    "nivel_4": "Alimentación",
+    "nivel_5": "Tienda de ultramarinos",
+    "definicion": "Establecimiento o tienda comercial que vende diversos productos alimenticios.",
+    "keywords": [
+      "ultramarinos",
+      "colmado",
+      "tienda de alimentación"
+    ],
+    "keywords_negativas": []
+  },
+  {
+    "id": "Geyser",
+    "label": "Géiser",
+    "nivel_1": "Entidad turística",
+    "nivel_2": "Recurso turístico",
+    "nivel_3": "Recurso natural",
+    "nivel_4": "Géiser",
+    "nivel_5": "",
+    "definicion": "Fuente termal intermitente, en forma de surtidor.",
+    "keywords": [
+      "géiser"
+    ],
+    "keywords_negativas": []
+  },
+  {
+    "id": "Glamping",
+    "label": "Glamping",
+    "nivel_1": "Entidad turística",
+    "nivel_2": "Instalación turística o vinculada",
+    "nivel_3": "Establecimiento alojativo",
+    "nivel_4": "Glamping",
+    "nivel_5": "",
+    "definicion": "Modalidad de acampada que combina la experiencia de acampar al aire libre con las comodidades y lujos propios de los mejores hoteles.",
+    "keywords": [
+      "glamping"
+    ],
+    "keywords_negativas": []
+  },
+  {
+    "id": "GolfCourse",
+    "label": "Campo de golf",
+    "nivel_1": "Entidad turística",
+    "nivel_2": "Instalación turística o vinculada",
+    "nivel_3": "Instalación deportiva",
+    "nivel_4": "Campo de golf",
+    "nivel_5": "",
+    "definicion": "Área amplia de hierba natural al aire libre donde se practica el golf.",
+    "keywords": [
+      "campo de golf",
+      "golf"
+    ],
+    "keywords_negativas": []
+  },
+  {
+    "id": "GuestHouse",
+    "label": "Pensión",
+    "nivel_1": "Entidad turística",
+    "nivel_2": "Instalación turística o vinculada",
+    "nivel_3": "Establecimiento alojativo",
+    "nivel_4": "Pensión",
+    "nivel_5": "",
+    "definicion": "Casa donde se reciben huéspedes mediante precio convenido.",
+    "keywords": [
+      "pensión",
+      "casa de huéspedes"
+    ],
+    "keywords_negativas": []
+  },
+  {
+    "id": "Gym",
+    "label": "Gimnasio",
+    "nivel_1": "Entidad turística",
+    "nivel_2": "Instalación turística o vinculada",
+    "nivel_3": "Instalación deportiva",
+    "nivel_4": "Gimnasio",
+    "nivel_5": "",
+    "definicion": "Local dotado de las instalaciones y los aparatos adecuados para hacer gimnasia y practicar ciertos deportes.",
+    "keywords": [
+      "gimnasio"
+    ],
+    "keywords_negativas": []
+  },
+  {
+    "id": "Hairdressing",
+    "label": "Peluquería",
+    "nivel_1": "Entidad turística",
+    "nivel_2": "Instalación turística o vinculada",
+    "nivel_3": "Negocio local",
+    "nivel_4": "Servicios varios",
+    "nivel_5": "Peluquería",
+    "definicion": "Establecimiento donde el cabello es peinado, cortado, arreglado y cuidado.",
+    "keywords": [
+      "peluquería",
+      "barbería"
+    ],
+    "keywords_negativas": []
+  },
+  {
+    "id": "Handicrafts",
+    "label": "Tienda de artesanías",
+    "nivel_1": "Entidad turística",
+    "nivel_2": "Instalación turística o vinculada",
+    "nivel_3": "Negocio local",
+    "nivel_4": "Comercio y moda",
+    "nivel_5": "Tienda de artesanías",
+    "definicion": "Tienda que se dedica a la venta de productos hechos a mano por artesanos.",
+    "keywords": [
+      "artesanía",
+      "artesanías"
+    ],
+    "keywords_negativas": []
+  },
+  {
+    "id": "HealthResort",
+    "label": "Balneario",
+    "nivel_1": "Entidad turística",
+    "nivel_2": "Instalación turística o vinculada",
+    "nivel_3": "Instalación de salud y bienestar",
+    "nivel_4": "Balneario",
+    "nivel_5": "",
+    "definicion": "Establecimiento dotado de instalaciones apropiadas para tomar baños medicinales y curativos.",
+    "keywords": [
+      "balneario"
+    ],
+    "keywords_negativas": []
+  },
+  {
+    "id": "HistoricalOrCulturalResource",
+    "label": "Recurso histórico o cultural",
+    "nivel_1": "Entidad turística",
+    "nivel_2": "Recurso turístico",
+    "nivel_3": "Recurso histórico o cultural",
+    "nivel_4": "",
+    "nivel_5": "",
+    "definicion": "Lugares, sitios y estructuras que tienen un valor significativo para los turistas desde el punto de vista histórico, arqueológico, arquitectónico o cultural.",
+    "keywords": [],
+    "keywords_negativas": []
+  },
+  {
+    "id": "HolidayPackage",
+    "label": "Paquete turístico",
+    "nivel_1": "Entidad turística",
+    "nivel_2": "Servicio turístico",
+    "nivel_3": "Paquete turístico",
+    "nivel_4": "",
+    "nivel_5": "",
+    "definicion": "Experiencia que se comercializa únicamente por medio de las agencias de viajes que contiene dos o más servicios de carácter turístico (alojamiento, manutención o transporte) por el que el cliente abona un precio.",
+    "keywords": [
+      "paquete turístico",
+      "paquete vacacional"
+    ],
+    "keywords_negativas": []
+  },
+  {
+    "id": "Hostal",
+    "label": "Hostal",
+    "nivel_1": "Entidad turística",
+    "nivel_2": "Instalación turística o vinculada",
+    "nivel_3": "Establecimiento alojativo",
+    "nivel_4": "Hostal",
+    "nivel_5": "",
+    "definicion": "Establecimiento hotelero de categoría inferior a un hotel.",
+    "keywords": [
+      "hostal"
+    ],
+    "keywords_negativas": []
+  },
+  {
+    "id": "Hostel",
+    "label": "Albergue",
+    "nivel_1": "Entidad turística",
+    "nivel_2": "Instalación turística o vinculada",
+    "nivel_3": "Establecimiento alojativo",
+    "nivel_4": "Albergue",
+    "nivel_5": "",
+    "definicion": "Establecimiento hotelero para estancias cortas, generalmente situado en un lugar de paso o estratégico.",
+    "keywords": [
+      "albergue",
+      "refugio"
+    ],
+    "keywords_negativas": []
+  },
+  {
+    "id": "Hotel",
+    "label": "Hotel",
+    "nivel_1": "Entidad turística",
+    "nivel_2": "Instalación turística o vinculada",
+    "nivel_3": "Establecimiento alojativo",
+    "nivel_4": "Hotel",
+    "nivel_5": "",
+    "definicion": "Establecimiento, reconocido o registrado como hotel según la legislación aplicable, con recepción, servicios e instalaciones adicionales que ofrece alojamiento y, en la mayoría de los casos, servicios de comidas.",
+    "keywords": [
+      "hotel"
+    ],
+    "keywords_negativas": []
+  },
+  {
+    "id": "IceCreamShop",
+    "label": "Heladería",
+    "nivel_1": "Entidad turística",
+    "nivel_2": "Instalación turística o vinculada",
+    "nivel_3": "Establecimiento de restauración",
+    "nivel_4": "Heladería",
+    "nivel_5": "",
+    "definicion": "Establecimiento en el que se comercializan y se sirven helados.",
+    "keywords": [
+      "heladería"
+    ],
+    "keywords_negativas": []
+  },
+  {
+    "id": "Inn",
+    "label": "Mesón / Venta",
+    "nivel_1": "Entidad turística",
+    "nivel_2": "Instalación turística o vinculada",
+    "nivel_3": "Establecimiento de restauración",
+    "nivel_4": "Mesón / Venta",
+    "nivel_5": "",
+    "definicion": "Establecimiento en el que se preparan y sirven comidas y que está decorado de forma tradicional y rústica.",
+    "keywords": [
+      "mesón",
+      "venta"
+    ],
+    "keywords_negativas": []
+  },
+  {
+    "id": "InterpretationCentre",
+    "label": "Centro de interpretación",
+    "nivel_1": "Entidad turística",
+    "nivel_2": "Instalación turística o vinculada",
+    "nivel_3": "Instalación educativa",
+    "nivel_4": "Centro de interpretación",
+    "nivel_5": "",
+    "definicion": "Espacio que revela el significado y la relación del patrimonio con el visitante que llega hasta el sitio turístico que lo contiene.",
+    "keywords": [
+      "centro de interpretación",
+      "aula de naturaleza"
+    ],
+    "keywords_negativas": [
+      "parque",
+      "jardín"
+    ]
+  },
+  {
+    "id": "JewelryAndWatches",
+    "label": "Joyería y relojería",
+    "nivel_1": "Entidad turística",
+    "nivel_2": "Instalación turística o vinculada",
+    "nivel_3": "Negocio local",
+    "nivel_4": "Comercio y moda",
+    "nivel_5": "Joyería y relojería",
+    "definicion": "Establecimiento donde se venden joyas y relojes.",
+    "keywords": [
+      "joyería",
+      "relojería"
+    ],
+    "keywords_negativas": []
+  },
+  {
+    "id": "Karaoke",
+    "label": "Karaoke",
+    "nivel_1": "Entidad turística",
+    "nivel_2": "Instalación turística o vinculada",
+    "nivel_3": "Instalación para fiestas y entretenimiento",
+    "nivel_4": "Karaoke",
+    "nivel_5": "",
+    "definicion": "Local público con instalaciones para karaoke, equipo que se usa para interpretar canciones sobre un fondo musical grabado, mientras se sigue la letra que aparece en una pantalla.",
+    "keywords": [
+      "karaoke"
+    ],
+    "keywords_negativas": []
+  },
+  {
+    "id": "KartsCircuit",
+    "label": "Circuito de karts",
+    "nivel_1": "Entidad turística",
+    "nivel_2": "Instalación turística o vinculada",
+    "nivel_3": "Instalación deportiva",
+    "nivel_4": "Circuito de karts",
+    "nivel_5": "",
+    "definicion": "Espacio provisto de una o varias pistas preparadas para disputar carreras con estos vehículos.",
+    "keywords": [
+      "karts",
+      "karting",
+      "circuito de karts"
+    ],
+    "keywords_negativas": []
+  },
+  {
+    "id": "Kiosk",
+    "label": "Quiosco",
+    "nivel_1": "Entidad turística",
+    "nivel_2": "Instalación turística o vinculada",
+    "nivel_3": "Negocio local",
+    "nivel_4": "Comercio y moda",
+    "nivel_5": "Quiosco",
+    "definicion": "Local comercial de pequeño tamaño destinado a la venta de periódicos, revistas, golosinas y otros artículos.",
+    "keywords": [
+      "quiosco"
+    ],
+    "keywords_negativas": []
+  },
+  {
+    "id": "Lake",
+    "label": "Lago",
+    "nivel_1": "Entidad turística",
+    "nivel_2": "Recurso turístico",
+    "nivel_3": "Recurso natural",
+    "nivel_4": "Lago",
+    "nivel_5": "",
+    "definicion": "Gran masa permanente de agua depositada en depresiones del terreno.",
+    "keywords": [
+      "lago",
+      "laguna",
+      "lagunar"
+    ],
+    "keywords_negativas": []
+  },
+  {
+    "id": "Library",
+    "label": "Biblioteca",
+    "nivel_1": "Entidad turística",
+    "nivel_2": "Instalación turística o vinculada",
+    "nivel_3": "Instalación de cultura y ocio",
+    "nivel_4": "Biblioteca",
+    "nivel_5": "",
+    "definicion": "Lugar cuya finalidad consiste en la adquisición, conservación, estudio y exposición de libros y documentos.",
+    "keywords": [
+      "biblioteca"
+    ],
+    "keywords_negativas": []
+  },
+  {
+    "id": "Lodge",
+    "label": "Lodge",
+    "nivel_1": "Entidad turística",
+    "nivel_2": "Instalación turística o vinculada",
+    "nivel_3": "Establecimiento alojativo",
+    "nivel_4": "Lodge",
+    "nivel_5": "",
+    "definicion": "Establecimiento hotelero formado por varias unidades independientes alojativas (bungalows, cabañas, villas) edificadas en entornos naturales y construidos con materiales propios del lugar.",
+    "keywords": [
+      "lodge",
+      "bungalow",
+      "cabaña"
+    ],
+    "keywords_negativas": []
+  },
+  {
+    "id": "LuggageStorage",
+    "label": "Consigna de equipaje",
+    "nivel_1": "Entidad turística",
+    "nivel_2": "Instalación turística o vinculada",
+    "nivel_3": "Negocio local",
+    "nivel_4": "Servicios varios",
+    "nivel_5": "Consigna de equipaje",
+    "definicion": "Lugares reservados para guardar el equipaje de forma segura y para espacios de tiempo cortos.",
+    "keywords": [
+      "consigna",
+      "consigna de equipaje",
+      "guardaequipajes"
+    ],
+    "keywords_negativas": []
+  },
+  {
+    "id": "MassageCentre",
+    "label": "Centro de masajes",
+    "nivel_1": "Entidad turística",
+    "nivel_2": "Instalación turística o vinculada",
+    "nivel_3": "Instalación de salud y bienestar",
+    "nivel_4": "Centro de masajes",
+    "nivel_5": "",
+    "definicion": "Negocio que brinda los servicios de relax, salud y bienestar corporal por medio de masajes terapéuticos y anti estrés.",
+    "keywords": [
+      "masajes",
+      "centro de masajes"
+    ],
+    "keywords_negativas": []
+  },
+  {
+    "id": "Minaret",
+    "label": "Minarete",
+    "nivel_1": "Entidad turística",
+    "nivel_2": "Recurso turístico",
+    "nivel_3": "Recurso histórico o cultural",
+    "nivel_4": "Minarete",
+    "nivel_5": "",
+    "definicion": "Torre de las mezquitas desde cuya altura convoca el almuédano a los musulmanes en las horas de oración.",
+    "keywords": [
+      "minarete",
+      "alminar"
+    ],
+    "keywords_negativas": []
+  },
+  {
+    "id": "Monastery",
+    "label": "Monasterio",
+    "nivel_1": "Entidad turística",
+    "nivel_2": "Recurso turístico",
+    "nivel_3": "Recurso histórico o cultural",
+    "nivel_4": "Monasterio",
+    "nivel_5": "",
+    "definicion": "Casa, ordinariamente fuera de poblado, donde viven monjes en comunidad.",
+    "keywords": [
+      "monasterio",
+      "abadía"
+    ],
+    "keywords_negativas": []
+  },
+  {
+    "id": "Monument",
+    "label": "Monumento",
+    "nivel_1": "Entidad turística",
+    "nivel_2": "Recurso turístico",
+    "nivel_3": "Recurso histórico o cultural",
+    "nivel_4": "Monumento",
+    "nivel_5": "",
+    "definicion": "Construcción arquitectónica o escultórica, generalmente de grandes dimensiones, que se erige en recuerdo de una persona o hecho memorable.",
+    "keywords": [
+      "monumento",
+      "escultura",
+      "estatua",
+      "placa"
+    ],
+    "keywords_negativas": []
+  },
+  {
+    "id": "Mosque",
+    "label": "Mezquita",
+    "nivel_1": "Entidad turística",
+    "nivel_2": "Recurso turístico",
+    "nivel_3": "Recurso histórico o cultural",
+    "nivel_4": "Mezquita",
+    "nivel_5": "",
+    "definicion": "Templo musulmán.",
+    "keywords": [
+      "mezquita"
+    ],
+    "keywords_negativas": []
+  },
+  {
+    "id": "Motel",
+    "label": "Motel",
+    "nivel_1": "Entidad turística",
+    "nivel_2": "Instalación turística o vinculada",
+    "nivel_3": "Establecimiento alojativo",
+    "nivel_4": "Motel",
+    "nivel_5": "",
+    "definicion": "Tipo de alojamiento turístico modesto que se caracteriza por estar situado próximo a carreteras y ofrecer alojamiento y aparcamiento para estancias de corta duración.",
+    "keywords": [
+      "motel"
+    ],
+    "keywords_negativas": []
+  },
+  {
+    "id": "Mountain",
+    "label": "Montaña",
+    "nivel_1": "Entidad turística",
+    "nivel_2": "Recurso turístico",
+    "nivel_3": "Recurso natural",
+    "nivel_4": "Montaña",
+    "nivel_5": "",
+    "definicion": "Gran elevación natural del terreno.",
+    "keywords": [
+      "montaña",
+      "monte",
+      "pico",
+      "cumbre",
+      "sierra"
+    ],
+    "keywords_negativas": [
+      "castillo"
+    ]
+  },
+  {
+    "id": "MovieTheater",
+    "label": "Cine",
+    "nivel_1": "Entidad turística",
+    "nivel_2": "Instalación turística o vinculada",
+    "nivel_3": "Instalación de cultura y ocio",
+    "nivel_4": "Cine",
+    "nivel_5": "",
+    "definicion": "Establecimiento destinado a la proyección de películas cinematográficas.",
+    "keywords": [
+      "cine",
+      "multicines",
+      "sala de cine"
+    ],
+    "keywords_negativas": []
+  },
+  {
+    "id": "MultiAdventureCentre",
+    "label": "Centro de actividades multiaventura",
+    "nivel_1": "Entidad turística",
+    "nivel_2": "Instalación turística o vinculada",
+    "nivel_3": "Instalación deportiva",
+    "nivel_4": "Centro de actividades multiaventura",
+    "nivel_5": "",
+    "definicion": "Centro orientado a los deportes o prácticas que conllevan, además de una actividad física, una intensa actividad recreativa en el medio natural.",
+    "keywords": [
+      "multiaventura",
+      "aventura"
+    ],
+    "keywords_negativas": []
+  },
+  {
+    "id": "Museum",
+    "label": "Museo",
+    "nivel_1": "Entidad turística",
+    "nivel_2": "Recurso turístico",
+    "nivel_3": "Recurso histórico o cultural",
+    "nivel_4": "Museo",
+    "nivel_5": "",
+    "definicion": "Institución sin ánimo de lucro permanente cuya finalidad consiste en la adquisición, conservación, estudio y exposición al público de objetos de interés cultural.",
+    "keywords": [
+      "museo"
+    ],
+    "keywords_negativas": []
+  },
+  {
+    "id": "MusicVenue",
+    "label": "Sala de conciertos",
+    "nivel_1": "Entidad turística",
+    "nivel_2": "Instalación turística o vinculada",
+    "nivel_3": "Instalación para eventos",
+    "nivel_4": "Sala de conciertos",
+    "nivel_5": "",
+    "definicion": "Local dedicado a interpretaciones de música en vivo.",
+    "keywords": [
+      "sala de conciertos",
+      "sala de música"
+    ],
+    "keywords_negativas": []
+  },
+  {
+    "id": "NaturalPark",
+    "label": "Parque natural",
+    "nivel_1": "Entidad turística",
+    "nivel_2": "Recurso turístico",
+    "nivel_3": "Recurso natural",
+    "nivel_4": "Parque natural",
+    "nivel_5": "",
+    "definicion": "Espacio natural legalmente protegido que, por su belleza o por la singularidad de su fauna y flora, posee valor ecológico y cultural.",
+    "keywords": [
+      "parque natural",
+      "parque nacional",
+      "reserva natural",
+      "reserva regional"
+    ],
+    "keywords_negativas": []
+  },
+  {
+    "id": "NaturalViewPoint",
+    "label": "Mirador natural",
+    "nivel_1": "Entidad turística",
+    "nivel_2": "Recurso turístico",
+    "nivel_3": "Recurso natural",
+    "nivel_4": "Mirador natural",
+    "nivel_5": "",
+    "definicion": "Lugar o punto elevado desde el cual puede contemplarse con facilidad un paisaje.",
+    "keywords": [
+      "mirador natural",
+      "mirador",
+      "cancho",
+      "observatorio"
+    ],
+    "keywords_negativas": []
+  },
+  {
+    "id": "NightClub",
+    "label": "Discoteca",
+    "nivel_1": "Entidad turística",
+    "nivel_2": "Instalación turística o vinculada",
+    "nivel_3": "Instalación para fiestas y entretenimiento",
+    "nivel_4": "Discoteca",
+    "nivel_5": "",
+    "definicion": "Local público donde sirven bebidas y se baila al son de música grabada.",
+    "keywords": [
+      "discoteca",
+      "club nocturno"
+    ],
+    "keywords_negativas": []
+  },
+  {
+    "id": "OliveOilMill",
+    "label": "Almazara",
+    "nivel_1": "Entidad turística",
+    "nivel_2": "Instalación turística o vinculada",
+    "nivel_3": "Instalación agroturística",
+    "nivel_4": "Almazara",
+    "nivel_5": "",
+    "definicion": "Molino de aceite.",
+    "keywords": [
+      "almazara",
+      "molino de aceite",
+      "molinos de aceite",
+      "molino aceitero"
+    ],
+    "keywords_negativas": []
+  },
+  {
+    "id": "OrnamentalFountain",
+    "label": "Fuente ornamental",
+    "nivel_1": "Entidad turística",
+    "nivel_2": "Recurso turístico",
+    "nivel_3": "Recurso histórico o cultural",
+    "nivel_4": "Fuente ornamental",
+    "nivel_5": "",
+    "definicion": "Estructura, típicamente de agua, diseñada para embellecer un espacio, tanto interior como exterior, a través de su forma, diseño y efectos visuales y/o auditivos.",
+    "keywords": [
+      "fuente",
+      "fuente ornamental",
+      "fuentes"
+    ],
+    "keywords_negativas": [
+      "parque",
+      "jardín",
+      "monumento",
+      "pueblo",
+      "ciudad",
+      "villa",
+      "aldea"
+    ]
+  },
+  {
+    "id": "PaddleCourt",
+    "label": "Pista de pádel",
+    "nivel_1": "Entidad turística",
+    "nivel_2": "Instalación turística o vinculada",
+    "nivel_3": "Instalación deportiva",
+    "nivel_4": "Pista de pádel",
+    "nivel_5": "",
+    "definicion": "Cancha rectangular cerrada para la práctica de este deporte.",
+    "keywords": [
+      "pádel",
+      "padel",
+      "pista de pádel",
+      "pista de padel"
+    ],
+    "keywords_negativas": []
+  },
+  {
+    "id": "Palace",
+    "label": "Palacio",
+    "nivel_1": "Entidad turística",
+    "nivel_2": "Recurso turístico",
+    "nivel_3": "Recurso histórico o cultural",
+    "nivel_4": "Palacio",
+    "nivel_5": "",
+    "definicion": "Mansión grande y lujosa destinada a ser residencia de reyes, de aristócratas o de personajes importantes.",
+    "keywords": [
+      "palacio",
+      "palacios",
+      "palacete"
+    ],
+    "keywords_negativas": []
+  },
+  {
+    "id": "ParcelAndCourier",
+    "label": "Paquetería y mensajería",
+    "nivel_1": "Entidad turística",
+    "nivel_2": "Instalación turística o vinculada",
+    "nivel_3": "Negocio local",
+    "nivel_4": "Servicios varios",
+    "nivel_5": "Paquetería y mensajería",
+    "definicion": "Servicio de reparto de correspondencia y de paquetes realizado por una empresa.",
+    "keywords": [
+      "paquetería",
+      "paquetes",
+      "mensajería",
+      "correos"
+    ],
+    "keywords_negativas": []
+  },
+  {
+    "id": "ParkingFacility",
+    "label": "Aparcamiento",
+    "nivel_1": "Entidad turística",
+    "nivel_2": "Infraestructura de transporte",
+    "nivel_3": "Aparcamiento",
+    "nivel_4": "",
+    "nivel_5": "",
+    "definicion": "Lugar o recinto destinado a aparcar vehículos.",
+    "keywords": [
+      "aparcamiento",
+      "parking",
+      "estacionamiento"
+    ],
+    "keywords_negativas": []
+  },
+  {
+    "id": "Perfumery",
+    "label": "Perfumería",
+    "nivel_1": "Entidad turística",
+    "nivel_2": "Instalación turística o vinculada",
+    "nivel_3": "Negocio local",
+    "nivel_4": "Comercio y moda",
+    "nivel_5": "Perfumería",
+    "definicion": "Tienda donde se venden perfumes.",
+    "keywords": [
+      "perfumería"
+    ],
+    "keywords_negativas": []
+  },
+  {
+    "id": "Pharmacy",
+    "label": "Farmacia",
+    "nivel_1": "Entidad turística",
+    "nivel_2": "Instalación turística o vinculada",
+    "nivel_3": "Negocio local",
+    "nivel_4": "Servicio médico",
+    "nivel_5": "Farmacia",
+    "definicion": "Establecimiento en el que se preparan y venden medicamentos.",
+    "keywords": [
+      "farmacia",
+      "psicología",
+      "consultorio",
+      "farmacéutico",
+      "farmacéutica",
+      "farmacéuticos",
+      "farmacéuticas",
+      "farmacias",
+      "psicologa",
+      "psicólogo",
+      "psicóloga",
+      "psicólogos",
+      "psicólogas",
+      "clinica",
+      "clínica",
+      "consultorio psicológico",
+      "consultorio de psicología",
+      "centro medico"
+    ],
+    "keywords_negativas": []
+  },
+  {
+    "id": "Planetarium",
+    "label": "Planetario",
+    "nivel_1": "Entidad turística",
+    "nivel_2": "Instalación turística o vinculada",
+    "nivel_3": "Instalación de cultura y ocio",
+    "nivel_4": "Planetario",
+    "nivel_5": "",
+    "definicion": "Estructura acondicionada para la proyección de espectáculos relacionados con la astronomía.",
+    "keywords": [
+      "planetario"
+    ],
+    "keywords_negativas": []
+  },
+  {
+    "id": "Playground",
+    "label": "Parque infantil",
+    "nivel_1": "Entidad turística",
+    "nivel_2": "Instalación turística o vinculada",
+    "nivel_3": "Instalación de cultura y ocio",
+    "nivel_4": "Parque infantil",
+    "nivel_5": "",
+    "definicion": "Espacio recreativo enfocado a los niños, que cuenta con juegos infantiles y que suele estar en espacios abiertos.",
+    "keywords": [
+      "parque infantil"
+    ],
+    "keywords_negativas": []
+  },
+  {
+    "id": "Playroom",
+    "label": "Ludoteca",
+    "nivel_1": "Entidad turística",
+    "nivel_2": "Instalación turística o vinculada",
+    "nivel_3": "Instalación de cultura y ocio",
+    "nivel_4": "Ludoteca",
+    "nivel_5": "",
+    "definicion": "Centro de recreo donde se guardan juegos y juguetes para su uso y préstamo.",
+    "keywords": [
+      "ludoteca"
+    ],
+    "keywords_negativas": []
+  },
+  {
+    "id": "PoliceStation",
+    "label": "Comisaría de policía",
+    "nivel_1": "Entidad turística",
+    "nivel_2": "Servicio público",
+    "nivel_3": "Comisaría de policía",
+    "nivel_4": "",
+    "nivel_5": "",
+    "definicion": "Edificio donde se centralizan las actividades policiales de un barrio o distrito bajo el mando de un comisario.",
+    "keywords": [
+      "comisaría",
+      "policía"
+    ],
+    "keywords_negativas": []
+  },
+  {
+    "id": "PortPassengerTerminal",
+    "label": "Terminal portuaria de pasajeros",
+    "nivel_1": "Entidad turística",
+    "nivel_2": "Infraestructura de transporte",
+    "nivel_3": "Terminal portuaria de pasajeros",
+    "nivel_4": "",
+    "nivel_5": "",
+    "definicion": "Unidad establecida en un puerto o fuera de él, que permite la realización íntegra de la operación portuaria de tránsito de pasajeros, incluyendo el embarque y el desembarque.",
+    "keywords": [
+      "terminal portuaria",
+      "puerto de pasajeros"
+    ],
+    "keywords_negativas": []
+  },
+  {
+    "id": "PostOffice",
+    "label": "Oficina de correos",
+    "nivel_1": "Entidad turística",
+    "nivel_2": "Servicio público",
+    "nivel_3": "Oficina de correos",
+    "nivel_4": "",
+    "nivel_5": "",
+    "definicion": "Establecimiento responsable de enviar, recibir, ordenar, manejar, transmitir y entregar el correo.",
+    "keywords": [
+      "correos",
+      "oficina de correos"
+    ],
+    "keywords_negativas": []
+  },
+  {
+    "id": "PrimaryCare",
+    "label": "Centro de atención primaria",
+    "nivel_1": "Entidad turística",
+    "nivel_2": "Servicio público",
+    "nivel_3": "Centro de atención primaria",
+    "nivel_4": "",
+    "nivel_5": "",
+    "definicion": "Edificio donde se atiende a la población en un primer nivel asistencial sanitario.",
+    "keywords": [
+      "centro de salud",
+      "ambulatorio",
+      "atención primaria"
+    ],
+    "keywords_negativas": []
+  },
+  {
+    "id": "PrivateHireCompany",
+    "label": "Empresa VTC",
+    "nivel_1": "Entidad turística",
+    "nivel_2": "Organización turística",
+    "nivel_3": "Compañía de transporte de viajeros",
+    "nivel_4": "Empresa VTC",
+    "nivel_5": "",
+    "definicion": "Empresa que proporciona servicios de transporte de pasajeros utilizando vehículos privados y conductores profesionales.",
+    "keywords": [
+      "VTC",
+      "taxi privado"
+    ],
+    "keywords_negativas": []
+  },
+  {
+    "id": "PrivateHospital",
+    "label": "Hospital privado",
+    "nivel_1": "Entidad turística",
+    "nivel_2": "Instalación turística o vinculada",
+    "nivel_3": "Negocio local",
+    "nivel_4": "Servicio médico",
+    "nivel_5": "Hospital privado",
+    "definicion": "Establecimiento destinado al diagnóstico y tratamiento de enfermos, cuya financiación corre a cargo de los propios pacientes, de las aseguradoras o de embajadas extranjeras.",
+    "keywords": [
+      "hospital privado",
+      "clínica privada"
+    ],
+    "keywords_negativas": [
+      "capilla",
+      "Iglesia",
+      "convento",
+      "monasterio",
+      "abadía",
+      "Santuario",
+      "ermita",
+      "oratorio",
+      "basílica",
+      "catedral",
+      "iglesia"
+    ]
+  },
+  {
+    "id": "Pub",
+    "label": "Pub",
+    "nivel_1": "Entidad turística",
+    "nivel_2": "Instalación turística o vinculada",
+    "nivel_3": "Instalación para fiestas y entretenimiento",
+    "nivel_4": "Pub",
+    "nivel_5": "",
+    "definicion": "Local público, de diseño cuidado, donde se sirven bebidas y se escucha música.",
+    "keywords": [
+      "pub"
+    ],
+    "keywords_negativas": []
+  },
+  {
+    "id": "PublicHospital",
+    "label": "Hospital público",
+    "nivel_1": "Entidad turística",
+    "nivel_2": "Servicio público",
+    "nivel_3": "Hospital público",
+    "nivel_4": "",
+    "nivel_5": "",
+    "definicion": "Establecimiento financiado con fondos estatales destinado al diagnóstico y tratamiento de pacientes, donde a menudo se practican la investigación y la docencia.",
+    "keywords": [
+      "hospital público",
+      "hospital"
+    ],
+    "keywords_negativas": [
+      "capilla",
+      "Iglesia",
+      "convento",
+      "monasterio",
+      "abadía",
+      "Santuario",
+      "ermita",
+      "oratorio",
+      "basílica",
+      "catedral",
+      "iglesia"
+    ]
+  },
+  {
+    "id": "PublicRestroom",
+    "label": "Baño público",
+    "nivel_1": "Entidad turística",
+    "nivel_2": "Servicio público",
+    "nivel_3": "Baño público",
+    "nivel_4": "",
+    "nivel_5": "",
+    "definicion": "Habitación o edificación pequeña con uno o más inodoros para uso del público en general.",
+    "keywords": [
+      "baño público",
+      "aseos públicos"
+    ],
+    "keywords_negativas": []
+  },
+  {
+    "id": "Racetrack",
+    "label": "Hipódromo",
+    "nivel_1": "Entidad turística",
+    "nivel_2": "Instalación turística o vinculada",
+    "nivel_3": "Instalación deportiva",
+    "nivel_4": "Hipódromo",
+    "nivel_5": "",
+    "definicion": "Lugar destinado a carreras de caballos.",
+    "keywords": [
+      "hipódromo",
+      "carreras de caballos"
+    ],
+    "keywords_negativas": []
+  },
+  {
+    "id": "Reservoir",
+    "label": "Embalse",
+    "nivel_1": "Entidad turística",
+    "nivel_2": "Recurso turístico",
+    "nivel_3": "Recurso natural",
+    "nivel_4": "Embalse",
+    "nivel_5": "",
+    "definicion": "Acumulación de agua producida por una construcción en el lecho de un río o arroyo que cierra parcial o totalmente su cauce.",
+    "keywords": [
+      "embalse",
+      "pantano",
+      "presa",
+      "embalses",
+      "pantanos",
+      "presas",
+      "represa",
+      "represas",
+      "dique"
+    ],
+    "keywords_negativas": []
+  },
+  {
+    "id": "Residence",
+    "label": "Residencia",
+    "nivel_1": "Entidad turística",
+    "nivel_2": "Instalación turística o vinculada",
+    "nivel_3": "Establecimiento alojativo",
+    "nivel_4": "Residencia",
+    "nivel_5": "",
+    "definicion": "Establecimiento público donde se alojan viajeros o huéspedes estables.",
+    "keywords": [
+      "residencia"
+    ],
+    "keywords_negativas": []
+  },
+  {
+    "id": "Resort",
+    "label": "Complejo turístico",
+    "nivel_1": "Entidad turística",
+    "nivel_2": "Instalación turística o vinculada",
+    "nivel_3": "Establecimiento alojativo",
+    "nivel_4": "Complejo turístico",
+    "nivel_5": "",
+    "definicion": "Lugar habilitado para el desarrollo de la actividad turística en el que se ofrece una gama amplia de servicios e instalaciones relacionadas con la hostelería, especialmente dedicadas al descanso y esparcimiento.",
+    "keywords": [
+      "resort",
+      "complejo turístico"
+    ],
+    "keywords_negativas": []
+  },
+  {
+    "id": "Restaurant",
+    "label": "Restaurante",
+    "nivel_1": "Entidad turística",
+    "nivel_2": "Instalación turística o vinculada",
+    "nivel_3": "Establecimiento de restauración",
+    "nivel_4": "Restaurante",
+    "nivel_5": "",
+    "definicion": "Establecimiento público donde se sirven comidas y bebidas, mediante precio, para ser consumidas en el mismo local.",
+    "keywords": [
+      "restaurante"
+    ],
+    "keywords_negativas": []
+  },
+  {
+    "id": "River",
+    "label": "Río",
+    "nivel_1": "Entidad turística",
+    "nivel_2": "Recurso turístico",
+    "nivel_3": "Recurso natural",
+    "nivel_4": "Río",
+    "nivel_5": "",
+    "definicion": "Corriente de agua continua y más o menos caudalosa que va a desembocar en otra, en un lago o en el mar.",
+    "keywords": [
+      "río"
+    ],
+    "keywords_negativas": [
+      "poblado",
+      "pueblo",
+      "ciudad",
+      "villa",
+      "aldea",
+      "parque",
+      "jardín",
+      "plaza",
+      "calle",
+      "avenida",
+      "carretera",
+      "autopista",
+      "autovía"
+    ]
+  },
+  {
+    "id": "Route",
+    "label": "Ruta",
+    "nivel_1": "Entidad turística",
+    "nivel_2": "Recurso turístico",
+    "nivel_3": "Ruta",
+    "nivel_4": "",
+    "nivel_5": "",
+    "definicion": "Camino o dirección que contiene una serie de lugares por los que se debe pasar o detenerse para llegar a un destino.",
+    "keywords": [
+      "ruta",
+      "paseo",
+      "avenida",
+      "camino",
+      "senda"
+    ],
+    "keywords_negativas": []
+  },
+  {
+    "id": "RunningTrack",
+    "label": "Pista de atletismo",
+    "nivel_1": "Entidad turística",
+    "nivel_2": "Instalación turística o vinculada",
+    "nivel_3": "Instalación deportiva",
+    "nivel_4": "Pista de atletismo",
+    "nivel_5": "",
+    "definicion": "Zona en la que se realizan las carreras de la disciplina de atletismo.",
+    "keywords": [
+      "pista de atletismo",
+      "atletismo"
+    ],
+    "keywords_negativas": []
+  },
+  {
+    "id": "RuralHouse",
+    "label": "Casa rural",
+    "nivel_1": "Entidad turística",
+    "nivel_2": "Instalación turística o vinculada",
+    "nivel_3": "Establecimiento alojativo",
+    "nivel_4": "Casa rural",
+    "nivel_5": "",
+    "definicion": "Tipo de establecimiento extrahotelero ubicado en un inmueble situado en suelo rústico y de ámbito rural que dispone de una unidad alojativa.",
+    "keywords": [
+      "casa rural",
+      "turismo rural"
+    ],
+    "keywords_negativas": []
+  },
+  {
+    "id": "Salina",
+    "label": "Salina",
+    "nivel_1": "Entidad turística",
+    "nivel_2": "Recurso turístico",
+    "nivel_3": "Recurso natural",
+    "nivel_4": "Salina",
+    "nivel_5": "",
+    "definicion": "Lugar donde se deja evaporar agua salada para dejar solo la sal, secarla y recogerla luego para su utilización, consumo o venta.",
+    "keywords": [
+      "salina",
+      "salinas"
+    ],
+    "keywords_negativas": []
+  },
+  {
+    "id": "Sanctuary",
+    "label": "Santuario",
+    "nivel_1": "Entidad turística",
+    "nivel_2": "Recurso turístico",
+    "nivel_3": "Recurso histórico o cultural",
+    "nivel_4": "Santuario",
+    "nivel_5": "",
+    "definicion": "Templo en que se venera la imagen o reliquia de un santo de especial devoción. También puede utilizarse el término ermita.",
+    "keywords": [
+      "santuario",
+      "ermita"
+    ],
+    "keywords_negativas": []
+  },
+  {
+    "id": "ShootingRange",
+    "label": "Campo de tiro",
+    "nivel_1": "Entidad turística",
+    "nivel_2": "Instalación turística o vinculada",
+    "nivel_3": "Instalación deportiva",
+    "nivel_4": "Campo de tiro",
+    "nivel_5": "",
+    "definicion": "Espacios habilitados para la práctica del tiro que reúnan las características y medidas de seguridad pertinentes.",
+    "keywords": [
+      "campo de tiro",
+      "stand de tiro"
+    ],
+    "keywords_negativas": []
+  },
+  {
+    "id": "ShoppingMall",
+    "label": "Centro comercial",
+    "nivel_1": "Entidad turística",
+    "nivel_2": "Instalación turística o vinculada",
+    "nivel_3": "Negocio local",
+    "nivel_4": "Comercio y moda",
+    "nivel_5": "Centro comercial",
+    "definicion": "Complejo formado por establecimientos dedicados a actividades comerciales y de ocio.",
+    "keywords": [
+      "centro comercial"
+    ],
+    "keywords_negativas": []
+  },
+  {
+    "id": "SingularExperience",
+    "label": "Experiencia singular",
+    "nivel_1": "Entidad turística",
+    "nivel_2": "Servicio turístico",
+    "nivel_3": "Experiencia en destino",
+    "nivel_4": "Experiencia singular",
+    "nivel_5": "",
+    "definicion": "Experiencia en destino con vínculo a un negocio particular con un valor diferencial, que puede llevar consigo o no la transacción de un producto o servicio. También llamadas microexperiencias.",
+    "keywords": [
+      "experiencia singular",
+      "microexperiencia"
+    ],
+    "keywords_negativas": []
+  },
+  {
+    "id": "SingularTree",
+    "label": "Árbol singular",
+    "nivel_1": "Entidad turística",
+    "nivel_2": "Recurso turístico",
+    "nivel_3": "Recurso natural",
+    "nivel_4": "Árbol singular",
+    "nivel_5": "",
+    "definicion": "Árbol que destaca entre los demás por su tamaño, forma, edad, rareza, origen biológico, estado de conservación, belleza o por formar parte de mitos o tradiciones.",
+    "keywords": [
+      "árbol singular",
+      "árbol monumental",
+      "alcornoque",
+      "ciruelo",
+      "encina",
+      "pino",
+      "laurel"
+    ],
+    "keywords_negativas": []
+  },
+  {
+    "id": "SkatePark",
+    "label": "Skatepark",
+    "nivel_1": "Entidad turística",
+    "nivel_2": "Instalación turística o vinculada",
+    "nivel_3": "Instalación deportiva",
+    "nivel_4": "Skatepark",
+    "nivel_5": "",
+    "definicion": "Instalación deportiva diseñada específicamente para la práctica del monopatinaje.",
+    "keywords": [
+      "skatepark",
+      "skate"
+    ],
+    "keywords_negativas": []
+  },
+  {
+    "id": "SkatingRink",
+    "label": "Pista de patinaje",
+    "nivel_1": "Entidad turística",
+    "nivel_2": "Instalación turística o vinculada",
+    "nivel_3": "Instalación deportiva",
+    "nivel_4": "Pista de patinaje",
+    "nivel_5": "",
+    "definicion": "Superficie acondicionada y diseñada para la práctica del patinaje sobre ruedas o sobre hielo, dependiendo del tipo de pista.",
+    "keywords": [
+      "pista de patinaje",
+      "patinaje sobre hielo"
+    ],
+    "keywords_negativas": []
+  },
+  {
+    "id": "Souvenir",
+    "label": "Tienda de souvenirs",
+    "nivel_1": "Entidad turística",
+    "nivel_2": "Instalación turística o vinculada",
+    "nivel_3": "Negocio local",
+    "nivel_4": "Comercio y moda",
+    "nivel_5": "Tienda de souvenirs",
+    "definicion": "Tienda que vende objetos que sirven como recuerdo de la visita a un lugar determinado.",
+    "keywords": [
+      "souvenirs",
+      "tienda de regalos"
+    ],
+    "keywords_negativas": []
+  },
+  {
+    "id": "Spa",
+    "label": "Spa",
+    "nivel_1": "Entidad turística",
+    "nivel_2": "Instalación turística o vinculada",
+    "nivel_3": "Instalación de salud y bienestar",
+    "nivel_4": "Spa",
+    "nivel_5": "",
+    "definicion": "Establecimiento que ofrece tratamientos, terapias o sistemas de relajación, utilizando como base principal el agua, generalmente corriente, no medicinal.",
+    "keywords": [
+      "spa"
+    ],
+    "keywords_negativas": []
+  },
+  {
+    "id": "SportsCentre",
+    "label": "Polideportivo",
+    "nivel_1": "Entidad turística",
+    "nivel_2": "Instalación turística o vinculada",
+    "nivel_3": "Instalación deportiva",
+    "nivel_4": "Polideportivo",
+    "nivel_5": "",
+    "definicion": "Lugar que dispone de diferentes instalaciones e infraestructuras para la práctica de disciplinas deportivas.",
+    "keywords": [
+      "polideportivo",
+      "centro deportivo",
+      "ciudad deportiva",
+      "gimnasio municipal"
+    ],
+    "keywords_negativas": []
+  },
+  {
+    "id": "Spring",
+    "label": "Manantial",
+    "nivel_1": "Entidad turística",
+    "nivel_2": "Recurso turístico",
+    "nivel_3": "Recurso natural",
+    "nivel_4": "Manantial",
+    "nivel_5": "",
+    "definicion": "Corriente de agua que mana del suelo o de entre las rocas de forma natural.",
+    "keywords": [
+      "manantial",
+      "fuente natural"
+    ],
+    "keywords_negativas": []
+  },
+  {
+    "id": "Square",
+    "label": "Plaza",
+    "nivel_1": "Entidad turística",
+    "nivel_2": "Recurso turístico",
+    "nivel_3": "Recurso histórico o cultural",
+    "nivel_4": "Plaza",
+    "nivel_5": "",
+    "definicion": "Lugar ancho y espacioso dentro de una población, al que suelen afluir varias calles.",
+    "keywords": [
+      "plaza",
+      "plazuela"
+    ],
+    "keywords_negativas": []
+  },
+  {
+    "id": "Stadium",
+    "label": "Estadio",
+    "nivel_1": "Entidad turística",
+    "nivel_2": "Instalación turística o vinculada",
+    "nivel_3": "Instalación deportiva",
+    "nivel_4": "Estadio",
+    "nivel_5": "",
+    "definicion": "Recinto de grandes dimensiones con graderías para los espectadores, destinado a competiciones deportivas.",
+    "keywords": [
+      "estadio"
+    ],
+    "keywords_negativas": []
+  },
+  {
+    "id": "Supermarket",
+    "label": "Supermercado",
+    "nivel_1": "Entidad turística",
+    "nivel_2": "Instalación turística o vinculada",
+    "nivel_3": "Negocio local",
+    "nivel_4": "Alimentación",
+    "nivel_5": "Supermercado",
+    "definicion": "Establecimiento comercial de venta al por menor en el que se expenden todo género de artículos alimenticios, bebidas, productos de limpieza, etc.",
+    "keywords": [
+      "supermercado",
+      "súper",
+      "hipermercado"
+    ],
+    "keywords_negativas": []
+  },
+  {
+    "id": "Swamp",
+    "label": "Pantano",
+    "nivel_1": "Entidad turística",
+    "nivel_2": "Recurso turístico",
+    "nivel_3": "Recurso natural",
+    "nivel_4": "Pantano",
+    "nivel_5": "",
+    "definicion": "Terreno hundido de fondo más o menos cenagoso y abundante vegetación, donde las aguas se estancan de forma natural.",
+    "keywords": [
+      "pantano",
+      "marisma",
+      "humedal"
+    ],
+    "keywords_negativas": []
+  },
+  {
+    "id": "SwimmingPool",
+    "label": "Piscina",
+    "nivel_1": "Entidad turística",
+    "nivel_2": "Instalación turística o vinculada",
+    "nivel_3": "Instalación deportiva",
+    "nivel_4": "Piscina",
+    "nivel_5": "",
+    "definicion": "Construcción que contiene gran cantidad de agua y que se destina al baño, a la natación o a otros ejercicios y deportes acuáticos.",
+    "keywords": [
+      "piscina"
+    ],
+    "keywords_negativas": []
+  },
+  {
+    "id": "Synagogue",
+    "label": "Sinagoga",
+    "nivel_1": "Entidad turística",
+    "nivel_2": "Recurso turístico",
+    "nivel_3": "Recurso histórico o cultural",
+    "nivel_4": "Sinagoga",
+    "nivel_5": "",
+    "definicion": "Edificio dedicado a la congregación y culto de la religión judía.",
+    "keywords": [
+      "sinagoga"
+    ],
+    "keywords_negativas": []
+  },
+  {
+    "id": "TailorShop",
+    "label": "Sastrería",
+    "nivel_1": "Entidad turística",
+    "nivel_2": "Instalación turística o vinculada",
+    "nivel_3": "Negocio local",
+    "nivel_4": "Comercio y moda",
+    "nivel_5": "Sastrería",
+    "definicion": "Tienda y taller de sastre.",
+    "keywords": [
+      "sastrería",
+      "sastre"
+    ],
+    "keywords_negativas": []
+  },
+  {
+    "id": "TakeAway",
+    "label": "Comida para llevar",
+    "nivel_1": "Entidad turística",
+    "nivel_2": "Instalación turística o vinculada",
+    "nivel_3": "Establecimiento de restauración",
+    "nivel_4": "Comida para llevar",
+    "nivel_5": "",
+    "definicion": "Establecimiento donde se preparan y venden alimentos listos para ser llevados y consumidos fuera del lugar de venta.",
+    "keywords": [
+      "para llevar",
+      "take away",
+      "comida para llevar"
+    ],
+    "keywords_negativas": []
+  },
+  {
+    "id": "Tavern",
+    "label": "Taberna",
+    "nivel_1": "Entidad turística",
+    "nivel_2": "Instalación turística o vinculada",
+    "nivel_3": "Establecimiento de restauración",
+    "nivel_4": "Taberna",
+    "nivel_5": "",
+    "definicion": "Establecimiento público, de carácter popular, donde se sirven y expenden bebidas y, a veces, se sirven comidas.",
+    "keywords": [
+      "taberna"
+    ],
+    "keywords_negativas": []
+  },
+  {
+    "id": "TaxiStand",
+    "label": "Parada de taxis",
+    "nivel_1": "Entidad turística",
+    "nivel_2": "Infraestructura de transporte",
+    "nivel_3": "Parada de taxis",
+    "nivel_4": "",
+    "nivel_5": "",
+    "definicion": "Lugar en que se detienen los taxis a la espera de pasajeros.",
+    "keywords": [
+      "parada de taxi",
+      "taxi"
+    ],
+    "keywords_negativas": []
+  },
+  {
+    "id": "TeaRoom",
+    "label": "Tetería",
+    "nivel_1": "Entidad turística",
+    "nivel_2": "Instalación turística o vinculada",
+    "nivel_3": "Establecimiento de restauración",
+    "nivel_4": "Tetería",
+    "nivel_5": "",
+    "definicion": "Establecimiento especializado en la venta y servicio de tés e infusiones de todo el mundo.",
+    "keywords": [
+      "tetería",
+      "salón de té"
+    ],
+    "keywords_negativas": []
+  },
+  {
+    "id": "TelephoneShop",
+    "label": "Tienda de telefonía",
+    "nivel_1": "Entidad turística",
+    "nivel_2": "Instalación turística o vinculada",
+    "nivel_3": "Negocio local",
+    "nivel_4": "Comercio y moda",
+    "nivel_5": "Tienda de telefonía",
+    "definicion": "Establecimiento de venta al por menor de artículos de telefonía, teléfonos móviles y accesorios.",
+    "keywords": [
+      "telefonía",
+      "tienda de móviles"
+    ],
+    "keywords_negativas": []
+  },
+  {
+    "id": "TemporaryTouristInformationPoint",
+    "label": "Punto de información turística temporal",
+    "nivel_1": "Entidad turística",
+    "nivel_2": "Servicio público",
+    "nivel_3": "Punto de información turística temporal",
+    "nivel_4": "",
+    "nivel_5": "",
+    "definicion": "Espacio ubicado en lugares de máxima afluencia donde se ofrece información de interés al visitante.",
+    "keywords": [
+      "punto de información turística"
+    ],
+    "keywords_negativas": []
+  },
+  {
+    "id": "TennisCourt",
+    "label": "Pista de tenis",
+    "nivel_1": "Entidad turística",
+    "nivel_2": "Instalación turística o vinculada",
+    "nivel_3": "Instalación deportiva",
+    "nivel_4": "Pista de tenis",
+    "nivel_5": "",
+    "definicion": "Campo de juego donde se juega al tenis.",
+    "keywords": [
+      "pista de tenis",
+      "tenis"
+    ],
+    "keywords_negativas": []
+  },
+  {
+    "id": "Theater",
+    "label": "Teatro",
+    "nivel_1": "Entidad turística",
+    "nivel_2": "Instalación turística o vinculada",
+    "nivel_3": "Instalación de cultura y ocio",
+    "nivel_4": "Teatro",
+    "nivel_5": "",
+    "definicion": "Edificio o sitio destinado a la representación de obras dramáticas o a otros espectáculos públicos propios de la escena.",
+    "keywords": [
+      "teatro"
+    ],
+    "keywords_negativas": []
+  },
+  {
+    "id": "TobaccoShop",
+    "label": "Estanco",
+    "nivel_1": "Entidad turística",
+    "nivel_2": "Instalación turística o vinculada",
+    "nivel_3": "Negocio local",
+    "nivel_4": "Comercio y moda",
+    "nivel_5": "Estanco",
+    "definicion": "Sitio o tienda donde se venden principalmente sellos y tabaco, además de ofrecer servicios de recarga de tarjetas prepago de telefonía y de transportes urbanos.",
+    "keywords": [
+      "estanco",
+      "tabaco"
+    ],
+    "keywords_negativas": []
+  },
+  {
+    "id": "Tour",
+    "label": "Visita guiada",
+    "nivel_1": "Entidad turística",
+    "nivel_2": "Servicio turístico",
+    "nivel_3": "Visita guiada",
+    "nivel_4": "",
+    "nivel_5": "",
+    "definicion": "Experiencia turística que incluye el recorrido por algún lugar o recinto de interés, que se hace generalmente en grupo y con la ayuda de un guía.",
+    "keywords": [
+      "visita guiada",
+      "tour"
+    ],
+    "keywords_negativas": []
+  },
+  {
+    "id": "TourGuide",
+    "label": "Guía turístico",
+    "nivel_1": "Entidad turística",
+    "nivel_2": "Organización turística",
+    "nivel_3": "Guía turístico",
+    "nivel_4": "",
+    "nivel_5": "",
+    "definicion": "Persona con amplio conocimiento del destino, capaz de expresarse en dos o más idiomas, cuya responsabilidad es atender, informar y asistir a los turistas en los tours que realizan.",
+    "keywords": [
+      "guía turístico",
+      "guía"
+    ],
+    "keywords_negativas": []
+  },
+  {
+    "id": "TourismDestination",
+    "label": "Destino turístico",
+    "nivel_1": "Entidad turística",
+    "nivel_2": "Destino turístico",
+    "nivel_3": "",
+    "nivel_4": "",
+    "nivel_5": "",
+    "definicion": "Espacio físico, con o sin una delimitación de carácter administrativo o analítico, en el que un visitante puede pernoctar.",
+    "keywords": [],
+    "keywords_negativas": []
+  },
+  {
+    "id": "TouristAttractionSite",
+    "label": "Conjunto de interés artístico",
+    "nivel_1": "Entidad turística",
+    "nivel_2": "Recurso turístico",
+    "nivel_3": "Recurso histórico o cultural",
+    "nivel_4": "Conjunto de interés artístico",
+    "nivel_5": "",
+    "definicion": "Espacio delimitado en el que se reúnen diferentes atractivos que no son exclusivamente turísticos, pero que en razón de sus condiciones y singularidad suscitan interés para la actividad turística. Por ejemplo, puede incluir el casco antiguo de una población.",
+    "keywords": [
+      "casco histórico",
+      "casco antiguo",
+      "conjunto histórico",
+      "fallada",
+      "crucero",
+      "cruceros",
+      "cruces",
+      "cruz",
+      "mosaico",
+      "mural",
+      "portico",
+      "portada",
+      "puerta",
+      "púlpito",
+      "talla",
+      "termas",
+      "pintura",
+      "cuartel",
+      "pinturas"
+    ],
+    "keywords_negativas": []
+  },
+  {
+    "id": "TouristInformationOffice",
+    "label": "Oficina de turismo",
+    "nivel_1": "Entidad turística",
+    "nivel_2": "Servicio público",
+    "nivel_3": "Oficina de turismo",
+    "nivel_4": "",
+    "nivel_5": "",
+    "definicion": "Organización encargada de proveer información a los turistas potenciales y turistas que visitan un determinado lugar.",
+    "keywords": [
+      "oficina de turismo",
+      "oficina de información turística"
+    ],
+    "keywords_negativas": []
+  },
+  {
+    "id": "Tower",
+    "label": "Torre",
+    "nivel_1": "Entidad turística",
+    "nivel_2": "Recurso turístico",
+    "nivel_3": "Recurso histórico o cultural",
+    "nivel_4": "Torre",
+    "nivel_5": "",
+    "definicion": "Construcción fortificada, más alta que ancha, utilizada para defender una ciudad o plaza.",
+    "keywords": [
+      "torre",
+      "atalaya"
+    ],
+    "keywords_negativas": []
+  },
+  {
+    "id": "TownHall",
+    "label": "Ayuntamiento",
+    "nivel_1": "Entidad turística",
+    "nivel_2": "Recurso turístico",
+    "nivel_3": "Recurso histórico o cultural",
+    "nivel_4": "Ayuntamiento",
+    "nivel_5": "",
+    "definicion": "El edificio del ayuntamiento, también conocido como casa consistorial, es el edificio de una población adonde concurren los concejales de su ayuntamiento a celebrar sus juntas.",
+    "keywords": [
+      "ayuntamiento",
+      "casa consistorial",
+      "asamblea"
+    ],
+    "keywords_negativas": []
+  },
+  {
+    "id": "ToyStore",
+    "label": "Juguetería",
+    "nivel_1": "Entidad turística",
+    "nivel_2": "Instalación turística o vinculada",
+    "nivel_3": "Negocio local",
+    "nivel_4": "Comercio y moda",
+    "nivel_5": "Juguetería",
+    "definicion": "Tienda donde se venden juguetes.",
+    "keywords": [
+      "juguetería"
+    ],
+    "keywords_negativas": []
+  },
+  {
+    "id": "TraditionalMarket",
+    "label": "Mercado tradicional",
+    "nivel_1": "Entidad turística",
+    "nivel_2": "Instalación turística o vinculada",
+    "nivel_3": "Instalación agroturística",
+    "nivel_4": "Mercado tradicional",
+    "nivel_5": "",
+    "definicion": "Recinto formado por puestos individuales que ofrecen productos de diversa índole con predominancia de los productos frescos: carne, frutas, verduras, pescado, etc.",
+    "keywords": [
+      "mercado",
+      "mercado tradicional",
+      "mercado municipal"
+    ],
+    "keywords_negativas": []
+  },
+  {
+    "id": "Trail",
+    "label": "Sendero",
+    "nivel_1": "Entidad turística",
+    "nivel_2": "Recurso turístico",
+    "nivel_3": "Recurso natural",
+    "nivel_4": "Sendero",
+    "nivel_5": "",
+    "definicion": "Vía, senda o camino que se caracteriza por ser muy pequeña y angosta y que por lo general se encuentran en las zonas rurales.",
+    "keywords": [
+      "sendero",
+      "senda",
+      "camino"
+    ],
+    "keywords_negativas": []
+  },
+  {
+    "id": "TrailMTB",
+    "label": "Sendero BTT",
+    "nivel_1": "Entidad turística",
+    "nivel_2": "Recurso turístico",
+    "nivel_3": "Recurso natural",
+    "nivel_4": "Sendero BTT",
+    "nivel_5": "",
+    "definicion": "Caminos disponibles para ir en bicicleta por la montaña o el campo.",
+    "keywords": [
+      "BTT",
+      "mountain bike",
+      "sendero bicicleta"
+    ],
+    "keywords_negativas": []
+  },
+  {
+    "id": "TrainStation",
+    "label": "Estación de tren",
+    "nivel_1": "Entidad turística",
+    "nivel_2": "Infraestructura de transporte",
+    "nivel_3": "Estación de tren",
+    "nivel_4": "",
+    "nivel_5": "",
+    "definicion": "Instalación ferroviaria con vías a la que pueden llegar y desde la que se pueden expedir trenes.",
+    "keywords": [
+      "estación de tren",
+      "ferrocarril",
+      "estación de ferrocarril"
+    ],
+    "keywords_negativas": []
+  },
+  {
+    "id": "TravelAgency",
+    "label": "Agencia de viajes",
+    "nivel_1": "Entidad turística",
+    "nivel_2": "Organización turística",
+    "nivel_3": "Intermediario turístico",
+    "nivel_4": "Agencia de viajes",
+    "nivel_5": "",
+    "definicion": "Empresa que presta servicios de organización, planificación, desarrollo y venta de productos o servicios de naturaleza y fines turísticos entre proveedores y clientes finales.",
+    "keywords": [
+      "agencia de viajes"
+    ],
+    "keywords_negativas": []
+  },
+  {
+    "id": "UrbanViewPoint",
+    "label": "Mirador urbano",
+    "nivel_1": "Entidad turística",
+    "nivel_2": "Recurso turístico",
+    "nivel_3": "Recurso histórico o cultural",
+    "nivel_4": "Mirador urbano",
+    "nivel_5": "",
+    "definicion": "Lugar para disfrutar de las vistas de una ciudad desde una perspectiva única, desde la cima de un edificio o de una colina.",
+    "keywords": [
+      "mirador urbano",
+      "mirador"
+    ],
+    "keywords_negativas": []
+  },
+  {
+    "id": "VATRefund",
+    "label": "Devolución de IVA",
+    "nivel_1": "Entidad turística",
+    "nivel_2": "Instalación turística o vinculada",
+    "nivel_3": "Negocio local",
+    "nivel_4": "Servicio financiero",
+    "nivel_5": "Devolución de IVA",
+    "definicion": "Compañías especializadas en la gestión de la devolución del Impuesto al Valor Agregado (IVA) a los turistas o visitantes extranjeros.",
+    "keywords": [
+      "devolución IVA",
+      "tax free"
+    ],
+    "keywords_negativas": []
+  },
+  {
+    "id": "VacationRental",
+    "label": "Vivienda de uso turístico",
+    "nivel_1": "Entidad turística",
+    "nivel_2": "Instalación turística o vinculada",
+    "nivel_3": "Establecimiento alojativo",
+    "nivel_4": "Vivienda de uso turístico",
+    "nivel_5": "",
+    "definicion": "Inmuebles completos (pisos, chalets, adosados...) que se alquilan de forma habitual con fines turísticos, vacacionales o de ocio.",
+    "keywords": [
+      "vivienda turística",
+      "apartamento turístico",
+      "alquiler vacacional"
+    ],
+    "keywords_negativas": []
+  },
+  {
+    "id": "Valley",
+    "label": "Valle",
+    "nivel_1": "Entidad turística",
+    "nivel_2": "Recurso turístico",
+    "nivel_3": "Recurso natural",
+    "nivel_4": "Valle",
+    "nivel_5": "",
+    "definicion": "Llanura entre montes o alturas.",
+    "keywords": [
+      "valle"
+    ],
+    "keywords_negativas": []
+  },
+  {
+    "id": "VehicleExperience",
+    "label": "Experiencia en vehículo",
+    "nivel_1": "Entidad turística",
+    "nivel_2": "Instalación turística o vinculada",
+    "nivel_3": "Instalación de cultura y ocio",
+    "nivel_4": "Experiencia en vehículo",
+    "nivel_5": "",
+    "definicion": "Pequeñas excursiones en tren, bus o barco para conocer los principales monumentos y atracciones de una ciudad.",
+    "keywords": [
+      "tren turístico",
+      "bus turístico",
+      "barco turístico"
+    ],
+    "keywords_negativas": []
+  },
+  {
+    "id": "VehicleRentalCompany",
+    "label": "Empresa de alquiler de vehículos",
+    "nivel_1": "Entidad turística",
+    "nivel_2": "Organización turística",
+    "nivel_3": "Compañía de transporte de viajeros",
+    "nivel_4": "Empresa de alquiler de vehículos",
+    "nivel_5": "",
+    "definicion": "Entidad comercial que se dedica a proporcionar servicios de alquiler de vehículos a corto plazo a viajeros que necesitan un medio de transporte temporal.",
+    "keywords": [
+      "alquiler de coches",
+      "rent a car"
+    ],
+    "keywords_negativas": []
+  },
+  {
+    "id": "VehicleWorkshop",
+    "label": "Taller mecánico",
+    "nivel_1": "Entidad turística",
+    "nivel_2": "Instalación turística o vinculada",
+    "nivel_3": "Negocio local",
+    "nivel_4": "Servicios varios",
+    "nivel_5": "Taller mecánico",
+    "definicion": "Establecimiento donde se reparan las averías de los automóviles.",
+    "keywords": [
+      "taller mecánico",
+      "taller"
+    ],
+    "keywords_negativas": []
+  },
+  {
+    "id": "VendingMachine",
+    "label": "Máquina expendedora",
+    "nivel_1": "Entidad turística",
+    "nivel_2": "Instalación turística o vinculada",
+    "nivel_3": "Negocio local",
+    "nivel_4": "Alimentación",
+    "nivel_5": "Máquina expendedora",
+    "definicion": "Máquina que proporciona aperitivos, bebidas, golosinas y otros productos a los consumidores.",
+    "keywords": [
+      "máquina expendedora",
+      "vending"
+    ],
+    "keywords_negativas": []
+  },
+  {
+    "id": "VernacularArchitecture",
+    "label": "Arquitectura vernácula",
+    "nivel_1": "Entidad turística",
+    "nivel_2": "Recurso turístico",
+    "nivel_3": "Recurso histórico o cultural",
+    "nivel_4": "Arquitectura vernácula",
+    "nivel_5": "",
+    "definicion": "Construcciones tradicionales que reflejan las tradiciones y estilos arquitectónicos locales (masías, molinos, almazaras, etc.).",
+    "keywords": [
+      "arquitectura vernácula",
+      "arquitectura popular",
+      "arquitectura tradicional",
+      "cortijo",
+      "lavadero",
+      "huerta",
+      "huerto",
+      "masias",
+      "masia",
+      "humilladero",
+      "molinos",
+      "horno de cal",
+      "molino",
+      "pozo",
+      "abrevadero"
+    ],
+    "keywords_negativas": []
+  },
+  {
+    "id": "Vineyard",
+    "label": "Viñedo",
+    "nivel_1": "Entidad turística",
+    "nivel_2": "Instalación turística o vinculada",
+    "nivel_3": "Instalación agroturística",
+    "nivel_4": "Viñedo",
+    "nivel_5": "",
+    "definicion": "Tierra plantada de viñas perteneciente a una bodega, zona, región, país, denominación de origen, etc.",
+    "keywords": [
+      "viñedo",
+      "viñas"
+    ],
+    "keywords_negativas": []
+  },
+  {
+    "id": "VineyardShelter",
+    "label": "Guardaviña",
+    "nivel_1": "Entidad turística",
+    "nivel_2": "Recurso turístico",
+    "nivel_3": "Recurso histórico o cultural",
+    "nivel_4": "Guardaviña",
+    "nivel_5": "",
+    "definicion": "También conocido como chozo, se trata de una pequeña edificación de piedra de una sola planta, normalmente de forma circular y coronada con una falsa cúpula, levantada por el propio agricultor de la vid como refugio ante las inclemencias del tiempo.",
+    "keywords": [
+      "guardaviña",
+      "chozo"
+    ],
+    "keywords_negativas": []
+  },
+  {
+    "id": "Volcano",
+    "label": "Volcán",
+    "nivel_1": "Entidad turística",
+    "nivel_2": "Recurso turístico",
+    "nivel_3": "Recurso natural",
+    "nivel_4": "Volcán",
+    "nivel_5": "",
+    "definicion": "Abertura en la tierra, y más comúnmente en una montaña, por donde salen de tiempo en tiempo humo, llamas y materias encendidas o derretidas.",
+    "keywords": [
+      "volcán"
+    ],
+    "keywords_negativas": []
+  },
+  {
+    "id": "Wall",
+    "label": "Muralla",
+    "nivel_1": "Entidad turística",
+    "nivel_2": "Recurso turístico",
+    "nivel_3": "Recurso histórico o cultural",
+    "nivel_4": "Muralla",
+    "nivel_5": "",
+    "definicion": "Construcción alta y robusta, generalmente coronada por un parapeto, que rodea una fortificación, plaza fuerte u otro lugar para su defensa.",
+    "keywords": [
+      "muralla",
+      "baluarte",
+      "murallas",
+      "hornabeque"
+    ],
+    "keywords_negativas": []
+  },
+  {
+    "id": "Waterfall",
+    "label": "Cascada",
+    "nivel_1": "Entidad turística",
+    "nivel_2": "Recurso turístico",
+    "nivel_3": "Recurso natural",
+    "nivel_4": "Cascada",
+    "nivel_5": "",
+    "definicion": "Caída desde cierta altura del agua de un río u otra corriente por el brusco desnivel del cauce.",
+    "keywords": [
+      "cascada",
+      "salto de agua",
+      "catarata"
+    ],
+    "keywords_negativas": []
+  },
+  {
+    "id": "WineBar",
+    "label": "Bar de vinos",
+    "nivel_1": "Entidad turística",
+    "nivel_2": "Instalación turística o vinculada",
+    "nivel_3": "Establecimiento de restauración",
+    "nivel_4": "Bar de vinos",
+    "nivel_5": "",
+    "definicion": "Establecimiento especializado en la venta y degustación de vinos.",
+    "keywords": [
+      "bar de vinos",
+      "vinoteca"
+    ],
+    "keywords_negativas": []
+  },
+  {
+    "id": "Winery",
+    "label": "Bodega",
+    "nivel_1": "Entidad turística",
+    "nivel_2": "Instalación turística o vinculada",
+    "nivel_3": "Instalación agroturística",
+    "nivel_4": "Bodega",
+    "nivel_5": "",
+    "definicion": "Lugar donde se cría y almacena el vino.",
+    "keywords": [
+      "bodega","bodegas",
+      "estacion enologica",
+      "estacion ampelografica"
+    ],
+    "keywords_negativas": []
+  },
+  {
+    "id": "WinterSportsResort",
+    "label": "Estación de deportes de invierno",
+    "nivel_1": "Entidad turística",
+    "nivel_2": "Instalación turística o vinculada",
+    "nivel_3": "Instalación deportiva",
+    "nivel_4": "Estación de deportes de invierno",
+    "nivel_5": "",
+    "definicion": "Centro turístico básicamente dedicado a la práctica del esquí y demás deportes de nieve y montaña, que forma un conjunto coordinado de medios de remonte mecánicos, pistas e instalaciones complementarias.",
+    "keywords": [
+      "estación de esquí",
+      "estación de nieve",
+      "ski"
+    ],
+    "keywords_negativas": []
+  },
+  {
+    "id": "YatchingPort",
+    "label": "Puerto deportivo",
+    "nivel_1": "Entidad turística",
+    "nivel_2": "Instalación turística o vinculada",
+    "nivel_3": "Instalación deportiva",
+    "nivel_4": "Puerto deportivo",
+    "nivel_5": "",
+    "definicion": "Instalación ubicada en una zona costera o junto a un cuerpo de agua, que se utiliza para el amarre y resguardo de embarcaciones de recreo y deportivas.",
+    "keywords": [
+      "puerto deportivo",
+      "embarcadero",
+      "embarcaderos",
+      "puerto"
+    ],
+    "keywords_negativas": []
+  },
+  {
+    "id": "YogaCentre",
+    "label": "Centro de yoga",
+    "nivel_1": "Entidad turística",
+    "nivel_2": "Instalación turística o vinculada",
+    "nivel_3": "Instalación de salud y bienestar",
+    "nivel_4": "Centro de yoga",
+    "nivel_5": "",
+    "definicion": "Establecimiento donde se practica yoga.",
+    "keywords": [
+      "yoga",
+      "centro de yoga"
+    ],
+    "keywords_negativas": []
+  },
+  {
+    "id": "Zoo",
+    "label": "Zoológico",
+    "nivel_1": "Entidad turística",
+    "nivel_2": "Instalación turística o vinculada",
+    "nivel_3": "Instalación de cultura y ocio",
+    "nivel_4": "Zoológico",
+    "nivel_5": "",
+    "definicion": "Lugar en que se conservan, cuidan y a veces se crían diversas especies animales para que sean contempladas por el público y para su estudio.",
+    "keywords": [
+      "zoo",
+      "zoológico"
+    ],
+    "keywords_negativas": []
+  }
+]

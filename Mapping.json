@@ -1,0 +1,898 @@
+[
+  {
+    "categoria_origen": "A caballo",
+    "ruta": {
+      "nivel_1": "instalación turística o vinculada",
+      "nivel_2": [
+        "instalación deportiva"
+      ],
+      "nivel_3": [
+        "club hípico",
+        "hipódromo"
+      ],
+      "nivel_4": []
+    }
+  },
+  {
+    "categoria_origen": "Agencias de Viajes",
+    "ruta": {
+      "nivel_1": "organización turística",
+      "nivel_2": [
+        "intermediario turístico"
+      ],
+      "nivel_3": [
+        "agencia de viajes"
+      ],
+      "nivel_4": []
+    }
+  },
+  {
+    "categoria_origen": "Albergues turísticos",
+    "ruta": {
+      "nivel_1": "instalación turística o vinculada",
+      "nivel_2": [
+        "establecimiento alojativo"
+      ],
+      "nivel_3": [
+        "albergue"
+      ],
+      "nivel_4": []
+    }
+  },
+  {
+    "categoria_origen": "Alojamientos de turismo rural",
+    "ruta": {
+      "nivel_1": "instalación turística o vinculada",
+      "nivel_2": [
+        "establecimiento alojativo"
+      ],
+      "nivel_3": [
+        "casa rural",
+        "lodge"
+      ],
+      "nivel_4": []
+    }
+  },
+  {
+    "categoria_origen": "Apartamentos turísticos",
+    "ruta": {
+      "nivel_1": "instalación turística o vinculada",
+      "nivel_2": [
+        "establecimiento alojativo"
+      ],
+      "nivel_3": [
+        "apartahotel",
+        "vivienda de uso turístico"
+      ],
+      "nivel_4": []
+    }
+  },
+  {
+    "categoria_origen": "Arte rupestre",
+    "ruta": {
+      "nivel_1": "Recurso histórico",
+      "nivel_2": [
+        "recurso histórico o cultural"
+      ],
+      "nivel_3": [
+        "Yacimiento arqueológico"
+      ],
+      "nivel_4": []
+    }
+  },
+  {
+    "categoria_origen": "Ayuntamiento",
+    "ruta": {
+      "nivel_1": "recurso turístico",
+      "nivel_2": [
+        "recurso histórico o cultural"
+      ],
+      "nivel_3": [
+        "ayuntamiento"
+      ],
+      "nivel_4": []
+    }
+  },
+  {
+    "categoria_origen": "Bares",
+    "ruta": {
+      "nivel_1": "instalación turística o vinculada",
+      "nivel_2": [
+        "establecimiento de restauración"
+      ],
+      "nivel_3": [
+        "bar",
+        "chiringuito",
+        "cervecría",
+        "chocolatería",
+        "churrería",
+        "sidrería",
+        "coctelería",
+        "tabernas",
+        "bar de vinos"
+      ],
+      "nivel_4": []
+    }
+  },
+  {
+    "categoria_origen": "Bodegas",
+    "ruta": {
+      "nivel_1": "instalación turística o vinculada",
+      "nivel_2": [
+        "instalación agroturística"
+      ],
+      "nivel_3": [
+        "bodega",
+        "enoteca"
+      ],
+      "nivel_4": []
+    }
+  },
+  {
+    "categoria_origen": "Bomberos",
+    "ruta": {
+      "nivel_1": "servicio publico",
+      "nivel_2": [
+        "Estación de bomberos"
+      ],
+      "nivel_3": [],
+      "nivel_4": []
+    }
+  },
+  {
+    "categoria_origen": "Cafeterías",
+    "ruta": {
+      "nivel_1": "instalación turística o vinculada",
+      "nivel_2": [
+        "establecimiento de restauración"
+      ],
+      "nivel_3": [
+        "cafetería",
+        "heladería",
+        "tetería"
+      ],
+      "nivel_4": []
+    }
+  },
+  {
+    "categoria_origen": "Cajero",
+    "ruta": {
+      "nivel_1": "instalación turística o vinculada",
+      "nivel_2": [
+        "negocio local"
+      ],
+      "nivel_3": [
+        "servicio financiero"
+      ],
+      "nivel_4": [
+        "cajero automático",
+        "oficina bancaria",
+        "casa de cambio",
+        "devolución de IVA"
+      ]
+    }
+  },
+  {
+    "categoria_origen": "Campings",
+    "ruta": {
+      "nivel_1": "instalación turística o vinculada",
+      "nivel_2": [
+        "establecimiento alojativo"
+      ],
+      "nivel_3": [
+        "camping",
+        "Glamping"
+      ],
+      "nivel_4": []
+    }
+  },
+  {
+    "categoria_origen": "Casa solariega",
+    "ruta": {
+      "nivel_1": "recurso turístico",
+      "nivel_2": [
+        "recurso histórico o cultural"
+      ],
+      "nivel_3": [
+        "conjunto de interés artístico",
+        "arquitectura vernácula"
+      ],
+      "nivel_4": []
+    }
+  },
+  {
+    "categoria_origen": "Castillos y fortalezas",
+    "ruta": {
+      "nivel_1": "recurso turístico",
+      "nivel_2": [
+        "recurso histórico o cultural"
+      ],
+      "nivel_3": [
+        "castillo"
+      ],
+      "nivel_4": []
+    }
+  },
+  {
+    "categoria_origen": "Catering / Banquetes",
+    "ruta": {
+      "nivel_1": "instalación turística o vinculada",
+      "nivel_2": [
+        "establecimiento de restauración"
+      ],
+      "nivel_3": [
+        "servicio de catering"
+      ],
+      "nivel_4": []
+    }
+  },
+  {
+    "categoria_origen": "Centro de salud",
+    "ruta": {
+      "nivel_1": "servicio público",
+      "nivel_2": [
+        "Centro de atención primaria",
+        "Hospital público",
+        "Hospital público"
+      ],
+      "nivel_3": [],
+      "nivel_4": []
+    }
+  },
+  {
+    "categoria_origen": "Ciclismo",
+    "ruta": {
+      "nivel_1": "Infraestructura de transporte   | Recurso turístico",
+      "nivel_2": [
+        "Recurso natural",
+        "Carril bici",
+        "Sistema de bicicletas compartidas"
+      ],
+      "nivel_3": [
+        "Sendero BTT"
+      ],
+      "nivel_4": []
+    }
+  },
+  {
+    "categoria_origen": "Comercio tradicional",
+    "ruta": {
+      "nivel_1": "instalación turística o vinculada",
+      "nivel_2": [
+        "negocio local",
+        "recurso historico o cultural"
+      ],
+      "nivel_3": [
+        "comercio y moda",
+        "mercado tradicional",
+        "alimentación"
+      ],
+      "nivel_4": [
+        "tienda de artesanías",
+        "tienda de moda",
+        "panadería y pastelería"
+      ]
+    }
+  },
+  {
+    "categoria_origen": "Conjunto histórico",
+    "ruta": {
+      "nivel_1": "recurso turístico",
+      "nivel_2": [
+        "recurso histórico o cultural"
+      ],
+      "nivel_3": [
+        "conjunto de interés artístico"
+      ],
+      "nivel_4": []
+    }
+  },
+  {
+    "categoria_origen": "Construcción civil",
+    "ruta": {
+      "nivel_1": "Infraestructura de transporte | instalación turística o vinculada",
+      "nivel_2": [
+        "Aeropuerto",
+        "Sistema de bicicletas compartidas",
+        "Carril bici",
+        "Estación de autobuses",
+        "Área de autocaravanas",
+        "Estación de carga de vehículos eléctricos",
+        "Gasolinera",
+        "Aparcamiento",
+        "Terminal portuaria de pasajeros",
+        "Parada de transporte público",
+        "Parada de taxis",
+        "Estación de tren",
+        "Baño público",
+        "acueducto",
+        "Torre",
+        "puente",
+        "Plaza",
+        "Plaza de toros",
+        "Fuente ornamental",
+        "Cementerio",
+        "Instalación de cultura y ocio"
+      ],
+      "nivel_3": [
+        "Cine"
+      ],
+      "nivel_4": []
+    }
+  },
+  {
+    "categoria_origen": "Construcción militar",
+    "ruta": {
+      "nivel_1": "recurso turístico",
+      "nivel_2": [
+        "recurso histórico o cultural"
+      ],
+      "nivel_3": [
+        "Castillo",
+        "Alcazar",
+        "Torre"
+      ],
+      "nivel_4": []
+    }
+  },
+  {
+    "categoria_origen": "Consulta médica",
+    "ruta": {
+      "nivel_1": "instalación turística o vinculada",
+      "nivel_2": [
+        "negocio local"
+      ],
+      "nivel_3": [
+        "servicio médico"
+      ],
+      "nivel_4": []
+    }
+  },
+  {
+    "categoria_origen": "Cultura",
+    "ruta": {
+      "nivel_1": "recurso turístico | instalación turística o vinculada",
+      "nivel_2": [
+        "recurso histórico o cultural",
+        "instalación para eventos"
+      ],
+      "nivel_3": [
+        "Palacio de congresos y exposiciones",
+        "Centro cultural",
+        "Biblioteca",
+        "Museo",
+        "Teatro",
+        "Auditorio",
+        "Sala de conciertos"
+      ],
+      "nivel_4": []
+    }
+  },
+  {
+    "categoria_origen": "Edificio religioso",
+    "ruta": {
+      "nivel_1": "Recurso turístico",
+      "nivel_2": [
+        "recurso histórico o cultural"
+      ],
+      "nivel_3": [
+        "Basílica",
+        "Capilla",
+        "Catedral",
+        "Calustro",
+        "Convento",
+        "Iglesia",
+        "Mezquita",
+        "Minarete",
+        "Monasterio",
+        "Santuario",
+        "Sinagoga"
+      ],
+      "nivel_4": []
+    }
+  },
+  {
+    "categoria_origen": "Educación",
+    "ruta": {
+      "nivel_1": "instalación turística o vinculada",
+      "nivel_2": [
+        "Instalación educativa"
+      ],
+      "nivel_3": [
+        "Campamento",
+        "Centro de interpretación",
+        "Centro educativo",
+        "Granja escuela",
+        "Campamento"
+      ],
+      "nivel_4": []
+    }
+  },
+  {
+    "categoria_origen": "Empresas de actividades",
+    "ruta": {
+      "nivel_1": "organización turística | instalación turística o vinculada",
+      "nivel_2": [
+        "Empresa de alojamiento",
+        "Empresa de actividades complementarias",
+        "Empresa de organización de eventos",
+        "Empresa de servicios de restauración",
+        "Compañía de transporte de viajeros",
+        "instalacion de cultura y ocio"
+      ],
+      "nivel_3": [
+        "Empresa VTC",
+        "Empresa de alquiler de vehículos",
+        "Escape room"
+      ],
+      "nivel_4": []
+    }
+  },
+  {
+    "categoria_origen": "En coche",
+    "ruta": {
+      "nivel_1": "instalación turística o vinculada",
+      "nivel_2": [
+        "Instalación de cultura y ocio",
+        "Instalación deportiva"
+      ],
+      "nivel_3": [
+        "Experiencia en vehículo",
+        "Circuito de motor"
+      ],
+      "nivel_4": []
+    }
+  },
+  {
+    "categoria_origen": "Escudos",
+    "ruta": {
+      "nivel_1": "recurso turístico",
+      "nivel_2": [
+        "recurso histórico o cultural"
+      ],
+      "nivel_3": [
+        "conjunto de interés artístico"
+      ],
+      "nivel_4": []
+    }
+  },
+  {
+    "categoria_origen": "Espacio natural",
+    "ruta": {
+      "nivel_1": "Recurso turístico",
+      "nivel_2": [
+        "Recurso natural"
+      ],
+      "nivel_3": [
+        "Playa",
+        "Canal",
+        "Cueva o caverna",
+        "Cala",
+        "Desierto",
+        "Bosque",
+        "Géiser",
+        "Lago",
+        "Montaña",
+        "Parque natural",
+        "Mirador natural",
+        "Embalse",
+        "Río",
+        "Salina",
+        "Árbol singular",
+        "Manantial",
+        "Pantano",
+        "Sendero",
+        "Sendero BTT",
+        "Valle",
+        "Volcán",
+        "Cascada",
+        "Viñedo"
+      ],
+      "nivel_4": []
+    }
+  },
+  {
+    "categoria_origen": "Estación de servicio",
+    "ruta": {
+      "nivel_1": "Infraestructura de Transporte",
+      "nivel_2": [
+        "Gasolinera"
+      ],
+      "nivel_3": [],
+      "nivel_4": []
+    }
+  },
+  {
+    "categoria_origen": "Farmacia",
+    "ruta": {
+      "nivel_1": "instalación turística o vinculada",
+      "nivel_2": [
+        "negocio local"
+      ],
+      "nivel_3": [
+        "servicio médico"
+      ],
+      "nivel_4": [
+        "farmacia"
+      ]
+    }
+  },
+  {
+    "categoria_origen": "Guías turísticos",
+    "ruta": {
+      "nivel_1": "servicio turístico | Organización turística",
+      "nivel_2": [
+        "Visita guiada",
+        "Guía turístico"
+      ],
+      "nivel_3": [],
+      "nivel_4": []
+    }
+  },
+  {
+    "categoria_origen": "Hostales",
+    "ruta": {
+      "nivel_1": "instalación turística o vinculada",
+      "nivel_2": [
+        "establecimiento alojativo"
+      ],
+      "nivel_3": [
+        "hostal",
+        "motel",
+        "residencia"
+      ],
+      "nivel_4": []
+    }
+  },
+  {
+    "categoria_origen": "Hoteles",
+    "ruta": {
+      "nivel_1": "instalación turística o vinculada",
+      "nivel_2": [
+        "establecimiento alojativo"
+      ],
+      "nivel_3": [
+        "hotel",
+        "complejo turístico"
+      ],
+      "nivel_4": []
+    }
+  },
+  {
+    "categoria_origen": "Instalación deportiva",
+    "ruta": {
+      "nivel_1": "instalación turística o vinculada",
+      "nivel_2": [
+        "Instalación deportiva"
+      ],
+      "nivel_3": [
+        "Cancha de baloncesto",
+        "Bolera",
+        "Rocódromo",
+        "Circuito de motor",
+        "Club hípico",
+        "Campo de fútbol",
+        "Campo de golf",
+        "Gimnasio",
+        "Circuito de karts",
+        "Centro de actividades multiaventura",
+        "Pista de pádel",
+        "Hipódromo",
+        "Pista de atletismo",
+        "Campo de tiro",
+        "Skatepark",
+        "Pista de patinaje",
+        "Polideportivo",
+        "Estadio",
+        "Piscina",
+        "Pista de tenis",
+        "Estación de deportes de invierno",
+        "Puerto deportivo",
+        "Estadio"
+      ],
+      "nivel_4": []
+    }
+  },
+  {
+    "categoria_origen": "Jardín histórico",
+    "ruta": {
+      "nivel_1": "Recurso histórico",
+      "nivel_2": [
+        "Recurso histórico o cultural"
+      ],
+      "nivel_3": [
+        "Jardín"
+      ],
+      "nivel_4": []
+    }
+  },
+  {
+    "categoria_origen": "Monumento",
+    "ruta": {
+      "nivel_1": "recurso turístico",
+      "nivel_2": [
+        "recurso histórico o cultural"
+      ],
+      "nivel_3": [
+        "Anfiteatro",
+        "Arco",
+        "Monumento",
+        "Palacio"
+      ],
+      "nivel_4": []
+    }
+  },
+  {
+    "categoria_origen": "Museo",
+    "ruta": {
+      "nivel_1": "recurso turístico | instalación turística o vinculada",
+      "nivel_2": [
+        "recurso histórico o cultural",
+        "instalación de cultura y ocio"
+      ],
+      "nivel_3": [
+        "museo",
+        "galería de arte",
+        "sala de exposiciones"
+      ],
+      "nivel_4": []
+    }
+  },
+  {
+    "categoria_origen": "Oficina de información turística",
+    "ruta": {
+      "nivel_1": "Servicio público",
+      "nivel_2": [
+        "Oficina de turismo",
+        "Punto de información turística temporal"
+      ],
+      "nivel_3": [],
+      "nivel_4": []
+    }
+  },
+  {
+    "categoria_origen": "Oficina de turismo",
+    "ruta": {
+      "nivel_1": "Servicio publico",
+      "nivel_2": [
+        "Oficina de turismo",
+        "Punto de información turística temporal"
+      ],
+      "nivel_3": [],
+      "nivel_4": []
+    }
+  },
+  {
+    "categoria_origen": "Otros",
+    "ruta": {
+      "nivel_1": "Servicio publico | instalacion turística o vinculada",
+      "nivel_2": [
+        "Oficiana de correos",
+        "negocio local",
+        "",
+        "instalación de cultura y ocio"
+      ],
+      "nivel_3": [
+        "servicios varios",
+        "comercio y moda",
+        "Instalación de salud y bienestar",
+        "instalacion de cultura y ocio"
+      ],
+      "nivel_4": [
+        "tintorería o lavandería",
+        "peluquería",
+        "librería",
+        "joyería y relojería",
+        "perfumería",
+        "Centro estético",
+        "Balneario",
+        "Centro de masajes",
+        "Spa",
+        "Centro de yoga",
+        "Salón recreativo"
+      ]
+    }
+  },
+  {
+    "categoria_origen": "Otros núcleos de población",
+    "ruta": {
+      "nivel_1": "TourismDestination | Location",
+      "nivel_2": [
+        "Destino turístico",
+        "Localización"
+      ],
+      "nivel_3": [],
+      "nivel_4": []
+    }
+  },
+  {
+    "categoria_origen": "Paraje pintoresco",
+    "ruta": {
+      "nivel_1": "NaturalViewPoint | UrbanViewPoint | NaturalResource | SingularTree",
+      "nivel_2": [
+        "Mirador natural",
+        "Mirador urbano",
+        "Recurso natural",
+        "Árbol singular"
+      ],
+      "nivel_3": [
+        "mirador urbano o natural ??"
+      ],
+      "nivel_4": []
+    }
+  },
+  {
+    "categoria_origen": "Parques y jardines",
+    "ruta": {
+      "nivel_1": "instalación turística o vinculada",
+      "nivel_2": [
+        "instalación de cultura y ocio"
+      ],
+      "nivel_3": [
+        "Parque infantil"
+      ],
+      "nivel_4": []
+    }
+  },
+  {
+    "categoria_origen": "Pensiones",
+    "ruta": {
+      "nivel_1": "instalación turística o vinculada",
+      "nivel_2": [
+        "establecimiento alojativo"
+      ],
+      "nivel_3": [
+        "pensión"
+      ],
+      "nivel_4": []
+    }
+  },
+  {
+    "categoria_origen": "Policía y/o Guardía Civil",
+    "ruta": {
+      "nivel_1": "servicio publico",
+      "nivel_2": [
+        "comisaria de policia"
+      ],
+      "nivel_3": [],
+      "nivel_4": []
+    }
+  },
+  {
+    "categoria_origen": "Punto de ruta",
+    "ruta": {
+      "nivel_1": "Recurso turístico",
+      "nivel_2": "Ruta",
+      "nivel_3": [],
+      "nivel_4": []
+    }
+  },
+  {
+    "categoria_origen": "Restaurantes",
+    "ruta": {
+      "nivel_1": "instalación turística o vinculada",
+      "nivel_2": [
+        "establecimiento de restauración"
+      ],
+      "nivel_3": [
+        "restaurante",
+        "mesón/venta",
+        "casa de comidas"
+      ],
+      "nivel_4": []
+    }
+  },
+  {
+    "categoria_origen": "Senderismo",
+    "ruta": {
+      "nivel_1": "recurso turístico",
+      "nivel_2": [
+        "recurso natural"
+      ],
+      "nivel_3": [
+        "sendero"
+      ],
+      "nivel_4": []
+    }
+  },
+  {
+    "categoria_origen": "Supermercado",
+    "ruta": {
+      "nivel_1": "instalación turística o vinculada",
+      "nivel_2": [
+        "negocio local"
+      ],
+      "nivel_3": [
+        "Alimentación",
+        "Comercio y moda"
+      ],
+      "nivel_4": [
+        "tienda de ultramarinos",
+        "supermercado",
+        "Bazar"
+      ]
+    }
+  },
+  {
+    "categoria_origen": "Taller de automóvil",
+    "ruta": {
+      "nivel_1": "instalación turística o vinculada",
+      "nivel_2": [
+        "negocio local"
+      ],
+      "nivel_3": [
+        "servicios varios"
+      ],
+      "nivel_4": [
+        "taller mecánico"
+      ]
+    }
+  },
+  {
+    "categoria_origen": "Urbana",
+    "ruta": {
+      "nivel_1": "Recurso turístico",
+      "nivel_2": "Recurso turístico o cultural",
+      "nivel_3": [
+        "Plaza",
+        "Ayuntamiento",
+        "Estadio",
+        "Cementerio",
+        "Biblioteca",
+        "Estación de tren"
+      ],
+      "nivel_4": []
+    }
+  },
+  {
+    "categoria_origen": "Vía histórica",
+    "ruta": {
+      "nivel_1": "Recurso turístico",
+      "nivel_2": [
+        "Ruta"
+      ],
+      "nivel_3": [],
+      "nivel_4": []
+    }
+  },
+  {
+    "categoria_origen": "Zona arqueológica",
+    "ruta": {
+      "nivel_1": "recurso turístico",
+      "nivel_2": [
+        "recurso histórico o cultural"
+      ],
+      "nivel_3": [
+        "Yacimiento Arqueológico",
+        "Catacumba",
+        "Baños árabes",
+        "Guardaviña"
+      ],
+      "nivel_4": []
+    }
+  },
+  {
+    "categoria_origen": "Zona comercial",
+    "ruta": {
+      "nivel_1": "instalación turística o vinculada",
+      "nivel_2": [
+        "negocio local"
+      ],
+      "nivel_3": [
+        "comercio y moda"
+      ],
+      "nivel_4": [
+        "centro comercial"
+      ]
+    }
+  },
+  {
+    "categoria_origen": "Pendiente de afinar , por ejemplo dentro de bares , pueden entrar mas establecimiento de restauración como cervecería,chocolatería o bar de vinos.",
+    "ruta": {
+      "nivel_1": "",
+      "nivel_2": [],
+      "nivel_3": [],
+      "nivel_4": []
+    }
+  }
+]
