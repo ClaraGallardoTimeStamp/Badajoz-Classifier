@@ -68,4 +68,4 @@ CSV_PATH     = 'Servicios_Limpio.csv'
 
 ## Documentación completa
 
-Ver [`DOCUMENTACION.md`](DOCUMENTACION.md) para detalles sobre la arquitectura interna, las reglas de negocio, cómo extender el sistema y cómo integrarlo con APIs externas.
+Ver [`Docu.md`](Docu.md) para detalles sobre la arquitectura interna, las reglas de negocio, cómo extender el sistema y cómo integrarlo con APIs externas.S
