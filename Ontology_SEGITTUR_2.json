@@ -757,7 +757,8 @@
     "definicion": "Terreno, generalmente cercado, destinado a enterrar cadáveres.",
     "keywords": [
       "cementerio",
-      "camposanto","velatorio"
+      "camposanto",
+      "velatorio"
     ],
     "keywords_negativas": []
   },
@@ -1207,6 +1208,9 @@
     "definicion": "Servicio o entidad turística relacionada con empresa de actividades complementarias",
     "keywords": [
       "empresa",
+      "poligono industrial",
+      "industria",
+      "industriales",
       "complementarias",
       "actividades",
       "embotelladora",
@@ -1216,10 +1220,14 @@
       "fontaneria",
       "autolavado",
       "auto-lavado",
-      "veterinario","Oficina Veterinaria",
+      "veterinario",
+      "Oficina Veterinaria",
       "veterinaria",
-      "clinica dental","Servicios de abastecimiento de agua",
-      "dentista"
+      "clinica dental",
+      "Servicios de abastecimiento de agua",
+      "dentista",
+      "hijos sl",
+      "excavaciones sl"
     ],
     "keywords_negativas": []
   },
@@ -3442,7 +3450,8 @@
     "nivel_5": "",
     "definicion": "Lugar donde se cría y almacena el vino.",
     "keywords": [
-      "bodega","bodegas",
+      "bodega",
+      "bodegas",
       "estacion enologica",
       "estacion ampelografica"
     ],
