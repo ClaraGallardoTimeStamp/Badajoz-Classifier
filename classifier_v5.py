@@ -1,5 +1,5 @@
 """
-Clasificador v3 — Correcciones y mejoras de robustez.
+Clasificador v5 — Correcciones y mejoras de robustez.
 
 CAMBIOS RESPECTO A v2:
   [FIX-1]  Carga segura de ficheros con try/except (ya no rompe silenciosamente).

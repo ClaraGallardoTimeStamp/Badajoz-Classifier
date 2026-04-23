@@ -48,7 +48,13 @@
     "nivel_4": "",
     "nivel_5": "",
     "definicion": "Área destinada al aterrizaje y despegue de aviones dotada de instalaciones para el control del tráfico aéreo y de servicios a los pasajeros.",
-    "keywords": [],
+    "keywords": [
+      "avion",
+      "helipuerto",
+      "aviones",
+      "helicopteros",
+      "helicoptero"
+    ],
     "keywords_negativas": []
   },
   {
@@ -62,12 +68,10 @@
     "definicion": "Castillo fortificado situado en un lugar estratégico, especialmente cuando está amurallado.",
     "keywords": [
       "alcázar",
-      "castillo",
-      "castillos",
       "fortaleza",
       "alcazaba"
     ],
-    "keywords_negativas": []
+    "keywords_negativas": ["castillo"]
   },
   {
     "id": "Amphitheatre",
@@ -204,7 +208,15 @@
       "columbario",
       "columbarios",
       "necrópolis",
-      "Terma"
+      "terma",
+      "termas",
+      "dolmen",
+      "menhir",
+      "tumulo",
+      "protohistorico",
+      "prehistorico",
+      "dolmenes","pinturas rupestres",
+      "megalitico"
     ],
     "keywords_negativas": []
   },
@@ -690,7 +702,7 @@
       "fortaleza",
       "fuerte"
     ],
-    "keywords_negativas": []
+    "keywords_negativas": ["alcazaba", "alcázar","alcazar"]
   },
   {
     "id": "Catacomb",
@@ -872,7 +884,9 @@
     "nivel_5": "",
     "definicion": "Servicio público que protege a las personas y bienes garantizando una respuesta adecuada ante los distintos tipos de emergencias y catástrofes.",
     "keywords": [
-      "protección civil"
+      "protección civil",
+      "cuartel",
+      "guardia civil"
     ],
     "keywords_negativas": []
   },
@@ -1080,10 +1094,45 @@
     "nivel_5": "",
     "definicion": "Establecimiento destinado a la enseñanza.",
     "keywords": [
-      "centro educativo","CEIP","IES","guarderia",
+      "centro educativo",
+      "CEIP",
+      "IES",
+      "guarderia",
       "escuela",
       "colegio",
       "colegios"
+    ],
+    "keywords_negativas": []
+  },
+  {
+    "id": "EmbassyAndConsulate",
+    "label": "Servicio público",
+    "nivel_1": "Entidad turística",
+    "nivel_2": "Servicio público",
+    "nivel_3": "",
+    "nivel_4": "",
+    "nivel_5": "",
+    "definicion": "Conjunto de servicios públicos relacionados con la representación de la administración pública u otros servicios",
+    "keywords": [
+      "oficina de la reserva de la biosfera",
+      "camara de comercio",
+      "centro de desarrollo rural",
+      "centro de dia",
+      "notaria",
+      "agencia de lectura",
+      "centro social",
+      "punto limpio",
+      "centro de atencion al ciudadano",
+      "centro de empleo",
+      "centro joven",
+      "espacio para la creacion joven",
+      "juzgado",
+      "OAR",
+      "Organismo Autonomico de Recaudacion",
+      "pisos tutelados",
+      "residencia de mayores",
+      "residencia de ancianos",
+      "residencia de tercera edad"
     ],
     "keywords_negativas": []
   },
@@ -1234,6 +1283,7 @@
       "autolavado",
       "auto-lavado",
       "veterinario",
+      "centro veterinario",
       "Oficina Veterinaria",
       "veterinaria",
       "clinica dental",
@@ -1449,7 +1499,8 @@
     "definicion": "Establecimiento o puesto de venta en el que se vende y suministra a vehículos automóviles gasolina u otros combustibles.",
     "keywords": [
       "gasolinera",
-      "estación de servicio"
+      "estación de servicio",
+      "estacion de servicios"
     ],
     "keywords_negativas": []
   },
@@ -1714,8 +1765,7 @@
     "nivel_5": "",
     "definicion": "Establecimiento en el que se preparan y sirven comidas y que está decorado de forma tradicional y rústica.",
     "keywords": [
-      "mesón",
-      "venta"
+      "mesón"
     ],
     "keywords_negativas": []
   },
@@ -2209,13 +2259,26 @@
     "definicion": "Establecimiento en el que se preparan y venden medicamentos.",
     "keywords": [
       "farmacia",
-      "psicología",
-      "consultorio",
       "farmacéutico",
       "farmacéutica",
       "farmacéuticos",
       "farmacéuticas",
-      "farmacias",
+      "farmacias"
+    ],
+    "keywords_negativas": []
+  },
+  {
+    "id": "Pharmacy",
+    "label": "Servicio médico",
+    "nivel_1": "Entidad turística",
+    "nivel_2": "Instalación turística o vinculada",
+    "nivel_3": "Negocio local",
+    "nivel_4": "Servicio médico",
+    "nivel_5": "",
+    "definicion": "Establecimiento en el que se prestan servicios médicos varios.",
+    "keywords": [
+      "psicología",
+      "consultorio","consultorio local",
       "psicologa",
       "psicólogo",
       "psicóloga",
@@ -2225,9 +2288,11 @@
       "clínica",
       "consultorio psicológico",
       "consultorio de psicología",
+      "centro medico",
+      "cruz roja",
       "centro medico"
     ],
-    "keywords_negativas": []
+    "keywords_negativas": ["farmacia"]
   },
   {
     "id": "Planetarium",
@@ -2253,7 +2318,9 @@
     "nivel_5": "",
     "definicion": "Espacio recreativo enfocado a los niños, que cuenta con juegos infantiles y que suele estar en espacios abiertos.",
     "keywords": [
-      "parque infantil"
+      "parque infantil",
+      "pista infantil",
+      "zona de juegos"
     ],
     "keywords_negativas": []
   },
@@ -2548,7 +2615,7 @@
     "nivel_5": "",
     "definicion": "Camino o dirección que contiene una serie de lugares por los que se debe pasar o detenerse para llegar a un destino.",
     "keywords": [
-      "ruta",
+      "ruta","travesia",
       "paseo",
       "avenida",
       "camino",
@@ -3070,15 +3137,12 @@
       "cruz",
       "mosaico",
       "mural",
+      "murales",
       "portico",
       "portada",
       "puerta",
       "púlpito",
-      "talla",
-      "termas",
-      "pintura",
-      "cuartel",
-      "pinturas"
+      "talla","pinturas"
     ],
     "keywords_negativas": []
   },
@@ -3358,6 +3422,7 @@
       "lavadero",
       "huerta",
       "huerto",
+      "huertos",
       "masias",
       "masia",
       "humilladero",
@@ -3442,7 +3507,6 @@
     "definicion": "Caída desde cierta altura del agua de un río u otra corriente por el brusco desnivel del cauce.",
     "keywords": [
       "cascada",
-      "salto de agua",
       "catarata"
     ],
     "keywords_negativas": []

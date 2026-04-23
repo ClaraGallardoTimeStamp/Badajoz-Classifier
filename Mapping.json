@@ -594,19 +594,6 @@
     }
   },
   {
-    "categoria_origen": "Jardín histórico",
-    "ruta": {
-      "nivel_1": "Recurso histórico",
-      "nivel_2": [
-        "Recurso histórico o cultural"
-      ],
-      "nivel_3": [
-        "Jardín"
-      ],
-      "nivel_4": []
-    }
-  },
-  {
     "categoria_origen": "Monumento",
     "ruta": {
       "nivel_1": "recurso turístico",
@@ -722,6 +709,19 @@
     }
   },
   {
+    "categoria_origen": "Jardín histórico",
+    "ruta": {
+      "nivel_1": "Recurso turístico",
+      "nivel_2": [
+        "Recurso natural"
+      ],
+      "nivel_3": [
+        "Parque natural"
+      ],
+      "nivel_4": []
+    }
+  },
+  {
     "categoria_origen": "Parques y jardines",
     "ruta": {
       "nivel_1": "instalación turística o vinculada",
@@ -807,9 +807,9 @@
         "Comercio y moda"
       ],
       "nivel_4": [
-        "tienda de ultramarinos",
         "supermercado",
-        "Bazar"
+        "Bazar",
+        "tienda de ultramarinos"
       ]
     }
   },
@@ -884,15 +884,6 @@
       "nivel_4": [
         "centro comercial"
       ]
-    }
-  },
-  {
-    "categoria_origen": "Pendiente de afinar , por ejemplo dentro de bares , pueden entrar mas establecimiento de restauración como cervecería,chocolatería o bar de vinos.",
-    "ruta": {
-      "nivel_1": "",
-      "nivel_2": [],
-      "nivel_3": [],
-      "nivel_4": []
     }
   }
 ]
