@@ -932,6 +932,9 @@
     "definicion": "Establecimiento especializado en la preparación y en el servicio de cócteles.",
     "keywords": [
       "coctelería",
+      "copas",
+      "cocktail bar",
+      "cocktail",
       "bar de cócteles"
     ],
     "keywords_negativas": []
@@ -1077,7 +1080,7 @@
     "nivel_5": "",
     "definicion": "Establecimiento destinado a la enseñanza.",
     "keywords": [
-      "centro educativo",
+      "centro educativo","CEIP","IES","guarderia",
       "escuela",
       "colegio",
       "colegios"
@@ -1492,8 +1495,8 @@
       "tienda de alimentación",
       "carniceria",
       "queseria",
-      "pescadería",
-      "chuchería",
+      "pescaderia",
+      "chucheria",
       "chuche",
       "charcutería",
       "frutería"
