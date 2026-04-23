@@ -8,7 +8,11 @@
     "nivel_4": "Servicio financiero",
     "nivel_5": "Cajero automático",
     "definicion": "Máquina conectada informáticamente con un banco que permite efectuar ciertas operaciones bancarias mediante una tarjeta o libreta magnética que tienen asignada una clave personal.",
-    "keywords": [],
+    "keywords": [
+      "cajero automático",
+      "cajero",
+      "ATM"
+    ],
     "keywords_negativas": []
   },
   {
@@ -261,7 +265,12 @@
     "keywords": [
       "oficina bancaria",
       "banco",
-      "sucursal bancaria"
+      "sucursal bancaria",
+      "BBVA",
+      "Caixabank",
+      "caja rural",
+      "ibercaja",
+      "Liberbank"
     ],
     "keywords_negativas": []
   },
@@ -318,7 +327,8 @@
     "nivel_5": "Bazar",
     "definicion": "Establecimiento en el que se venden gran diversidad de productos, como ropa, relojes, juguetes, artículos para la casa y objetos de regalo.",
     "keywords": [
-      "bazar"
+      "bazar",
+      "regalos"
     ],
     "keywords_negativas": []
   },
@@ -1479,7 +1489,14 @@
     "keywords": [
       "ultramarinos",
       "colmado",
-      "tienda de alimentación"
+      "tienda de alimentación",
+      "carniceria",
+      "queseria",
+      "pescadería",
+      "chuchería",
+      "chuche",
+      "charcutería",
+      "frutería"
     ],
     "keywords_negativas": []
   },
@@ -1581,7 +1598,8 @@
     "definicion": "Tienda que se dedica a la venta de productos hechos a mano por artesanos.",
     "keywords": [
       "artesanía",
-      "artesanías"
+      "artesanías",
+      "ceramicas"
     ],
     "keywords_negativas": []
   },
@@ -3388,7 +3406,8 @@
     "nivel_5": "",
     "definicion": "Abertura en la tierra, y más comúnmente en una montaña, por donde salen de tiempo en tiempo humo, llamas y materias encendidas o derretidas.",
     "keywords": [
-      "volcán"
+      "volcán",
+      "lava"
     ],
     "keywords_negativas": []
   },
@@ -3469,7 +3488,8 @@
     "keywords": [
       "estación de esquí",
       "estación de nieve",
-      "ski"
+      "ski",
+      "snowboard"
     ],
     "keywords_negativas": []
   },
@@ -3486,6 +3506,7 @@
       "puerto deportivo",
       "embarcadero",
       "embarcaderos",
+      "embarcaciones",
       "puerto"
     ],
     "keywords_negativas": []
