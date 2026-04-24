@@ -71,7 +71,9 @@
       "fortaleza",
       "alcazaba"
     ],
-    "keywords_negativas": ["castillo"]
+    "keywords_negativas": [
+      "castillo"
+    ]
   },
   {
     "id": "Amphitheatre",
@@ -215,7 +217,8 @@
       "tumulo",
       "protohistorico",
       "prehistorico",
-      "dolmenes","pinturas rupestres",
+      "dolmenes",
+      "pinturas rupestres",
       "megalitico"
     ],
     "keywords_negativas": []
@@ -702,7 +705,11 @@
       "fortaleza",
       "fuerte"
     ],
-    "keywords_negativas": ["alcazaba", "alcázar","alcazar"]
+    "keywords_negativas": [
+      "alcazaba",
+      "alcázar",
+      "alcazar"
+    ]
   },
   {
     "id": "Catacomb",
@@ -1483,6 +1490,7 @@
     "definicion": "Terreno donde se cultivan especies vegetales, con posible añadidura de otros elementos como fuentes, esculturas o zonas de ocio. También pueden referirse a parques urbanos.",
     "keywords": [
       "jardín",
+      "jardin botanico",
       "parque",
       "jardines"
     ],
@@ -1857,6 +1865,7 @@
     "definicion": "Gran masa permanente de agua depositada en depresiones del terreno.",
     "keywords": [
       "lago",
+      "complejo lagunar",
       "laguna",
       "lagunar"
     ],
@@ -2012,7 +2021,8 @@
       "monte",
       "pico",
       "cumbre",
-      "sierra"
+      "sierra",
+      "cima"
     ],
     "keywords_negativas": [
       "castillo"
@@ -2089,6 +2099,8 @@
     "definicion": "Espacio natural legalmente protegido que, por su belleza o por la singularidad de su fauna y flora, posee valor ecológico y cultural.",
     "keywords": [
       "parque natural",
+      "paraje natural",
+      "cantera",
       "parque nacional",
       "reserva natural",
       "reserva regional"
@@ -2278,7 +2290,8 @@
     "definicion": "Establecimiento en el que se prestan servicios médicos varios.",
     "keywords": [
       "psicología",
-      "consultorio","consultorio local",
+      "consultorio",
+      "consultorio local",
       "psicologa",
       "psicólogo",
       "psicóloga",
@@ -2292,7 +2305,9 @@
       "cruz roja",
       "centro medico"
     ],
-    "keywords_negativas": ["farmacia"]
+    "keywords_negativas": [
+      "farmacia"
+    ]
   },
   {
     "id": "Planetarium",
@@ -2305,6 +2320,23 @@
     "definicion": "Estructura acondicionada para la proyección de espectáculos relacionados con la astronomía.",
     "keywords": [
       "planetario"
+    ],
+    "keywords_negativas": []
+  },
+  {
+    "id": "Playground",
+    "label": "Parque infantil",
+    "nivel_1": "Entidad turística",
+    "nivel_2": "Instalación turística o vinculada",
+    "nivel_3": "Instalación de cultura y ocio",
+    "nivel_4": "",
+    "nivel_5": "",
+    "definicion": "Espacio recreativo enfocado al descanso y que suele estar en espacios abiertos.",
+    "keywords": [
+      "merendero",
+      "zona de descanso",
+      "descansadero",
+      "descansadero/abrevadero"
     ],
     "keywords_negativas": []
   },
@@ -2615,8 +2647,11 @@
     "nivel_5": "",
     "definicion": "Camino o dirección que contiene una serie de lugares por los que se debe pasar o detenerse para llegar a un destino.",
     "keywords": [
-      "ruta","travesia",
+      "ruta",
+      "travesia",
+      "corredor de la biodiversidad",
       "paseo",
+      "final ruta",
       "avenida",
       "camino",
       "senda"
@@ -2909,7 +2944,8 @@
     "nivel_5": "",
     "definicion": "Construcción que contiene gran cantidad de agua y que se destina al baño, a la natación o a otros ejercicios y deportes acuáticos.",
     "keywords": [
-      "piscina"
+      "piscina",
+      "piscinas naturales"
     ],
     "keywords_negativas": []
   },
@@ -3142,7 +3178,8 @@
       "portada",
       "puerta",
       "púlpito",
-      "talla","pinturas"
+      "talla",
+      "pinturas"
     ],
     "keywords_negativas": []
   },
@@ -3428,6 +3465,7 @@
       "humilladero",
       "molinos",
       "horno de cal",
+      "hornos de cal",
       "molino",
       "pozo",
       "abrevadero"

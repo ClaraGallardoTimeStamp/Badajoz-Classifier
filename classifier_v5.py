@@ -14,7 +14,10 @@ CAMBIOS RESPECTO A v2:
            para decidir entre Capilla, Arquitectura vernácula u Hospital público.
   [HR-4]   Espacio natural o Punto de ruta + cueva/gruta en nombre →
            SIEMPRE Cueva o caverna.
-  [ALIAS]  Aliases construidos dinámicamente desde Ontology_SEGITTUR_2.json:\n           cada keyword del JSON se convierte en alias → label.\n           Ya no hay aliases hardcodeados: para mejorar el vocabulario\n           solo hay que editar el fichero JSON.
+  [ALIAS]  Aliases construidos dinámicamente desde Ontology_SEGITTUR_2.json:\n           
+  cada keyword del JSON se convierte en alias → label.\n           
+  Ya no hay aliases hardcodeados: para mejorar el vocabulario\n           
+  solo hay que editar el fichero JSON.
   [WARN]   expand_cluster() ya no falla silenciosamente cuando un cluster
            no produce hojas: emite un aviso por consola.
 """
