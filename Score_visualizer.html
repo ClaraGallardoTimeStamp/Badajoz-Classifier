@@ -1,0 +1,1416 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>POI Classifier · Pipeline Debugger</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300;400;500;600;700&family=Space+Grotesk:wght@300;400;500;600;700&display=swap');
+
+  :root {
+    --bg:        #0d1117;
+    --bg2:       #161b22;
+    --bg3:       #1c2128;
+    --bg4:       #21262d;
+    --border:    #30363d;
+    --border2:   #3d444d;
+    --text:      #e6edf3;
+    --text2:     #8b949e;
+    --text3:     #6e7681;
+    --cyan:      #39d0d8;
+    --cyan2:     #1f8b90;
+    --green:     #3fb950;
+    --green2:    #1a6330;
+    --yellow:    #e3b341;
+    --yellow2:   #7a5c00;
+    --orange:    #f0883e;
+    --orange2:   #7a3800;
+    --red:       #f85149;
+    --red2:      #6e1c1a;
+    --purple:    #bc8cff;
+    --purple2:   #3c1f6e;
+    --blue:      #58a6ff;
+    --blue2:     #0e3f70;
+    --mono:      'JetBrains Mono', monospace;
+    --sans:      'Space Grotesk', sans-serif;
+    --radius:    6px;
+    --radius2:   10px;
+  }
+
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+
+  body {
+    background: var(--bg);
+    color: var(--text);
+    font-family: var(--sans);
+    font-size: 14px;
+    line-height: 1.6;
+    min-height: 100vh;
+  }
+
+  /* ── Header ─────────────────────────────────────── */
+  header {
+    border-bottom: 1px solid var(--border);
+    padding: 14px 24px;
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    background: var(--bg2);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+  }
+  .logo {
+    font-family: var(--mono);
+    font-size: 13px;
+    font-weight: 600;
+    color: var(--cyan);
+    letter-spacing: 0.05em;
+    white-space: nowrap;
+  }
+  .logo span { color: var(--text3); }
+  header .badge {
+    background: var(--bg4);
+    border: 1px solid var(--border);
+    border-radius: 4px;
+    padding: 2px 8px;
+    font-family: var(--mono);
+    font-size: 11px;
+    color: var(--text2);
+  }
+  .header-right { margin-left: auto; display: flex; gap: 8px; align-items: center; }
+  .btn-sm {
+    background: var(--bg4);
+    border: 1px solid var(--border2);
+    color: var(--text2);
+    border-radius: var(--radius);
+    padding: 4px 12px;
+    font-family: var(--sans);
+    font-size: 12px;
+    cursor: pointer;
+    transition: all .15s;
+  }
+  .btn-sm:hover { border-color: var(--cyan); color: var(--cyan); }
+  .btn-primary {
+    background: var(--cyan2);
+    border-color: var(--cyan);
+    color: var(--cyan);
+    font-weight: 600;
+  }
+  .btn-primary:hover { background: var(--cyan); color: var(--bg); }
+
+  /* ── Layout ─────────────────────────────────────── */
+  .app { display: grid; grid-template-columns: 320px 1fr; height: calc(100vh - 49px); }
+
+  /* ── Sidebar ─────────────────────────────────────── */
+  .sidebar {
+    border-right: 1px solid var(--border);
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+  }
+  .sidebar-section {
+    border-bottom: 1px solid var(--border);
+    padding: 16px;
+  }
+  .sidebar-section:last-child { border-bottom: none; flex: 1; overflow-y: auto; }
+  .section-title {
+    font-family: var(--mono);
+    font-size: 10px;
+    font-weight: 600;
+    letter-spacing: 0.1em;
+    color: var(--text3);
+    text-transform: uppercase;
+    margin-bottom: 10px;
+  }
+
+  /* Input area */
+  .input-area {
+    width: 100%;
+    background: var(--bg);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    color: var(--text);
+    font-family: var(--mono);
+    font-size: 11px;
+    padding: 10px;
+    resize: vertical;
+    min-height: 160px;
+    outline: none;
+    transition: border-color .15s;
+    line-height: 1.5;
+  }
+  .input-area:focus { border-color: var(--cyan2); }
+  .input-area::placeholder { color: var(--text3); }
+
+  .load-btn {
+    margin-top: 8px;
+    width: 100%;
+    background: var(--cyan2);
+    border: 1px solid var(--cyan);
+    color: var(--cyan);
+    border-radius: var(--radius);
+    padding: 7px;
+    font-family: var(--sans);
+    font-size: 12px;
+    font-weight: 600;
+    cursor: pointer;
+    letter-spacing: 0.03em;
+    transition: all .15s;
+  }
+  .load-btn:hover { background: var(--cyan); color: var(--bg); }
+
+  /* POI Info card */
+  .poi-card {
+    background: var(--bg3);
+    border: 1px solid var(--border);
+    border-radius: var(--radius2);
+    padding: 12px;
+  }
+  .poi-nombre {
+    font-family: var(--mono);
+    font-size: 13px;
+    font-weight: 600;
+    color: var(--text);
+    margin-bottom: 4px;
+    word-break: break-word;
+  }
+  .poi-cat {
+    font-size: 11px;
+    color: var(--text2);
+    margin-bottom: 8px;
+  }
+  .poi-result {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    flex-wrap: wrap;
+  }
+  .result-label {
+    background: var(--green2);
+    border: 1px solid var(--green);
+    color: var(--green);
+    border-radius: 4px;
+    padding: 2px 8px;
+    font-family: var(--mono);
+    font-size: 11px;
+    font-weight: 600;
+  }
+  .result-label.conflict { background: var(--red2); border-color: var(--red); color: var(--red); }
+  .result-label.ambig    { background: var(--yellow2); border-color: var(--yellow); color: var(--yellow); }
+  .conf-badge {
+    font-family: var(--mono);
+    font-size: 11px;
+    color: var(--text3);
+  }
+
+  /* Pipeline steps nav */
+  .step-nav { display: flex; flex-direction: column; gap: 2px; }
+  .step-btn {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 7px 10px;
+    border-radius: var(--radius);
+    cursor: pointer;
+    transition: background .12s;
+    border: 1px solid transparent;
+    background: transparent;
+    width: 100%;
+    text-align: left;
+  }
+  .step-btn:hover { background: var(--bg4); }
+  .step-btn.active { background: var(--bg4); border-color: var(--border); }
+  .step-btn.active .step-num { color: var(--cyan); border-color: var(--cyan); }
+  .step-num {
+    font-family: var(--mono);
+    font-size: 10px;
+    font-weight: 700;
+    color: var(--text3);
+    border: 1px solid var(--border);
+    border-radius: 50%;
+    width: 22px;
+    height: 22px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    transition: all .12s;
+  }
+  .step-btn.fired .step-num {
+    background: var(--green2);
+    border-color: var(--green);
+    color: var(--green);
+  }
+  .step-btn.skip .step-num {
+    background: var(--red2);
+    border-color: var(--red);
+    color: var(--red);
+  }
+  .step-name {
+    font-size: 12px;
+    color: var(--text2);
+    font-weight: 500;
+  }
+  .step-btn.active .step-name { color: var(--text); }
+  .step-chip {
+    margin-left: auto;
+    font-family: var(--mono);
+    font-size: 9px;
+    padding: 1px 5px;
+    border-radius: 3px;
+    font-weight: 600;
+    flex-shrink: 0;
+  }
+  .chip-ok     { background: var(--green2); color: var(--green); }
+  .chip-skip   { background: var(--red2);   color: var(--red); }
+  .chip-warn   { background: var(--yellow2); color: var(--yellow); }
+  .chip-info   { background: var(--blue2);   color: var(--blue); }
+  .chip-fired  { background: var(--purple2); color: var(--purple); }
+
+  /* ── Main content ────────────────────────────────── */
+  .main {
+    overflow-y: auto;
+    padding: 24px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  /* Empty state */
+  .empty-state {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    color: var(--text3);
+  }
+  .empty-icon {
+    font-size: 48px;
+    opacity: .4;
+  }
+  .empty-title {
+    font-family: var(--mono);
+    font-size: 14px;
+    color: var(--text2);
+  }
+  .empty-sub { font-size: 12px; text-align: center; max-width: 320px; line-height: 1.7; }
+
+  /* Step panel */
+  .panel {
+    background: var(--bg2);
+    border: 1px solid var(--border);
+    border-radius: var(--radius2);
+    overflow: hidden;
+  }
+  .panel-header {
+    padding: 12px 16px;
+    border-bottom: 1px solid var(--border);
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    background: var(--bg3);
+  }
+  .panel-title {
+    font-family: var(--mono);
+    font-size: 13px;
+    font-weight: 600;
+    color: var(--text);
+  }
+  .panel-sub {
+    font-size: 11px;
+    color: var(--text3);
+  }
+  .panel-body { padding: 16px; }
+
+  /* Token chips */
+  .token-group { margin-bottom: 14px; }
+  .token-group-label {
+    font-family: var(--mono);
+    font-size: 10px;
+    color: var(--text3);
+    text-transform: uppercase;
+    letter-spacing: .08em;
+    margin-bottom: 6px;
+  }
+  .token-list { display: flex; flex-wrap: wrap; gap: 5px; }
+  .tok {
+    font-family: var(--mono);
+    font-size: 11px;
+    padding: 2px 7px;
+    border-radius: 4px;
+    border: 1px solid;
+  }
+  .tok-head     { background: rgba(57,208,216,.08); border-color: var(--cyan2); color: var(--cyan); }
+  .tok-compl    { background: rgba(248,81,73,.08); border-color: var(--red2); color: var(--text3); text-decoration: line-through; }
+  .tok-normal   { background: var(--bg4); border-color: var(--border); color: var(--text2); }
+  .tok-desc     { background: rgba(88,166,255,.08); border-color: var(--blue2); color: var(--blue); }
+  .tok-first    { background: rgba(188,140,255,.18); border-color: var(--purple); color: var(--purple); font-weight: 700; }
+
+  /* Key-value rows */
+  .kv-grid { display: grid; grid-template-columns: 160px 1fr; gap: 6px 12px; }
+  .kv-key {
+    font-family: var(--mono);
+    font-size: 11px;
+    color: var(--text3);
+    padding-top: 2px;
+  }
+  .kv-val {
+    font-family: var(--mono);
+    font-size: 11px;
+    color: var(--text);
+    word-break: break-word;
+  }
+  .kv-val.bool-true  { color: var(--green); }
+  .kv-val.bool-false { color: var(--red); }
+  .kv-val.neutral { color: var(--text2); }
+
+  /* Score table */
+  .score-table-wrap { overflow-x: auto; }
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 12px;
+  }
+  th {
+    font-family: var(--mono);
+    font-size: 10px;
+    font-weight: 600;
+    color: var(--text3);
+    text-transform: uppercase;
+    letter-spacing: .07em;
+    padding: 7px 10px;
+    text-align: left;
+    border-bottom: 1px solid var(--border);
+    white-space: nowrap;
+  }
+  td {
+    padding: 7px 10px;
+    border-bottom: 1px solid var(--border);
+    vertical-align: top;
+  }
+  tr:last-child td { border-bottom: none; }
+  tr.winner { background: rgba(57,208,216,.06); }
+  tr.winner td:first-child { border-left: 2px solid var(--cyan); }
+  tr:not(.winner):hover { background: var(--bg3); }
+  tr.in-map td { background: rgba(88,166,255,.04); }
+
+  .score-bar-wrap { display: flex; align-items: center; gap: 8px; }
+  .score-bar {
+    height: 6px;
+    background: var(--border);
+    border-radius: 3px;
+    overflow: hidden;
+    width: 80px;
+    flex-shrink: 0;
+  }
+  .score-bar-fill {
+    height: 100%;
+    border-radius: 3px;
+    transition: width .3s;
+  }
+  .score-val {
+    font-family: var(--mono);
+    font-size: 12px;
+    font-weight: 700;
+    color: var(--text);
+    white-space: nowrap;
+  }
+
+  /* Signal badges */
+  .signal-list { display: flex; flex-wrap: wrap; gap: 4px; }
+  .signal {
+    font-family: var(--mono);
+    font-size: 10px;
+    padding: 1px 6px;
+    border-radius: 3px;
+    border: 1px solid;
+    white-space: nowrap;
+  }
+  .sig-s1nm   { background: rgba(57,208,216,.10); border-color: var(--cyan2);   color: var(--cyan); }
+  .sig-s1lm   { background: rgba(57,208,216,.18); border-color: var(--cyan);    color: var(--cyan); font-weight:700; }
+  .sig-s1mw   { background: rgba(188,140,255,.12); border-color: var(--purple2); color: var(--purple); }
+  .sig-s1tr   { background: rgba(110,118,129,.10); border-color: var(--border2); color: var(--text3); }
+  .sig-s2     { background: rgba(63,185,80,.10); border-color: var(--green2);   color: var(--green); }
+  .sig-s3     { background: rgba(63,185,80,.06); border-color: var(--green2);   color: var(--green); }
+  .sig-s4     { background: rgba(88,166,255,.08); border-color: var(--blue2);   color: var(--blue); }
+  .sig-alias  { background: rgba(240,136,62,.10); border-color: var(--orange2); color: var(--orange); }
+  .sig-anchor { background: rgba(227,179,65,.10); border-color: var(--yellow2); color: var(--yellow); }
+  .sig-dom    { background: rgba(188,140,255,.20); border-color: var(--purple);  color: var(--purple); font-weight:700; }
+  .sig-neg    { background: rgba(248,81,73,.10); border-color: var(--red2);     color: var(--red); }
+
+  /* Reason list */
+  .reason-list { display: flex; flex-direction: column; gap: 3px; }
+  .reason-item {
+    font-family: var(--mono);
+    font-size: 11px;
+    color: var(--text2);
+    padding: 2px 0;
+  }
+  .reason-item::before { content: '→ '; color: var(--text3); }
+
+  /* Alert boxes */
+  .alert {
+    border-radius: var(--radius);
+    padding: 10px 14px;
+    font-size: 12px;
+    display: flex;
+    gap: 10px;
+    align-items: flex-start;
+  }
+  .alert-icon { font-size: 14px; flex-shrink: 0; margin-top: 1px; }
+  .alert-cyan   { background: rgba(57,208,216,.08); border: 1px solid var(--cyan2); color: var(--cyan); }
+  .alert-green  { background: rgba(63,185,80,.08);  border: 1px solid var(--green2); color: var(--green); }
+  .alert-yellow { background: rgba(227,179,65,.08); border: 1px solid var(--yellow2); color: var(--yellow); }
+  .alert-red    { background: rgba(248,81,73,.08);  border: 1px solid var(--red2); color: var(--red); }
+  .alert-purple { background: rgba(188,140,255,.08);border: 1px solid var(--purple2); color: var(--purple); }
+
+  /* Mapping candidates */
+  .candidate-list { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 8px; }
+  .candidate {
+    background: var(--bg4);
+    border: 1px solid var(--border2);
+    border-radius: 4px;
+    padding: 3px 9px;
+    font-family: var(--mono);
+    font-size: 11px;
+    color: var(--text2);
+  }
+  .candidate.winner-cand { border-color: var(--cyan); color: var(--cyan); background: rgba(57,208,216,.08); }
+
+  /* Stats row */
+  .stats-row { display: flex; gap: 12px; flex-wrap: wrap; margin-bottom: 16px; }
+  .stat-card {
+    background: var(--bg3);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    padding: 8px 14px;
+    flex: 1;
+    min-width: 80px;
+  }
+  .stat-val {
+    font-family: var(--mono);
+    font-size: 18px;
+    font-weight: 700;
+    color: var(--cyan);
+  }
+  .stat-lbl {
+    font-size: 10px;
+    color: var(--text3);
+    text-transform: uppercase;
+    letter-spacing: .06em;
+    margin-top: 2px;
+  }
+
+  /* Divider */
+  .divider {
+    border: none;
+    border-top: 1px solid var(--border);
+    margin: 14px 0;
+  }
+
+  /* Scrollbar */
+  ::-webkit-scrollbar { width: 6px; height: 6px; }
+  ::-webkit-scrollbar-track { background: var(--bg); }
+  ::-webkit-scrollbar-thumb { background: var(--bg4); border-radius: 3px; }
+  ::-webkit-scrollbar-thumb:hover { background: var(--border2); }
+
+  /* Short-circuit overlay */
+  .shortcircuit-banner {
+    background: rgba(188,140,255,.10);
+    border: 1px solid var(--purple);
+    border-radius: var(--radius2);
+    padding: 14px 18px;
+    display: flex;
+    gap: 14px;
+    align-items: center;
+  }
+  .sc-icon { font-size: 24px; }
+  .sc-title { font-family: var(--mono); font-size: 13px; font-weight: 700; color: var(--purple); }
+  .sc-sub   { font-size: 12px; color: var(--text2); margin-top: 2px; }
+
+  /* File upload area */
+  .upload-area {
+    border: 1px dashed var(--border2);
+    border-radius: var(--radius);
+    padding: 10px;
+    text-align: center;
+    font-size: 11px;
+    color: var(--text3);
+    cursor: pointer;
+    transition: all .15s;
+    margin-top: 8px;
+  }
+  .upload-area:hover { border-color: var(--cyan2); color: var(--cyan); }
+
+  /* Filter bar for score table */
+  .filter-bar {
+    display: flex;
+    gap: 8px;
+    margin-bottom: 12px;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+  .filter-btn {
+    font-family: var(--mono);
+    font-size: 10px;
+    padding: 3px 9px;
+    border-radius: 4px;
+    border: 1px solid var(--border);
+    background: var(--bg4);
+    color: var(--text3);
+    cursor: pointer;
+    transition: all .12s;
+  }
+  .filter-btn.active { border-color: var(--cyan); color: var(--cyan); background: rgba(57,208,216,.1); }
+  .filter-input {
+    background: var(--bg3);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    color: var(--text);
+    font-family: var(--mono);
+    font-size: 11px;
+    padding: 4px 10px;
+    outline: none;
+    width: 180px;
+  }
+  .filter-input:focus { border-color: var(--cyan2); }
+
+  .example-btn {
+    display: block;
+    width: 100%;
+    background: var(--bg3);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    color: var(--text2);
+    font-family: var(--mono);
+    font-size: 10px;
+    padding: 6px 10px;
+    text-align: left;
+    cursor: pointer;
+    transition: all .12s;
+    margin-bottom: 4px;
+  }
+  .example-btn:hover { border-color: var(--cyan2); color: var(--cyan); }
+  .example-title { color: var(--text3); font-size: 9px; margin-bottom: 2px; }
+</style>
+</head>
+<body>
+
+<header>
+  <div class="logo">POI<span>/</span>CLASSIFIER <span>·</span> PIPELINE DEBUGGER</div>
+  <span class="badge">v6</span>
+  <div class="header-right">
+    <label class="btn-sm" style="cursor:pointer">
+      📂 Cargar .json
+      <input type="file" accept=".json,.jsonl" id="fileInput" style="display:none">
+    </label>
+    <button class="btn-sm btn-primary" onclick="loadSample()">▶ Ejemplo</button>
+  </div>
+</header>
+
+<div class="app">
+  <!-- ── Sidebar ── -->
+  <div class="sidebar">
+    <div class="sidebar-section">
+      <div class="section-title">Pegar traza JSON</div>
+      <textarea class="input-area" id="jsonInput"
+        placeholder='Pega aquí el JSON generado por classify_debug()&#10;&#10;Ejemplo:&#10;python classify_debug.py --nombre "Fuente del Pino" &#10;         --categoria "espacio natural" --pretty'></textarea>
+      <button class="load-btn" onclick="loadTrace()">Analizar traza →</button>
+      <label class="upload-area">
+        🗂 O arrastra un fichero .json / .jsonl
+        <input type="file" accept=".json,.jsonl" id="fileInput2" style="display:none">
+      </label>
+    </div>
+
+    <!-- POI result card -->
+    <div class="sidebar-section" id="poiCardSection" style="display:none">
+      <div class="section-title">Resultado</div>
+      <div class="poi-card" id="poiCard"></div>
+    </div>
+
+    <!-- Pipeline steps nav -->
+    <div class="sidebar-section" id="stepNavSection" style="display:none">
+      <div class="section-title">Pipeline</div>
+      <div class="step-nav" id="stepNav"></div>
+    </div>
+  </div>
+
+  <!-- ── Main ── -->
+  <div class="main" id="mainContent">
+    <div class="empty-state" id="emptyState">
+      <div class="empty-icon">🔬</div>
+      <div class="empty-title">Pipeline Debugger</div>
+      <div class="empty-sub">
+        Genera una traza con <code style="color:var(--cyan)">classify_debug.py</code>,
+        pégala en el panel izquierdo y haz clic en <strong>Analizar traza</strong>
+        para visualizar cada paso del pipeline.
+      </div>
+      <br>
+      <div style="font-size:11px;color:var(--text3);text-align:center">
+        <div style="margin-bottom:6px;font-family:var(--mono)">Comandos de ejemplo:</div>
+        <div class="example-btn" onclick="loadSample()">▶ Cargar ejemplo sintético</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script>
+// ══════════════════════════════════════════════════════════════════════════
+// DATA & STATE
+// ══════════════════════════════════════════════════════════════════════════
+
+let TRACE = null;
+let ACTIVE_STEP = 'normalization';
+let SCORE_FILTER = 'all'; // 'all' | 'map' | 'top10'
+let SCORE_QUERY  = '';
+
+// ══════════════════════════════════════════════════════════════════════════
+// SAMPLE TRACE
+// ══════════════════════════════════════════════════════════════════════════
+
+const SAMPLE_TRACE = {
+  input: { nombre: "Fuente del Pino", categoria: "espacio natural", descripcion: "Fuente histórica ubicada en el paraje del pino centenario. Aguas minerales." },
+  steps: {
+    normalization: {
+      name_raw: "Fuente del Pino",
+      name_clean: "Fuente del Pino",
+      desc_raw: "Fuente histórica ubicada en el paraje del pino centenario. Aguas minerales.",
+      address_stripped: false
+    },
+    tokenization: {
+      name_tokens_ordered: ["fuente", "del", "pino"],
+      tok_n: ["del", "fuente", "pino"],
+      tok_d: ["aguas", "centenario", "del", "en", "fuente", "historica", "minerales", "paraje", "pino", "ubicada"],
+      tok_f: ["aguas", "centenario", "del", "en", "fuente", "historica", "minerales", "paraje", "pino", "ubicada"]
+    },
+    genitive_split: {
+      head_tokens: ["fuente"],
+      complement_tokens: ["pino"],
+      connector_found: "del",
+      multiword_exception: false,
+      split_applied: true
+    },
+    first_token: {
+      raw_first: "fuente",
+      is_semantic: true,
+      effective_first_tok: "fuente",
+      bonus_will_apply: true
+    },
+    mapping: {
+      categoria_origen: "espacio natural",
+      candidates: ["cascada", "cueva o caverna", "fuente natural", "mirador natural", "parque natural", "reserva natural"],
+      ruta: { nivel_2: "Naturaleza", nivel_3: "espacio natural" },
+      level_used: "nivel_3",
+      deterministic: false
+    },
+    hard_rules: {
+      fired: false,
+      rule: null,
+      label: null
+    },
+    scoring: {
+      entries_evaluated: 187,
+      labels_with_score: 8,
+      name_map_labels: ["fuente natural"],
+      anchors_applied: [],
+      dominant_applied: [{ label: "fuente natural", bonus: 10 }],
+      aliases_fired: [],
+      disambiguation: [],
+      mapping_candidates: ["cascada", "cueva o caverna", "fuente natural", "mirador natural", "parque natural", "reserva natural"]
+    },
+    winner: {
+      best_label: "fuente natural",
+      best_score: 25,
+      second_label: "parque natural",
+      second_score: 8,
+      gap: 17,
+      ambiguous: false,
+      conflict: false,
+      in_map: true,
+      confidence: 0.92
+    }
+  },
+  scores_raw: [
+    { label: "fuente natural", score: 15, in_map: true,  reasons: ["'fuente natural' en nombre (mapping)"], signals: [["signal1_name_map",15,"'fuente natural' en nombre (mapping)"]] },
+    { label: "parque natural", score: 8,  in_map: true,  reasons: ["ancla de categoría (mapping directo, sin señal de texto)"], signals: [["anchor",8,"ancla de categoría"]] },
+    { label: "cueva o caverna",score: 3,  in_map: true,  reasons: ["ancla de categoría"], signals: [["anchor",3,"ancla de categoría"]] },
+    { label: "fuente",         score: 11, in_map: false, reasons: ["'fuente' en nombre (+primera palabra)"], signals: [["signal1_leading",7,"'fuente' en nombre"],["signal1_leading",4,"+primera palabra"]] },
+    { label: "mirador natural",score: 8,  in_map: true,  reasons: ["ancla de categoría"], signals: [["anchor",8,"ancla de categoría"]] },
+    { label: "pino",           score: 3,  in_map: false, reasons: ["'pino' en nombre (trailing)"], signals: [["signal1_trailing",3,"'pino' en nombre (posición trasera)"]] }
+  ],
+  scores_final: [
+    { label: "fuente natural", score: 25, in_map: true,  reasons: ["'fuente natural' en nombre (mapping)", "+10 (acuerdo nombre+mapping)"], signals: [["signal1_name_map",15,"'fuente natural' en nombre (mapping)"],["dominant_bonus",10,"acuerdo nombre+mapping"]] },
+    { label: "parque natural", score: 8,  in_map: true,  reasons: ["ancla de categoría"], signals: [["anchor",8,"ancla de categoría"]] },
+    { label: "fuente",         score: 11, in_map: false, reasons: ["'fuente' en nombre (+primera palabra)"], signals: [["signal1_leading",7,"'fuente' en nombre"],["signal1_leading",4,"+primera palabra"]] },
+    { label: "mirador natural",score: 8,  in_map: true,  reasons: ["ancla de categoría"], signals: [["anchor",8,"ancla de categoría"]] },
+    { label: "cueva o caverna",score: 3,  in_map: true,  reasons: ["ancla de categoría"], signals: [["anchor",3,"ancla de categoría"]] },
+    { label: "pino",           score: 3,  in_map: false, reasons: ["'pino' en nombre (trailing)"], signals: [["signal1_trailing",3,"posición trasera→topónimo?"]] }
+  ],
+  result: {
+    categoria_final: "fuente natural",
+    "Nivel 1": "Naturaleza",
+    "Nivel 2": "espacio natural",
+    "Nivel 3": "",
+    "Nivel 4": "",
+    confianza: 0.92,
+    conflicto_semantico: false,
+    ambiguedad: false,
+    sin_clasificar: false,
+    explicacion: "'fuente natural' en nombre (mapping); +10 (acuerdo nombre+mapping)"
+  }
+};
+
+// ══════════════════════════════════════════════════════════════════════════
+// LOAD / PARSE
+// ══════════════════════════════════════════════════════════════════════════
+
+function loadSample() {
+  TRACE = SAMPLE_TRACE;
+  renderAll();
+}
+
+function loadTrace() {
+  const raw = document.getElementById('jsonInput').value.trim();
+  if (!raw) { alert('Pega primero una traza JSON'); return; }
+  try {
+    // Soporte JSONL: tomar la primera línea
+    const firstLine = raw.split('\n').find(l => l.trim().startsWith('{'));
+    TRACE = JSON.parse(firstLine || raw);
+    renderAll();
+  } catch(e) {
+    alert('JSON inválido:\n' + e.message);
+  }
+}
+
+['fileInput','fileInput2'].forEach(id => {
+  document.getElementById(id).addEventListener('change', function(e) {
+    const file = e.target.files[0];
+    if (!file) return;
+    const reader = new FileReader();
+    reader.onload = ev => {
+      document.getElementById('jsonInput').value = ev.target.result;
+      loadTrace();
+    };
+    reader.readAsText(file);
+  });
+});
+
+// ══════════════════════════════════════════════════════════════════════════
+// RENDER ORCHESTRATOR
+// ══════════════════════════════════════════════════════════════════════════
+
+function renderAll() {
+  if (!TRACE) return;
+  document.getElementById('emptyState').style.display = 'none';
+  renderPoiCard();
+  renderStepNav();
+  renderMainContent(ACTIVE_STEP);
+}
+
+// ══════════════════════════════════════════════════════════════════════════
+// POI CARD
+// ══════════════════════════════════════════════════════════════════════════
+
+function renderPoiCard() {
+  const sec = document.getElementById('poiCardSection');
+  sec.style.display = '';
+  const r = TRACE.result || {};
+  const inp = TRACE.input || {};
+  const cls = [];
+  if (r.conflicto_semantico) cls.push('conflict');
+  if (r.ambiguedad) cls.push('ambig');
+
+  let badges = `<span class="result-label ${cls.join(' ')}">${r.categoria_final || '?'}</span>`;
+  if (r.conflicto_semantico) badges += `<span class="result-label conflict">⚠ conflicto</span>`;
+  if (r.ambiguedad)          badges += `<span class="result-label ambig">~ ambiguo</span>`;
+  if (r.sin_clasificar)      badges += `<span class="result-label conflict">✕ no clasificado</span>`;
+
+  document.getElementById('poiCard').innerHTML = `
+    <div class="poi-nombre">${esc(inp.nombre || '')}</div>
+    <div class="poi-cat">${esc(inp.categoria || '(sin categoría)')}</div>
+    <div class="poi-result">${badges}
+      <span class="conf-badge">conf: ${r.confianza || '?'}</span>
+    </div>
+    ${r.explicacion ? `<div style="margin-top:8px;font-size:10px;font-family:var(--mono);color:var(--text3);line-height:1.5">${esc(r.explicacion)}</div>` : ''}
+  `;
+}
+
+// ══════════════════════════════════════════════════════════════════════════
+// STEP NAV
+// ══════════════════════════════════════════════════════════════════════════
+
+const STEPS = [
+  { id: 'normalization',   label: 'Normalización',     icon: '🧹' },
+  { id: 'tokenization',    label: 'Tokenización',       icon: '🔤' },
+  { id: 'genitive_split',  label: 'Genitivo',           icon: '✂️' },
+  { id: 'first_token',     label: 'Primera palabra',    icon: '1️⃣' },
+  { id: 'mapping',         label: 'Mapping',            icon: '🗺' },
+  { id: 'hard_rules',      label: 'Hard Rules',         icon: '⚡' },
+  { id: 'scoring',         label: 'Scoring',            icon: '📊' },
+  { id: 'scores_final',    label: 'Ranking final',      icon: '🏆' },
+];
+
+function renderStepNav() {
+  const sec = document.getElementById('stepNavSection');
+  sec.style.display = '';
+  const nav = document.getElementById('stepNav');
+  const sc  = TRACE.shortcircuit;
+  const steps_data = TRACE.steps || {};
+
+  nav.innerHTML = STEPS.map(s => {
+    let chip = '';
+    let cls  = ACTIVE_STEP === s.id ? ' active' : '';
+
+    if (s.id === 'hard_rules') {
+      const hr = steps_data.hard_rules || {};
+      if (hr.fired) { chip = '<span class="step-chip chip-fired">FIRED</span>'; cls += ' fired'; }
+      else           { chip = '<span class="step-chip chip-ok">PASS</span>'; }
+    } else if (s.id === 'genitive_split') {
+      const gs = steps_data.genitive_split || {};
+      if (gs.split_applied)         chip = '<span class="step-chip chip-warn">SPLIT</span>';
+      else if (gs.multiword_exception) chip = '<span class="step-chip chip-info">EXCEPT</span>';
+      else                           chip = '<span class="step-chip chip-ok">PASS</span>';
+    } else if (s.id === 'mapping') {
+      const mp = steps_data.mapping || {};
+      if (mp.deterministic)         chip = '<span class="step-chip chip-fired">1-LABEL</span>';
+      else if ((mp.candidates||[]).length > 0) chip = `<span class="step-chip chip-info">${mp.candidates.length}</span>`;
+      else                           chip = '<span class="step-chip chip-warn">0</span>';
+    } else if (s.id === 'scoring') {
+      const sc2 = steps_data.scoring || {};
+      chip = `<span class="step-chip chip-info">${sc2.labels_with_score||0}</span>`;
+    } else if (s.id === 'scores_final') {
+      const w = steps_data.winner || {};
+      if (w.ambiguous) chip = '<span class="step-chip chip-warn">AMBIG</span>';
+      else if (w.conflict) chip = '<span class="step-chip chip-warn">CONF</span>';
+      else chip = '<span class="step-chip chip-ok">OK</span>';
+    }
+
+    return `<div class="step-btn${cls}" onclick="setStep('${s.id}')">
+      <div class="step-num">${s.icon}</div>
+      <div class="step-name">${s.label}</div>
+      ${chip}
+    </div>`;
+  }).join('');
+}
+
+function setStep(id) {
+  ACTIVE_STEP = id;
+  renderStepNav();
+  renderMainContent(id);
+}
+
+// ══════════════════════════════════════════════════════════════════════════
+// MAIN CONTENT ROUTER
+// ══════════════════════════════════════════════════════════════════════════
+
+function renderMainContent(step) {
+  const main = document.getElementById('mainContent');
+  // Clear except empty state
+  const empty = document.getElementById('emptyState');
+  main.innerHTML = '';
+  main.appendChild(empty);
+  empty.style.display = 'none';
+
+  // Short-circuit banner if applicable
+  const sc = TRACE.shortcircuit;
+  if (sc && sc !== 'no_clasificado') {
+    const scLabels = {
+      hard_rule:             ['⚡', 'Hard Rule activada', 'El pipeline se cortocircuitó por una regla dura. El scoring no se ejecutó.'],
+      mapping_deterministic: ['🗺', 'Mapping determinista', 'El mapping resolvió a exactamente 1 label. El scoring no se ejecutó. [FIX-MAP-2]'],
+      fallback_default:      ['🔄', 'Fallback por defecto', 'Sin señales de texto; se usó el label por defecto de la categoría.'],
+    };
+    const [icon, title, sub] = scLabels[sc] || ['ℹ', sc, ''];
+    main.insertAdjacentHTML('afterbegin', `
+      <div class="shortcircuit-banner">
+        <div class="sc-icon">${icon}</div>
+        <div><div class="sc-title">${title}</div><div class="sc-sub">${sub}</div></div>
+      </div>
+    `);
+  }
+
+  const renderers = {
+    normalization:  renderNormalization,
+    tokenization:   renderTokenization,
+    genitive_split: renderGenitive,
+    first_token:    renderFirstToken,
+    mapping:        renderMapping,
+    hard_rules:     renderHardRules,
+    scoring:        renderScoring,
+    scores_final:   renderScoresFinal,
+  };
+  if (renderers[step]) {
+    const el = renderers[step]();
+    if (el) main.appendChild(el);
+  }
+}
+
+// ══════════════════════════════════════════════════════════════════════════
+// STEP RENDERERS
+// ══════════════════════════════════════════════════════════════════════════
+
+function renderNormalization() {
+  const d = (TRACE.steps || {}).normalization || {};
+  const inp = TRACE.input || {};
+  const el = makePanel('🧹 Normalización', 'Limpieza HTML, expansión de abreviaturas y eliminación de dirección postal');
+  el.querySelector('.panel-body').innerHTML = `
+    <div class="kv-grid">
+      <div class="kv-key">nombre (raw)</div>
+      <div class="kv-val">${esc(inp.nombre||'')}</div>
+      <div class="kv-key">name_raw</div>
+      <div class="kv-val">${esc(d.name_raw||'')}</div>
+      <div class="kv-key">name_clean</div>
+      <div class="kv-val" style="color:var(--cyan)">${esc(d.name_clean||'')}</div>
+      <div class="kv-key">dirección eliminada</div>
+      <div class="kv-val ${d.address_stripped ? 'bool-true' : 'bool-false'}">${d.address_stripped ? '✓ sí' : '✗ no'}</div>
+      <div class="kv-key">categoría</div>
+      <div class="kv-val">${esc(inp.categoria||'(vacía)')}</div>
+      <div class="kv-key">desc (primeros 200)</div>
+      <div class="kv-val neutral">${esc(d.desc_raw||'')}</div>
+    </div>
+  `;
+  return el;
+}
+
+function renderTokenization() {
+  const d = (TRACE.steps || {}).tokenization || {};
+  const gs = (TRACE.steps || {}).genitive_split || {};
+  const headSet = new Set(gs.head_tokens || []);
+  const complSet = new Set(gs.complement_tokens || []);
+  const firstTok = ((TRACE.steps||{}).first_token||{}).effective_first_tok;
+
+  const el = makePanel('🔤 Tokenización', 'Set de tokens del nombre y descripción usando TOKEN_REGEX');
+  el.querySelector('.panel-body').innerHTML = `
+    <div class="token-group">
+      <div class="token-group-label">nombre (ordenado)</div>
+      <div class="token-list">
+        ${(d.name_tokens_ordered||[]).map(t => {
+          let cls = 'tok-normal';
+          if (t === firstTok) cls = 'tok-first';
+          else if (headSet.has(t)) cls = 'tok-head';
+          else if (complSet.has(t)) cls = 'tok-compl';
+          return `<span class="tok ${cls}">${esc(t)}</span>`;
+        }).join('')}
+      </div>
+    </div>
+    <div class="token-group">
+      <div class="token-group-label">tok_n (set nombre)</div>
+      <div class="token-list">
+        ${(d.tok_n||[]).map(t => `<span class="tok tok-head">${esc(t)}</span>`).join('')}
+      </div>
+    </div>
+    <div class="token-group">
+      <div class="token-group-label">tok_d (descripción, primeros 30)</div>
+      <div class="token-list">
+        ${(d.tok_d||[]).map(t => `<span class="tok tok-desc">${esc(t)}</span>`).join('')}
+      </div>
+    </div>
+    <hr class="divider">
+    <div style="font-size:11px;color:var(--text3);font-family:var(--mono)">
+      <span class="tok tok-first" style="margin-right:6px">primera</span> primera palabra significativa &nbsp;
+      <span class="tok tok-head" style="margin-right:6px">head</span> head (antes del genitivo) &nbsp;
+      <span class="tok tok-compl" style="margin-right:6px">compl</span> excluido del scoring (complemento genitivo)
+    </div>
+  `;
+  return el;
+}
+
+function renderGenitive() {
+  const d = (TRACE.steps || {}).genitive_split || {};
+  const el = makePanel('✂️ Genitivo [Cambio C]', 'División head / complemento genitivo del nombre del POI');
+
+  const splitInfo = d.split_applied
+    ? `<div class="alert alert-yellow"><div class="alert-icon">✂️</div><div>
+        Conector encontrado: <strong>${esc(d.connector_found||'')}</strong><br>
+        El complemento <strong>${(d.complement_tokens||[]).join(', ')}</strong> se excluye del scoring del nombre
+        (puede ser un topónimo, no un descriptor del POI).
+       </div></div>`
+    : d.multiword_exception
+    ? `<div class="alert alert-cyan"><div class="alert-icon">⚡</div><div>
+        <strong>Excepción: label multipalabra reconocido.</strong><br>
+        El nombre contiene una expresión multipalabra de la ontología → no se divide.
+       </div></div>`
+    : `<div class="alert alert-green"><div class="alert-icon">✓</div><div>
+        No se detectó conector genitivo. Todos los tokens son head.
+       </div></div>`;
+
+  el.querySelector('.panel-body').innerHTML = `
+    ${splitInfo}
+    <div style="margin-top:14px;display:grid;grid-template-columns:1fr 1fr;gap:12px">
+      <div>
+        <div class="token-group-label">HEAD tokens (scoring del nombre)</div>
+        <div class="token-list">${(d.head_tokens||[]).map(t=>`<span class="tok tok-head">${esc(t)}</span>`).join('')||'<span style="color:var(--text3);font-size:11px">ninguno</span>'}</div>
+      </div>
+      <div>
+        <div class="token-group-label">COMPLEMENTO (excluido del scoring)</div>
+        <div class="token-list">${(d.complement_tokens||[]).map(t=>`<span class="tok tok-compl">${esc(t)}</span>`).join('')||'<span style="color:var(--text3);font-size:11px">ninguno</span>'}</div>
+      </div>
+    </div>
+    <hr class="divider">
+    <div class="kv-grid">
+      <div class="kv-key">split_applied</div>
+      <div class="kv-val ${d.split_applied?'bool-true':'bool-false'}">${d.split_applied?'✓ sí':'✗ no'}</div>
+      <div class="kv-key">connector_found</div>
+      <div class="kv-val">${esc(d.connector_found||'—')}</div>
+      <div class="kv-key">multiword_exception</div>
+      <div class="kv-val ${d.multiword_exception?'bool-true':'neutral'}">${d.multiword_exception?'✓ sí':'✗ no'}</div>
+    </div>
+  `;
+  return el;
+}
+
+function renderFirstToken() {
+  const d = (TRACE.steps || {}).first_token || {};
+  const el = makePanel('1️⃣ Primera palabra [Cambio A]', '+4 pts si la primera palabra significativa del nombre es semántica');
+
+  const bonusAlert = d.bonus_will_apply
+    ? `<div class="alert alert-purple"><div class="alert-icon">⭐</div><div>
+        <strong>Bonus de primera palabra ACTIVADO</strong><br>
+        El token <strong>${esc(d.effective_first_tok||'')}</strong> recibirá +4 pts adicionales
+        en SEÑAL 1 si matchea como label monopalabra.
+       </div></div>`
+    : d.raw_first && !d.is_semantic
+    ? `<div class="alert alert-yellow"><div class="alert-icon">⚠️</div><div>
+        <strong>Bonus DESACTIVADO</strong>: token <em>${esc(d.raw_first||'')}</em> no aparece en ningún
+        label ni keyword de la ontología → probable topónimo o nombre propio.
+       </div></div>`
+    : `<div class="alert alert-red"><div class="alert-icon">✗</div><div>
+        No se encontró primera palabra significativa (todos son stopwords).
+       </div></div>`;
+
+  el.querySelector('.panel-body').innerHTML = `
+    ${bonusAlert}
+    <div style="margin-top:14px" class="kv-grid">
+      <div class="kv-key">raw_first</div>
+      <div class="kv-val">${esc(d.raw_first||'—')}</div>
+      <div class="kv-key">is_semantic</div>
+      <div class="kv-val ${d.is_semantic?'bool-true':'bool-false'}">${d.is_semantic?'✓ sí':'✗ no'}</div>
+      <div class="kv-key">effective_first_tok</div>
+      <div class="kv-val" style="color:var(--purple)">${esc(d.effective_first_tok||'—')}</div>
+      <div class="kv-key">bonus_will_apply</div>
+      <div class="kv-val ${d.bonus_will_apply?'bool-true':'bool-false'}">${d.bonus_will_apply?'✓ +4 pts':'✗ no'}</div>
+    </div>
+  `;
+  return el;
+}
+
+function renderMapping() {
+  const d = (TRACE.steps || {}).mapping || {};
+  const winner = ((TRACE.steps||{}).winner||{}).best_label;
+  const el = makePanel('🗺 Mapping [FIX-MAP-1 / FIX-MAP-2]', 'Resolución de candidatos: hoja más profunda primero');
+
+  const candidates = d.candidates || [];
+  const candHtml = candidates.length
+    ? candidates.map(c => `<span class="candidate${c===winner?' winner-cand':''}">${esc(c)}</span>`).join('')
+    : '<span style="color:var(--red);font-size:11px">Sin candidatos</span>';
+
+  const detAlert = d.deterministic
+    ? `<div class="alert alert-purple"><div class="alert-icon">⚡</div><div>
+        <strong>Mapping determinista [FIX-MAP-2]</strong>: exactamente 1 label → clasificación directa sin scoring.
+       </div></div>`
+    : candidates.length === 0
+    ? `<div class="alert alert-red"><div class="alert-icon">✗</div><div>
+        No se encontró la categoría en el mapping. Se usará solo scoring de texto.
+       </div></div>`
+    : `<div class="alert alert-cyan"><div class="alert-icon">ℹ</div><div>
+        ${candidates.length} candidatos resueltos en nivel <strong>${esc(d.level_used||'?')}</strong>.
+        Cada candidato recibirá bonus <strong>in_map</strong> en el scoring.
+       </div></div>`;
+
+  let rutaHtml = '';
+  if (d.ruta) {
+    rutaHtml = `<hr class="divider"><div class="token-group-label">Ruta del mapping</div>
+      <div class="kv-grid" style="margin-top:6px">
+        ${['nivel_2','nivel_3','nivel_4'].map(k => d.ruta[k] ? `
+          <div class="kv-key">${k}</div>
+          <div class="kv-val">${esc(d.ruta[k])}</div>` : '').join('')}
+      </div>`;
+  }
+
+  el.querySelector('.panel-body').innerHTML = `
+    ${detAlert}
+    <div style="margin-top:14px">
+      <div class="token-group-label">Candidatos</div>
+      <div class="candidate-list">${candHtml}</div>
+    </div>
+    ${rutaHtml}
+    <hr class="divider">
+    <div class="kv-grid">
+      <div class="kv-key">nivel resuelto</div>
+      <div class="kv-val">${esc(d.level_used||'—')}</div>
+      <div class="kv-key">deterministic</div>
+      <div class="kv-val ${d.deterministic?'bool-true':'bool-false'}">${d.deterministic?'✓ sí (cortocircuito)':'✗ no → scoring'}</div>
+    </div>
+  `;
+  return el;
+}
+
+function renderHardRules() {
+  const d = (TRACE.steps || {}).hard_rules || {};
+  const el = makePanel('⚡ Hard Rules', 'Reglas deterministas con cortocircuito — evalúan antes del scoring');
+
+  const allRules = [
+    { id: 'HR-0',  desc: 'Centro de interpretación en nombre/desc → Centro de interpretación' },
+    { id: 'HR-1',  desc: 'URL fexme.com en HTML crudo → Ruta' },
+    { id: 'HR-2',  desc: 'Edificio religioso + "colegio" en nombre → Centro educativo' },
+    { id: 'HR-3',  desc: 'Edificio religioso + "hospital" → Capilla / Arq. vernácula / Conj. artístico' },
+    { id: 'HR-3b', desc: 'Cat vacía/otros + "hospital" → Capilla / Conjunto artístico' },
+    { id: 'HR-4',  desc: 'Espacio natural / Ruta + tokens cueva → Cueva o caverna' },
+    { id: 'HR-5',  desc: 'Casa solariega → Arquitectura vernácula' },
+  ];
+
+  const firedRule = d.rule || '';
+  const firedId   = firedRule.match(/HR-[\w]+/)?.[0];
+
+  const rulesHtml = allRules.map(r => {
+    const isFired = firedId === r.id;
+    return `<div style="display:flex;gap:10px;align-items:flex-start;padding:6px 0;border-bottom:1px solid var(--border)">
+      <span class="signal ${isFired ? 'sig-dom' : 'sig-s4'}" style="flex-shrink:0;margin-top:2px">${r.id}</span>
+      <span style="font-size:11px;color:${isFired ? 'var(--purple)' : 'var(--text3)'};font-family:var(--mono)">
+        ${esc(r.desc)}
+        ${isFired ? ' <strong style="color:var(--purple)">← ACTIVADA</strong>' : ''}
+      </span>
+    </div>`;
+  }).join('');
+
+  const resultAlert = d.fired
+    ? `<div class="alert alert-purple" style="margin-bottom:14px"><div class="alert-icon">⚡</div><div>
+        <strong>Hard rule activada — pipeline cortocircuitado</strong><br>
+        Regla: <strong>${esc(firedRule)}</strong><br>
+        Label directo: <strong>${esc(d.label||'?')}</strong>
+       </div></div>`
+    : `<div class="alert alert-green" style="margin-bottom:14px"><div class="alert-icon">✓</div><div>
+        Ninguna hard rule disparó. El pipeline continúa hacia el scoring.
+       </div></div>`;
+
+  el.querySelector('.panel-body').innerHTML = resultAlert + rulesHtml;
+  return el;
+}
+
+function renderScoring() {
+  const d = (TRACE.steps || {}).scoring || {};
+  const el = makePanel('📊 Scoring — Señales del pipeline', 'Señales aplicadas, aliases, anclas y bonus dominante');
+
+  const signalDefs = [
+    { cls: 'sig-s1lm', label: 'SEÑAL 1 + MAP', desc: '+15 pts — label en nombre Y en mapping → candidato dominante [FIX-8]' },
+    { cls: 'sig-s1mw', label: 'SEÑAL 1 multipal.', desc: '+9 pts (+2 bonus) — label multipalabra en nombre sin mapping [Cambio B]' },
+    { cls: 'sig-s1nm', label: 'SEÑAL 1 leading', desc: '+7 pts — label monopalabra al inicio del nombre' },
+    { cls: 'sig-s1tr', label: 'SEÑAL 1 trailing', desc: '+3 pts — label monopalabra al final del nombre (posible topónimo)' },
+    { cls: 'sig-s2',   label: 'SEÑAL 2',          desc: '+5–8 pts — ≥2 keywords en nombre/desc' },
+    { cls: 'sig-s3',   label: 'SEÑAL 3',           desc: '+3–9 pts — 1 keyword en nombre/desc' },
+    { cls: 'sig-s4',   label: 'SEÑAL 4',           desc: '+1–2 pts — label/keywords solo en descripción (señal débil)' },
+    { cls: 'sig-alias',label: 'ALIAS',             desc: '+7–10 pts — alias de keyword → label de ontología' },
+    { cls: 'sig-anchor',label: 'ANCLA',            desc: '+8 pts — candidato de mapping sin ninguna señal de texto [FIX-10]' },
+    { cls: 'sig-dom',  label: 'DOMINANTE',         desc: '+10 pts — acuerdo nombre+mapping (imposible de superar por desc) [FIX-8]' },
+  ];
+
+  const signalLegend = signalDefs.map(s =>
+    `<div style="display:flex;gap:8px;align-items:flex-start;padding:5px 0;border-bottom:1px solid var(--border)">
+      <span class="signal ${s.cls}" style="flex-shrink:0;margin-top:2px">${s.label}</span>
+      <span style="font-size:11px;color:var(--text3);font-family:var(--mono)">${s.desc}</span>
+    </div>`
+  ).join('');
+
+  const stats = [
+    { val: d.entries_evaluated||0, lbl: 'Entries eval.' },
+    { val: d.labels_with_score||0, lbl: 'Con puntuación' },
+    { val: (d.name_map_labels||[]).length, lbl: 'Nom+Map' },
+    { val: (d.dominant_applied||[]).length, lbl: 'Bonus dom.' },
+    { val: (d.aliases_fired||[]).length, lbl: 'Aliases' },
+    { val: (d.anchors_applied||[]).length, lbl: 'Anclas' },
+  ];
+
+  const statsHtml = `<div class="stats-row">${stats.map(s =>
+    `<div class="stat-card"><div class="stat-val">${s.val}</div><div class="stat-lbl">${s.lbl}</div></div>`
+  ).join('')}</div>`;
+
+  const disambigHtml = (d.disambiguation||[]).length
+    ? `<hr class="divider"><div class="token-group-label">Desambiguaciones manuales aplicadas</div>
+       ${(d.disambiguation||[]).map(x => `<div class="reason-item" style="color:var(--yellow)">${esc(x)}</div>`).join('')}`
+    : '';
+
+  el.querySelector('.panel-body').innerHTML = statsHtml + signalLegend + disambigHtml;
+  return el;
+}
+
+function renderScoresFinal() {
+  const scores = TRACE.scores_final || [];
+  const winner = ((TRACE.steps||{}).winner||{}).best_label;
+  const mapCands = new Set(((TRACE.steps||{}).mapping||{}).candidates||[]);
+  const maxScore = scores.length ? scores[0].score : 1;
+
+  const el = makePanel('🏆 Ranking Final', 'Scores DESPUÉS del bonus dominante, desambiguaciones y anclas');
+
+  // Winner info
+  const w = (TRACE.steps||{}).winner||{};
+  const winnerInfo = `
+    <div style="display:grid;grid-template-columns:repeat(4,1fr);gap:8px;margin-bottom:16px">
+      <div class="stat-card">
+        <div class="stat-val" style="color:var(--cyan)">${esc(w.best_label||'?')}</div>
+        <div class="stat-lbl">ganador</div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-val">${w.best_score||0}</div>
+        <div class="stat-lbl">score</div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-val">${w.gap||0}</div>
+        <div class="stat-lbl">gap vs 2º</div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-val" style="color:${w.confidence>=0.85?'var(--green)':w.confidence>=0.6?'var(--yellow)':'var(--red)'}">${w.confidence||0}</div>
+        <div class="stat-lbl">confianza</div>
+      </div>
+    </div>
+    ${w.ambiguous ? '<div class="alert alert-yellow" style="margin-bottom:12px"><div class="alert-icon">⚠️</div><div>Resultado <strong>ambiguo</strong>: diferencia < 2 pts y score < 10. Revisar manualmente.</div></div>' : ''}
+    ${w.conflict  ? '<div class="alert alert-red" style="margin-bottom:12px"><div class="alert-icon">🔴</div><div><strong>Conflicto semántico</strong>: el label ganador no está en los candidatos del mapping.</div></div>' : ''}
+  `;
+
+  // Filter bar
+  const filterBar = `
+    <div class="filter-bar">
+      <button class="filter-btn ${SCORE_FILTER==='all'?'active':''}" onclick="setFilter('all')">Todos</button>
+      <button class="filter-btn ${SCORE_FILTER==='map'?'active':''}" onclick="setFilter('map')">Solo mapping</button>
+      <button class="filter-btn ${SCORE_FILTER==='top10'?'active':''}" onclick="setFilter('top10')">Top 10</button>
+      <input class="filter-input" placeholder="🔍 filtrar label…" value="${esc(SCORE_QUERY)}"
+             oninput="setQuery(this.value)">
+    </div>
+  `;
+
+  // Table
+  let rows = scores;
+  if (SCORE_FILTER === 'map')   rows = rows.filter(r => r.in_map);
+  if (SCORE_FILTER === 'top10') rows = rows.slice(0, 10);
+  if (SCORE_QUERY)  rows = rows.filter(r => r.label.toLowerCase().includes(SCORE_QUERY.toLowerCase()));
+
+  const tableRows = rows.map((r, i) => {
+    const isWinner = r.label === winner;
+    const fillColor = isWinner ? 'var(--cyan)' : r.in_map ? 'var(--blue)' : 'var(--border2)';
+    const barW = Math.round((r.score / maxScore) * 100);
+
+    const sigs = (r.signals||[]).map(([type,pts,reason]) => {
+      const cls = signalTypeCls(type);
+      return `<span class="signal ${cls}" title="${esc(reason)}">${signalTypeLabel(type)} +${pts}</span>`;
+    }).join(' ');
+
+    return `<tr class="${isWinner?'winner':''} ${r.in_map?'in-map':''}">
+      <td style="width:28px;text-align:center;font-family:var(--mono);font-size:11px;color:var(--text3)">${i+1}</td>
+      <td style="font-family:var(--mono);font-size:12px;font-weight:${isWinner?700:400};color:${isWinner?'var(--cyan)':'var(--text)'}">
+        ${esc(r.label)}
+        ${r.in_map ? '<span style="margin-left:4px;font-size:9px;color:var(--blue)">MAP</span>' : ''}
+      </td>
+      <td>
+        <div class="score-bar-wrap">
+          <div class="score-bar"><div class="score-bar-fill" style="width:${barW}%;background:${fillColor}"></div></div>
+          <span class="score-val">${r.score}</span>
+        </div>
+      </td>
+      <td><div class="signal-list">${sigs}</div></td>
+      <td style="max-width:220px">
+        <div class="reason-list">${(r.reasons||[]).map(x=>`<div class="reason-item">${esc(x)}</div>`).join('')}</div>
+      </td>
+    </tr>`;
+  }).join('');
+
+  el.querySelector('.panel-body').innerHTML = `
+    ${winnerInfo}
+    ${filterBar}
+    <div class="score-table-wrap">
+      <table>
+        <thead>
+          <tr>
+            <th>#</th>
+            <th>Label</th>
+            <th>Score</th>
+            <th>Señales</th>
+            <th>Razones</th>
+          </tr>
+        </thead>
+        <tbody>${tableRows}</tbody>
+      </table>
+    </div>
+    ${rows.length === 0 ? '<div style="color:var(--text3);font-size:12px;padding:12px 0">Sin resultados para este filtro</div>' : ''}
+  `;
+  return el;
+}
+
+// ══════════════════════════════════════════════════════════════════════════
+// HELPERS
+// ══════════════════════════════════════════════════════════════════════════
+
+function makePanel(title, sub) {
+  const el = document.createElement('div');
+  el.className = 'panel';
+  el.innerHTML = `
+    <div class="panel-header">
+      <div>
+        <div class="panel-title">${title}</div>
+        <div class="panel-sub">${sub}</div>
+      </div>
+    </div>
+    <div class="panel-body"></div>
+  `;
+  return el;
+}
+
+function signalTypeCls(type) {
+  const map = {
+    signal1_name_map:  'sig-s1lm',
+    signal1_leading:   'sig-s1nm',
+    signal1_trailing:  'sig-s1tr',
+    signal1_multiword: 'sig-s1mw',
+    signal2_kw_multi:  'sig-s2',
+    signal3_kw_single: 'sig-s3',
+    signal3_kw_multi:  'sig-s3',
+    signal4_desc:      'sig-s4',
+    signal4_kw_desc:   'sig-s4',
+    alias:             'sig-alias',
+    anchor:            'sig-anchor',
+    dominant_bonus:    'sig-dom',
+    negative_filter:   'sig-neg',
+  };
+  return map[type] || 'sig-s4';
+}
+
+function signalTypeLabel(type) {
+  const map = {
+    signal1_name_map:  'S1+MAP',
+    signal1_leading:   'S1-lead',
+    signal1_trailing:  'S1-trail',
+    signal1_multiword: 'S1-multi',
+    signal2_kw_multi:  'S2',
+    signal3_kw_single: 'S3',
+    signal3_kw_multi:  'S3-mw',
+    signal4_desc:      'S4',
+    signal4_kw_desc:   'S4-kw',
+    alias:             'ALIAS',
+    anchor:            'ANCLA',
+    dominant_bonus:    'DOM',
+    negative_filter:   'NEG',
+  };
+  return map[type] || type;
+}
+
+function setFilter(f) {
+  SCORE_FILTER = f;
+  renderMainContent('scores_final');
+}
+
+function setQuery(q) {
+  SCORE_QUERY = q;
+  renderMainContent('scores_final');
+}
+
+function esc(s) {
+  if (s == null) return '';
+  return String(s)
+    .replace(/&/g,'&amp;')
+    .replace(/</g,'&lt;')
+    .replace(/>/g,'&gt;')
+    .replace(/"/g,'&quot;');
+}
+</script>
+</body>
+</html>
