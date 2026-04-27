@@ -97,3 +97,6 @@ trace = classify_debug("Fuente del Pino", "espacio natural", "...")
 scorer_visualizer.html — abre en cualquier navegador, sin servidor. Muestra:
 PanelQué vesNormalizaciónname_raw → name_clean, si se eliminó direcciónTokenizacióntokens coloreados: head (azul), complemento genitivo (tachado), primera palabra (violeta)Genitivosi se dividió el nombre, qué conector activó el split, si hubo excepción multipalabraPrimera palabrasi el token es semántico, si el bonus +4 se activaMappingcandidatos resueltos, nivel del mapping (n4/n3/n2), si fue deterministaHard Rulestodas las reglas con cuál disparó (si aplica)Scoringleyenda de señales con puntuaciones, stats de ejecuciónRanking finaltabla completa con barras de score, badges por tipo de señal, filtros MAP / Top10 / búsqueda
 El banner de cortocircuito (violeta) aparece automáticamente si el pipeline se detuvo antes del scoring por hard rule o mapping determinista.
+
+
+# Pendiente de subir new version
