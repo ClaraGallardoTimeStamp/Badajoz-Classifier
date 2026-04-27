@@ -275,19 +275,6 @@
     }
   },
   {
-    "categoria_origen": "Conjunto histórico",
-    "ruta": {
-      "nivel_1": "recurso turístico",
-      "nivel_2": [
-        "recurso histórico o cultural"
-      ],
-      "nivel_3": [
-        "conjunto de interés artístico"
-      ],
-      "nivel_4": []
-    }
-  },
-  {
     "categoria_origen": "Construcción civil",
     "ruta": {
       "nivel_1": "Infraestructura de transporte | instalación turística o vinculada",
@@ -399,9 +386,9 @@
         "Instalación educativa"
       ],
       "nivel_3": [
+        "Centro educativo",
         "Campamento",
         "Centro de interpretación",
-        "Centro educativo",
         "Granja escuela",
         "Campamento"
       ],

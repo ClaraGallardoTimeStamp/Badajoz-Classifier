@@ -41,7 +41,7 @@ from copy import deepcopy
 # ── Import del script principal ──────────────────────────────────────────────
 # Ajusta el nombre si tu script tiene otro nombre de fichero.
 try:
-    import classifier_v5 as clf
+    import classifier_v6 as clf
 except ModuleNotFoundError:
     # Intentar importar el script directamente por si tiene guiones en el nombre
     import importlib.util, os

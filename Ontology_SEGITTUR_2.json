@@ -214,6 +214,7 @@
       "termas",
       "dolmen",
       "menhir",
+      "menhires",
       "tumulo",
       "protohistorico",
       "prehistorico",
@@ -248,7 +249,8 @@
     "nivel_5": "",
     "definicion": "Sala destinada a conciertos, recitales, conferencias, coloquios, lecturas públicas, etc.",
     "keywords": [
-      "auditorio"
+      "auditorio",
+      "auditorium"
     ],
     "keywords_negativas": []
   },
@@ -1125,6 +1127,7 @@
       "camara de comercio",
       "centro de desarrollo rural",
       "centro de dia",
+      "emisora municipal",
       "notaria",
       "agencia de lectura",
       "centro social",
@@ -1134,6 +1137,8 @@
       "centro joven",
       "espacio para la creacion joven",
       "juzgado",
+      "juzgados",
+      "registro civil",
       "OAR",
       "Organismo Autonomico de Recaudacion",
       "pisos tutelados",
@@ -1386,7 +1391,10 @@
       "casa de cambio",
       "cambio de moneda"
     ],
-    "keywords_negativas": []
+    "keywords_negativas": [
+      "cajero automático",
+      "cajero"
+    ]
   },
   {
     "id": "ExhibitionHall",
@@ -1881,7 +1889,8 @@
     "nivel_5": "",
     "definicion": "Lugar cuya finalidad consiste en la adquisición, conservación, estudio y exposición de libros y documentos.",
     "keywords": [
-      "biblioteca"
+      "biblioteca",
+      "biblioteca municipal"
     ],
     "keywords_negativas": []
   },
@@ -2325,7 +2334,7 @@
   },
   {
     "id": "Playground",
-    "label": "Parque infantil",
+    "label": "Instalación de cultura y ocio",
     "nivel_1": "Entidad turística",
     "nivel_2": "Instalación turística o vinculada",
     "nivel_3": "Instalación de cultura y ocio",
@@ -2335,6 +2344,7 @@
     "keywords": [
       "merendero",
       "zona de descanso",
+      "zona de ocio",
       "descansadero",
       "descansadero/abrevadero"
     ],
@@ -2778,7 +2788,8 @@
       "ciruelo",
       "encina",
       "pino",
-      "laurel"
+      "laurel",
+      "cipres"
     ],
     "keywords_negativas": []
   },
@@ -2913,7 +2924,15 @@
     "definicion": "Establecimiento comercial de venta al por menor en el que se expenden todo género de artículos alimenticios, bebidas, productos de limpieza, etc.",
     "keywords": [
       "supermercado",
-      "súper",
+      "carrefour",
+      "hipercor",
+      "mercadona",
+      "lidl",
+      "aldi",
+      "alcampo",
+      "ahorramas",
+      "makro",
+      "corte ingles",
       "hipermercado"
     ],
     "keywords_negativas": []
@@ -3470,7 +3489,12 @@
       "pozo",
       "abrevadero"
     ],
-    "keywords_negativas": []
+    "keywords_negativas": [
+      "molino aceitero",
+      "molino aceite",
+      "molino de aceite",
+      "molinos de aceite"
+    ]
   },
   {
     "id": "Vineyard",
