@@ -1,7 +1,7 @@
 """
 Clasificador v6 — Primera palabra, multipalabra y complementos genitivos.
 
-CAMBIOS RESPECTO A v5:
+CAMBIOS:
 
   [A - FIRST_TOKEN]
     La primera palabra significativa del nombre recibe un bonus de +4 pts.

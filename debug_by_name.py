@@ -2,7 +2,7 @@
 debug_by_name.py — Busca un POI por nombre en el CSV y genera su traza.
 
 USO:
-  python debug_by_name.py "Agencia de Lectura Manuel Durán"           # Modo interactivo (logs + archivo)
+  python debug_by_name.py "Agencia de Lectura Manuel Durán"           # Modo interactivo (logs + archivo) tal cual viene en .csv
   python debug_by_name.py "Agencia de Lectura Manuel Durán" --json    # JSON puro a stdout (para piping)
   python debug_by_name.py "Agencia de Lectura Manuel Durán" --quiet   # Solo genera archivo, sin logs
 
