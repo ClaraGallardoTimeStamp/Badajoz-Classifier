@@ -17,7 +17,7 @@ USO:
   )
   print(json.dumps(trace, ensure_ascii=False, indent=2))
 
-  # Opción B — procesar CSV completo y guardar trazas en JSONL:
+  # Opción B — procesar CSV completo y guardar traza en JSONL:
   python classify_debug.py --csv Servicios_Limpio.csv --out trazas.jsonl
 
   # Opción C — traza de un POI desde línea de comandos:
@@ -26,8 +26,8 @@ USO:
                            --desc "Fuente histórica de aguas minerales"
 
 IMPORTANTE:
-  Este módulo importa directamente del script principal (classifier_v6.py).
-  Asegúrate de que el fichero se llama classifier_v6.py o ajusta el import.
+  Este módulo importa directamente del script principal (classifier_v5.py).
+  Asegúrate de que el fichero se llama classifier_v5.py o ajusta el import.
   Si el script principal tiene otro nombre, modifica la línea de import abajo.
 """
 
@@ -41,12 +41,12 @@ from copy import deepcopy
 # ── Import del script principal ──────────────────────────────────────────────
 # Ajusta el nombre si tu script tiene otro nombre de fichero.
 try:
-    import classifier_v6 as clf
+    import classifier_v5 as clf
 except ModuleNotFoundError:
     # Intentar importar el script directamente por si tiene guiones en el nombre
     import importlib.util, os
     _candidates = [
-        "classifier_v6.py", "clasificador_v6.py", "classifier.py",
+        "classifier_v5.py", "clasificador_v6.py", "classifier.py",
         "clasificador.py", "main.py"
     ]
     _found = None

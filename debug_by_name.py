@@ -12,7 +12,7 @@ Genera el JSON de traza y lo guarda en traza_<nombre>.json
 import sys
 import json
 import pandas as pd
-from classify_debug import classify_debug
+from classifier_debug import classify_debug
 
 CSV_PATH = 'Servicios_Limpio.csv'
 
